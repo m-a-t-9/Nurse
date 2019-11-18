@@ -46,7 +46,7 @@ class Example(wx.Frame):
 
         menubar.Append(fileMenu, '&Plik')
         self.SetMenuBar(menubar)
-
+        #self.mainbox = wx.BoxSizer(wx.HORIZONTAL)
         self.hbox = wx.BoxSizer(wx.VERTICAL)
         #self.panel = wx.Panel(self)
         
@@ -94,7 +94,10 @@ class Example(wx.Frame):
 
         gs.AddMany([])
         '''
+        self.editButton = wx.Button(self, label='Edytuj', size=(50, 20))
+        
         self.hbox.Add(self.list, proportion=1, flag=wx.EXPAND)
+        self.hbox.Add(self.editButton)
         self.SetSizer(self.hbox)
         self.Layout()    
 
