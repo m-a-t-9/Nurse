@@ -1,7 +1,13 @@
 import wx
 from Scheduler import *
-
+from EditNurseDutiesWindow import *
 data = [("Styczen",31), ("Luty", 28), ("Marzec",31), ("Kwiecien",30), ("Maj",31), ("Czerwiec",30), ("Lipiec",31), ("Sierpien",31), ("Wrzesien", 30), ("Pazdziernik", 31), ("Listopad",30), ("Grudzien",31)]
+
+
+
+
+    
+
 
 class Example(wx.Frame):
 
@@ -65,6 +71,7 @@ class Example(wx.Frame):
     def showMonth(self):
         
         self.list = wx.ListCtrl(self, wx.ID_ANY, style=wx.LC_REPORT)
+        self.list.Bind(wx.EVT_LIST_ITEM_RIGHT_CLICK, self.OnRightClick)
         self.list.InsertColumn(0, "Imie i Nazwisko", width=200)
         for i in range(self.numberOfDays):
             self.list.InsertColumn(i+1, str(i+1), width=30)
@@ -72,35 +79,42 @@ class Example(wx.Frame):
         idx = 0
         for nurse in self.scheduler.nurses:
             index = self.list.InsertItem(idx, nurse.name)
-            print("Index " + str(index))
             for duty in nurse.dailyDuties:
-                print("DailyDuty: " + str(duty))
-                if (duty % 2) == 1:
-                    self.list.SetItem(index, (duty / 2) + 1, "D")
-                else:
-                    self.list.SetItem(index, (duty / 2), "D")
+                self.list.SetItem(index, duty, "D")
             for duty in nurse.nightlyDuties:
-                print("NightlyDuty: " + str(duty))
-                if (duty % 2) == 1:
-                    self.list.SetItem(index, (duty / 2) + 1, "N")
-                else:
-                    self.list.SetItem(index, (duty / 2), "N")    
+                self.list.SetItem(index, duty, "N")    
             idx += 1
-        
-        '''
-        self.display = wx.TextCtrl(self, style=wx.TE_RIGHT)
-        self.hbox.Add(self.display, flag=wx.EXPAND|wx.TOP|wx.BOTTOM, border=4)
-        gs = wx.GridSizer(self.scheduler.getNumberOfNurse(), self.numberOfDays, 5, 5)
 
-        gs.AddMany([])
-        '''
-        self.editButton = wx.Button(self, label='Edytuj', size=(50, 20))
+        #self.editButton = wx.Button(self, label='Edytuj', size=(50, 20))
+        #self.Bind(wx.EVT_BUTTON, self.OnEdit, self.editButton)
         
         self.hbox.Add(self.list, proportion=1, flag=wx.EXPAND)
-        self.hbox.Add(self.editButton)
+        #self.hbox.Add(self.editButton)
         self.SetSizer(self.hbox)
         self.Layout()    
 
+    def OnRightClick(self, e):
+        menu = wx.Menu()
+        itemOne = menu.Append(0, "Edytuj")
+        self.Bind(wx.EVT_MENU, self.OnEdit, itemOne)
+        itemTwo = menu.Append(1, "Usun")
+         
+        # show the popup menu
+        self.PopupMenu(menu)
+        menu.Destroy()
+        #menu = NursePopupMenu(self)
+        
+    def OnEdit(self, e):
+        i = self.GetSelectedItem()[0]
+        nurseName = self.list.GetItem(i).GetText()
+        print(nurseName)
+        if nurseName != "":
+            
+            editDialog = EditNurseDutiesWindow(self, self.scheduler.getNurse(nurseName))
+            editDialog.ShowModal()
+            editDialog.Destroy()
+            #PutData in the list and refresh
+        
     def OnQuit(self, e):
         self.Close()
 
@@ -130,6 +144,20 @@ class Example(wx.Frame):
         self.hbox.Add(self.list, proportion=1, flag=wx.EXPAND)
         self.SetSizer(self.hbox)
         self.Layout() 
+        
+    def GetSelectedItem(self):
+        selection = []
+        current = -1
+        while True:
+            next = self.GetNextSelected(current)
+            if next == -1:
+                return selection
+
+            selection.append(next)
+            current = next
+
+    def GetNextSelected(self, current):
+        return self.list.GetNextItem(current, wx.LIST_NEXT_ALL, wx.LIST_STATE_SELECTED)
 
 def main():
 
