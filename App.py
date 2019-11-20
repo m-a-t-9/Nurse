@@ -32,17 +32,17 @@ class Example(wx.Frame):
         for monthName in data:
             self.monthsMenuItems.append(wx.MenuItem(new, i, monthName[0]))
             self.monthsMenuItems[-1].SetItemLabel(monthName[0])
-            new.AppendItem(self.monthsMenuItems[-1])
+            new.Append(self.monthsMenuItems[-1])
             self.Bind(wx.EVT_MENU, self.OnNew, self.monthsMenuItems[-1])
             i+=1
             
-        fileMenu.AppendMenu(wx.ID_ANY, 'Nowy grafik', new)
+        fileMenu.AppendSubMenu(new, 'Nowy grafik')
 
         imp = wx.MenuItem(fileMenu, wx.ID_ANY, 'Importuj liste pielegniarek')
-        fileMenu.AppendItem(imp)
+        fileMenu.Append(imp)
         
         qmi = wx.MenuItem(fileMenu, wx.ID_EXIT, '&Wyjscie\tCtrl+W')
-        fileMenu.AppendItem(qmi)
+        fileMenu.Append(qmi)
 
         self.Bind(wx.EVT_MENU, self.OnQuit, qmi)
         self.Bind(wx.EVT_MENU, self.OnImport, imp)

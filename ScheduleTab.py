@@ -6,10 +6,12 @@ from datetime import datetime
 from Duty import *
 
 class EditableListCtrl(wx.ListCtrl, listmix.TextEditMixin):
-
+    ''' TextEditMixin allows any column to be edited. '''
+ 
+    #----------------------------------------------------------------------
     def __init__(self, parent, ID=wx.ID_ANY, pos=wx.DefaultPosition,
                  size=wx.DefaultSize, style=0):
-
+        """Constructor"""
         wx.ListCtrl.__init__(self, parent, ID, pos, size, style)
         listmix.TextEditMixin.__init__(self)
 
@@ -47,7 +49,7 @@ class ScheduleTab(wx.Panel):
         
         self.logger.info("ScheduleTab: createListCTRL: create calendar for days: " + str(self.numberOfDays))
         self.list = EditableListCtrl(self, style=wx.LC_REPORT)
-        #self.list.Bind(wx.EVT_LIST_ITEM_RIGHT_CLICK, self.OnRightClick) if will be needed futher
+        
         self.list.InsertColumn(0, "Imie i Nazwisko", width=150)
         for i in range(self.numberOfDays):
             self.list.InsertColumn(i+1, str(i+1), width=30)
@@ -75,6 +77,7 @@ class ScheduleTab(wx.Panel):
         self.SetSizer(self.hbox)
         self.Layout()    
     
+        
     def OnApply(self, e):
         count = self.list.GetItemCount()
         cols = self.list.GetColumnCount()
