@@ -1,10 +1,22 @@
 import wx
+import wx.lib.mixins.listctrl  as  listmix
+import logging
+
 from Scheduler import *
 from EditNurseDutiesWindow import *
+from NurseTab import *
+from ScheduleTab import *
+
 data = [("Styczen",31), ("Luty", 28), ("Marzec",31), ("Kwiecien",30), ("Maj",31), ("Czerwiec",30), ("Lipiec",31), ("Sierpien",31), ("Wrzesien", 30), ("Pazdziernik", 31), ("Listopad",30), ("Grudzien",31)]
 
 
+class EditableListCtrl(wx.ListCtrl, listmix.TextEditMixin):
 
+    def __init__(self, parent, ID=wx.ID_ANY, pos=wx.DefaultPosition,
+                 size=wx.DefaultSize, style=0):
+        """Constructor"""
+        wx.ListCtrl.__init__(self, parent, ID, pos, size, style)
+        listmix.TextEditMixin.__init__(self)
 
     
 
@@ -14,11 +26,13 @@ class Example(wx.Frame):
     monthsMenuItems = []
 
     def __init__(self, parent, title):
-        super(Example, self).__init__(parent, title=title,
-            size=(1200, 800))
-
+        super(Example, self).__init__(parent, title=title)
+        logging.basicConfig(filename='LOG.log', level=logging.DEBUG, filemode='w', format='%(asctime)s - %(levelname)s - %(process)d - %(message)s')
+        self.logger = logging.getLogger('LOG')
         self.scheduler = Scheduler()
+        self.Maximize(True)
         self.InitUI()
+        
 
     def InitUI(self):
 
@@ -48,50 +62,48 @@ class Example(wx.Frame):
 
         self.Bind(wx.EVT_MENU, self.OnQuit, qmi)
         self.Bind(wx.EVT_MENU, self.OnImport, imp)
-        #self.Bind(wx.EVT_MENU, self.OnNew, new)
+        
 
         menubar.Append(fileMenu, '&Plik')
         self.SetMenuBar(menubar)
-        #self.mainbox = wx.BoxSizer(wx.HORIZONTAL)
+        
         self.hbox = wx.BoxSizer(wx.VERTICAL)
-        #self.panel = wx.Panel(self)
         
-        #self.Maximize(True)
-        #self.SetTitle('Grafiki')
+        self.nb = wx.Notebook(self)
+        self.nurseTab = NurseTab(self.nb, self.logger)
+        self.scheduleTab = ScheduleTab(self.nb, self.logger, self.nurseTab.iface)
         
+        self.nb.AddPage(self.nurseTab, "Zaloga")
+        self.nb.AddPage(self.scheduleTab, "Grafik")
+        self.hbox.Add(self.nb, 1, wx.EXPAND)
+        self.SetSizer(self.hbox)
+        self.Layout()
 
     def OnNew(self, e):
-        self.numberOfDays = data[e.GetId()][1]
-        self.scheduler.createMonth(self.numberOfDays)
-        if len(self.scheduler.nurses) == 0:
-            self.loadNurses()
-        self.scheduler.schedule()
-        self.showMonth()
+        self.scheduleTab.OnNew(e.GetId()+1)
+        self.nb.ChangeSelection(self.scheduleTab.page)
 
-    def showMonth(self):
+    def OnApply(self, e):
+        count = self.list.GetItemCount()
+        cols = self.list.GetColumnCount()
+        duties = []
+        for row in range(count):
+            nurseName = self.list.GetItem(row, col=0).GetText()
+            #print("NurseName: " + nurseName)
+            nurse = self.scheduler.getNurse(nurseName)
+            nurse.nightlyDuties = []
+            nurse.dailyDuties = []
+            for col in range(1,cols):
+                val = self.list.GetItem(row, col=col).GetText()
+                if val == "D":
+                    nurse.dailyDuties.append(col)
+                elif val == "N":
+                    nurse.nightlyDuties.append(col)
+        #self.scheduler.printSchedules()
+        #self.scheduler.validateSchedule()
         
-        self.list = wx.ListCtrl(self, wx.ID_ANY, style=wx.LC_REPORT)
-        self.list.Bind(wx.EVT_LIST_ITEM_RIGHT_CLICK, self.OnRightClick)
-        self.list.InsertColumn(0, "Imie i Nazwisko", width=200)
-        for i in range(self.numberOfDays):
-            self.list.InsertColumn(i+1, str(i+1), width=30)
-
-        idx = 0
-        for nurse in self.scheduler.nurses:
-            index = self.list.InsertItem(idx, nurse.name)
-            for duty in nurse.dailyDuties:
-                self.list.SetItem(index, duty, "D")
-            for duty in nurse.nightlyDuties:
-                self.list.SetItem(index, duty, "N")    
-            idx += 1
-
-        #self.editButton = wx.Button(self, label='Edytuj', size=(50, 20))
-        #self.Bind(wx.EVT_BUTTON, self.OnEdit, self.editButton)
-        
-        self.hbox.Add(self.list, proportion=1, flag=wx.EXPAND)
-        #self.hbox.Add(self.editButton)
-        self.SetSizer(self.hbox)
-        self.Layout()    
+                    
+            
 
     def OnRightClick(self, e):
         menu = wx.Menu()
