@@ -13,7 +13,6 @@ class NurseTab(wx.Panel):
         self.nurses = []
         if self.checkSavedFiles():
             self.loadNurses("nurses.nur")
-        self.hbox = wx.BoxSizer(wx.VERTICAL)
         self.createListCTRL()
         
     def createButtons(self):
@@ -23,6 +22,7 @@ class NurseTab(wx.Panel):
         self.hbox.Add(self.removeNurse)
         
     def createListCTRL(self):
+        self.hbox = wx.BoxSizer(wx.VERTICAL)
         self.list = wx.ListCtrl(self, wx.ID_ANY, style=wx.LC_REPORT)
         self.list.InsertColumn(0, 'Pielegniarka', width=400)
         self.list.InsertColumn(1, 'Etat', width=100)
@@ -53,9 +53,8 @@ class NurseTab(wx.Panel):
             # Proceed loading the file chosen by the user
             pathname = fileDialog.GetPath()
             try:
-                with open(pathname, 'r') as file:
-                    self.loadNurses(file)
-                    self.createListCTRL()
+                self.loadNurses(pathname)
+                self.createListCTRL()
             except IOError:
                 wx.LogError("Cannot open file '%s'." % newfile)
                 
@@ -64,6 +63,8 @@ class NurseTab(wx.Panel):
         f = open(filename, "r")
         c = f.readlines()
         f.close()
+        if len(self.nurses) != 0:
+            self.nurses = []
         for i in range(len(c)):
             if i != 0:
                 self.nurses.append(Nurse(c[i], self.logger))

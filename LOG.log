@@ -1,932 +1,1496 @@
-2019-11-20 21:33:38,682 - INFO - 18420 - NurseTab init
-2019-11-20 21:33:38,683 - INFO - 18420 - NurseTab: loadNurses
-2019-11-20 21:33:38,684 - INFO - 18420 - Nurse: created: E_Holinka-Fabin timejob: 1
-2019-11-20 21:33:38,685 - INFO - 18420 - Nurse: created: J_Vyshtaliuk timejob: 1
-2019-11-20 21:33:38,685 - INFO - 18420 - Nurse: created: W_Naryjek timejob: 0
-2019-11-20 21:33:38,685 - INFO - 18420 - Nurse: created: T_Wieclawek timejob: 0
-2019-11-20 21:33:38,685 - INFO - 18420 - Nurse: created: E_Maslarz timejob: 0
-2019-11-20 21:33:38,685 - INFO - 18420 - Nurse: created: D_Ben-Madej timejob: 0
-2019-11-20 21:33:38,685 - INFO - 18420 - Nurse: created: V_Lodzinska timejob: 0
-2019-11-20 21:33:38,686 - INFO - 18420 - Nurse: created: D_Szwaja timejob: 0
-2019-11-20 21:33:38,686 - INFO - 18420 - Nurse: created: K_Banucha timejob: 1
-2019-11-20 21:33:38,686 - INFO - 18420 - Nurse: created: E_Burdzicka timejob: 1
-2019-11-20 21:33:38,686 - INFO - 18420 - Nurse: created: I_Hazubska timejob: 0.5
-2019-11-20 21:33:38,686 - INFO - 18420 - Nurse: created: A_Olszowa timejob: 1
-2019-11-20 21:33:38,686 - INFO - 18420 - Nurse: created: M_Kolodziej timejob: 0
-2019-11-20 21:33:38,686 - INFO - 18420 - Nurse: created: D_Prokop timejob: 1
-2019-11-20 21:33:38,687 - INFO - 18420 - Nurse: created: R_Ziomek timejob: 1
-2019-11-20 21:33:38,687 - INFO - 18420 - Nurse: created: T_Rodacka timejob: 0
-2019-11-20 21:33:38,687 - INFO - 18420 - Nurse: created: I_Bielinska timejob: 0
-2019-11-20 21:33:38,687 - INFO - 18420 - Nurse: created: B_Buczkowska timejob: 0
-2019-11-20 21:33:38,687 - INFO - 18420 - Nurse: created: L_Osak timejob: 0
-2019-11-20 21:33:38,687 - INFO - 18420 - Nurse: created: D_Palica timejob: 0
-2019-11-20 21:33:38,687 - INFO - 18420 - NurseTab: loadNurses: created: 20 nurses
-2019-11-20 21:33:38,711 - INFO - 18420 - ScheduleTab: createListCTRL: create calendar for days: 31
-2019-11-20 21:33:42,262 - INFO - 18420 - ScheduleTab: calculateHours: calculated SUNDAYS: 4
-2019-11-20 21:33:42,262 - INFO - 18420 - ScheduleTab: calculateHours: calculated SATURDAYS: 4
-2019-11-20 21:33:42,263 - INFO - 18420 - ScheduleTab: calculateHours: calculated WORKING DAYS: 23
-2019-11-20 21:33:42,263 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:42,263 - INFO - 18420 - Nurse: E_Holinka-Fabin should work in this month for 174.34
-2019-11-20 21:33:42,263 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:42,263 - INFO - 18420 - Nurse: J_Vyshtaliuk should work in this month for 174.34
-2019-11-20 21:33:42,263 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:42,263 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:42,263 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:42,263 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:42,263 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:42,265 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:42,265 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:42,265 - INFO - 18420 - Nurse: K_Banucha should work in this month for 174.34
-2019-11-20 21:33:42,266 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:42,266 - INFO - 18420 - Nurse: E_Burdzicka should work in this month for 174.34
-2019-11-20 21:33:42,266 - INFO - 18420 - Nurse timejob is 0.5
-2019-11-20 21:33:42,267 - INFO - 18420 - Nurse: I_Hazubska should work in this month for 87.17
-2019-11-20 21:33:42,267 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:42,267 - INFO - 18420 - Nurse: A_Olszowa should work in this month for 174.34
-2019-11-20 21:33:42,267 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:42,268 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:42,268 - INFO - 18420 - Nurse: D_Prokop should work in this month for 174.34
-2019-11-20 21:33:42,268 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:42,268 - INFO - 18420 - Nurse: R_Ziomek should work in this month for 174.34
-2019-11-20 21:33:42,268 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:42,268 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:42,268 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:42,269 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:42,269 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:42,269 - INFO - 18420 - SetContractors: adding duty: 3 to nurse W_Naryjek
-2019-11-20 21:33:42,269 - INFO - 18420 - SetContractors: adding duty: 5 to nurse W_Naryjek
-2019-11-20 21:33:42,269 - INFO - 18420 - SetContractors: adding duty: 6 to nurse W_Naryjek
-2019-11-20 21:33:42,271 - INFO - 18420 - SetContractors: adding duty: 9 to nurse W_Naryjek
-2019-11-20 21:33:42,271 - INFO - 18420 - SetContractors: adding duty: 10 to nurse W_Naryjek
-2019-11-20 21:33:42,271 - INFO - 18420 - SetContractors: adding duty: 14 to nurse W_Naryjek
-2019-11-20 21:33:42,271 - INFO - 18420 - SetContractors: adding duty: 17 to nurse W_Naryjek
-2019-11-20 21:33:42,272 - INFO - 18420 - SetContractors: adding duty: 18 to nurse W_Naryjek
-2019-11-20 21:33:42,272 - INFO - 18420 - SetContractors: adding duty: 21 to nurse W_Naryjek
-2019-11-20 21:33:42,272 - INFO - 18420 - SetContractors: adding duty: 22 to nurse W_Naryjek
-2019-11-20 21:33:42,272 - INFO - 18420 - SetContractors: adding duty: 25 to nurse W_Naryjek
-2019-11-20 21:33:42,272 - INFO - 18420 - SetContractors: adding duty: 26 to nurse W_Naryjek
-2019-11-20 21:33:42,273 - INFO - 18420 - SetContractors: adding duty: 29 to nurse W_Naryjek
-2019-11-20 21:33:42,273 - INFO - 18420 - SetContractors: adding duty: 4 to nurse T_Wieclawek
-2019-11-20 21:33:42,273 - INFO - 18420 - SetContractors: adding duty: 6 to nurse T_Wieclawek
-2019-11-20 21:33:42,274 - INFO - 18420 - SetContractors: adding duty: 10 to nurse T_Wieclawek
-2019-11-20 21:33:42,274 - INFO - 18420 - SetContractors: adding duty: 16 to nurse T_Wieclawek
-2019-11-20 21:33:42,274 - INFO - 18420 - SetContractors: adding duty: 28 to nurse T_Wieclawek
-2019-11-20 21:33:42,274 - INFO - 18420 - SetContractors: adding duty: 7 to nurse E_Maslarz
-2019-11-20 21:33:42,275 - INFO - 18420 - SetContractors: adding duty: 20 to nurse E_Maslarz
-2019-11-20 21:33:42,275 - INFO - 18420 - SetContractors: adding duty: 24 to nurse E_Maslarz
-2019-11-20 21:33:42,275 - INFO - 18420 - SetContractors: adding duty: 30 to nurse E_Maslarz
-2019-11-20 21:33:42,275 - INFO - 18420 - 
+2019-11-20 21:53:23,501 - INFO - 18452 - NurseTab init
+2019-11-20 21:53:23,501 - INFO - 18452 - NurseTab: loadNurses
+2019-11-20 21:53:23,502 - INFO - 18452 - Nurse: created: E_Holinka-Fabin timejob: 1
+2019-11-20 21:53:23,502 - INFO - 18452 - Nurse: created: J_Vyshtaliuk timejob: 1
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: W_Naryjek timejob: 0
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: T_Wieclawek timejob: 0
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: E_Maslarz timejob: 0
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: D_Ben-Madej timejob: 0
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: V_Lodzinska timejob: 0
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: D_Szwaja timejob: 0
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: K_Banucha timejob: 1
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: E_Burdzicka timejob: 1
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: I_Hazubska timejob: 0.5
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: A_Olszowa timejob: 1
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: M_Kolodziej timejob: 0
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: D_Prokop timejob: 1
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: R_Ziomek timejob: 1
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: T_Rodacka timejob: 0
+2019-11-20 21:53:23,503 - INFO - 18452 - Nurse: created: I_Bielinska timejob: 0
+2019-11-20 21:53:23,504 - INFO - 18452 - Nurse: created: B_Buczkowska timejob: 0
+2019-11-20 21:53:23,504 - INFO - 18452 - Nurse: created: L_Osak timejob: 0
+2019-11-20 21:53:23,504 - INFO - 18452 - Nurse: created: D_Palica timejob: 0
+2019-11-20 21:53:23,504 - INFO - 18452 - NurseTab: loadNurses: created: 20 nurses
+2019-11-20 21:53:23,529 - INFO - 18452 - ScheduleTab: createListCTRL: create calendar for days: 31
+2019-11-20 21:53:27,853 - INFO - 18452 - ScheduleTab: calculateHours: calculated SUNDAYS: 4
+2019-11-20 21:53:27,854 - INFO - 18452 - ScheduleTab: calculateHours: calculated SATURDAYS: 4
+2019-11-20 21:53:27,854 - INFO - 18452 - ScheduleTab: calculateHours: calculated WORKING DAYS: 23
+2019-11-20 21:53:27,854 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:27,855 - INFO - 18452 - Nurse: E_Holinka-Fabin should work in this month for 174.34
+2019-11-20 21:53:27,855 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:27,856 - INFO - 18452 - Nurse: J_Vyshtaliuk should work in this month for 174.34
+2019-11-20 21:53:27,857 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:27,857 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:27,858 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:27,858 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:27,859 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:27,859 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:27,859 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:27,860 - INFO - 18452 - Nurse: K_Banucha should work in this month for 174.34
+2019-11-20 21:53:27,860 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:27,860 - INFO - 18452 - Nurse: E_Burdzicka should work in this month for 174.34
+2019-11-20 21:53:27,861 - INFO - 18452 - Nurse timejob is 0.5
+2019-11-20 21:53:27,861 - INFO - 18452 - Nurse: I_Hazubska should work in this month for 87.17
+2019-11-20 21:53:27,862 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:27,862 - INFO - 18452 - Nurse: A_Olszowa should work in this month for 174.34
+2019-11-20 21:53:27,862 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:27,862 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:27,863 - INFO - 18452 - Nurse: D_Prokop should work in this month for 174.34
+2019-11-20 21:53:27,863 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:27,863 - INFO - 18452 - Nurse: R_Ziomek should work in this month for 174.34
+2019-11-20 21:53:27,864 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:27,864 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:27,865 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:27,865 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:27,865 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:27,865 - INFO - 18452 - SetContractors: adding duty: 3 to nurse W_Naryjek
+2019-11-20 21:53:27,866 - INFO - 18452 - SetContractors: adding duty: 5 to nurse W_Naryjek
+2019-11-20 21:53:27,866 - INFO - 18452 - SetContractors: adding duty: 6 to nurse W_Naryjek
+2019-11-20 21:53:27,866 - INFO - 18452 - SetContractors: adding duty: 9 to nurse W_Naryjek
+2019-11-20 21:53:27,866 - INFO - 18452 - SetContractors: adding duty: 10 to nurse W_Naryjek
+2019-11-20 21:53:27,866 - INFO - 18452 - SetContractors: adding duty: 14 to nurse W_Naryjek
+2019-11-20 21:53:27,866 - INFO - 18452 - SetContractors: adding duty: 17 to nurse W_Naryjek
+2019-11-20 21:53:27,866 - INFO - 18452 - SetContractors: adding duty: 18 to nurse W_Naryjek
+2019-11-20 21:53:27,866 - INFO - 18452 - SetContractors: adding duty: 21 to nurse W_Naryjek
+2019-11-20 21:53:27,866 - INFO - 18452 - SetContractors: adding duty: 22 to nurse W_Naryjek
+2019-11-20 21:53:27,866 - INFO - 18452 - SetContractors: adding duty: 25 to nurse W_Naryjek
+2019-11-20 21:53:27,866 - INFO - 18452 - SetContractors: adding duty: 26 to nurse W_Naryjek
+2019-11-20 21:53:27,871 - INFO - 18452 - SetContractors: adding duty: 29 to nurse W_Naryjek
+2019-11-20 21:53:27,871 - INFO - 18452 - SetContractors: adding duty: 4 to nurse T_Wieclawek
+2019-11-20 21:53:27,871 - INFO - 18452 - SetContractors: adding duty: 6 to nurse T_Wieclawek
+2019-11-20 21:53:27,871 - INFO - 18452 - SetContractors: adding duty: 10 to nurse T_Wieclawek
+2019-11-20 21:53:27,871 - INFO - 18452 - SetContractors: adding duty: 16 to nurse T_Wieclawek
+2019-11-20 21:53:27,872 - INFO - 18452 - SetContractors: adding duty: 28 to nurse T_Wieclawek
+2019-11-20 21:53:27,872 - INFO - 18452 - SetContractors: adding duty: 7 to nurse E_Maslarz
+2019-11-20 21:53:27,872 - INFO - 18452 - SetContractors: adding duty: 20 to nurse E_Maslarz
+2019-11-20 21:53:27,872 - INFO - 18452 - SetContractors: adding duty: 24 to nurse E_Maslarz
+2019-11-20 21:53:27,872 - INFO - 18452 - SetContractors: adding duty: 30 to nurse E_Maslarz
+2019-11-20 21:53:27,873 - INFO - 18452 - 
 Schedulling day 1 D
-2019-11-20 21:33:42,275 - INFO - 18420 - E_Holinka-Fabin planned hours: 0.0
-2019-11-20 21:33:42,275 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 1
-2019-11-20 21:33:42,275 - INFO - 18420 - J_Vyshtaliuk planned hours: 0.0
-2019-11-20 21:33:42,275 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 1
-2019-11-20 21:33:42,275 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,275 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,275 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,275 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,275 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,275 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,275 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,275 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,275 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,275 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,275 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,275 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,275 - INFO - 18420 - K_Banucha planned hours: 0.0
-2019-11-20 21:33:42,275 - INFO - 18420 - K_Banucha assigned to duty in 1
-2019-11-20 21:33:42,279 - INFO - 18420 - 
+2019-11-20 21:53:27,873 - INFO - 18452 - E_Holinka-Fabin planned hours: 0.0
+2019-11-20 21:53:27,873 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 1
+2019-11-20 21:53:27,873 - INFO - 18452 - J_Vyshtaliuk planned hours: 0.0
+2019-11-20 21:53:27,873 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 1
+2019-11-20 21:53:27,873 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,875 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,875 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,876 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,876 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,876 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,876 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,876 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,877 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,877 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,877 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,877 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,877 - INFO - 18452 - K_Banucha planned hours: 0.0
+2019-11-20 21:53:27,877 - INFO - 18452 - K_Banucha assigned to duty in 1
+2019-11-20 21:53:27,878 - INFO - 18452 - 
 Schedulling day 1 N
-2019-11-20 21:33:42,279 - INFO - 18420 - E_Burdzicka planned hours: 0.0
-2019-11-20 21:33:42,279 - INFO - 18420 - E_Burdzicka assigned to duty in 1
-2019-11-20 21:33:42,279 - INFO - 18420 - I_Hazubska planned hours: 0.0
-2019-11-20 21:33:42,279 - INFO - 18420 - I_Hazubska assigned to duty in 1
-2019-11-20 21:33:42,279 - INFO - 18420 - A_Olszowa planned hours: 0.0
-2019-11-20 21:33:42,281 - INFO - 18420 - A_Olszowa assigned to duty in 1
-2019-11-20 21:33:42,281 - INFO - 18420 - 
+2019-11-20 21:53:27,878 - INFO - 18452 - E_Burdzicka planned hours: 0.0
+2019-11-20 21:53:27,878 - INFO - 18452 - E_Burdzicka assigned to duty in 1
+2019-11-20 21:53:27,878 - INFO - 18452 - I_Hazubska planned hours: 0.0
+2019-11-20 21:53:27,879 - INFO - 18452 - I_Hazubska assigned to duty in 1
+2019-11-20 21:53:27,879 - INFO - 18452 - A_Olszowa planned hours: 0.0
+2019-11-20 21:53:27,880 - INFO - 18452 - A_Olszowa assigned to duty in 1
+2019-11-20 21:53:27,880 - INFO - 18452 - 
 Schedulling day 2 D
-2019-11-20 21:33:42,281 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,281 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,282 - INFO - 18420 - D_Prokop planned hours: 0.0
-2019-11-20 21:33:42,282 - INFO - 18420 - D_Prokop assigned to duty in 2
-2019-11-20 21:33:42,282 - INFO - 18420 - R_Ziomek planned hours: 0.0
-2019-11-20 21:33:42,282 - INFO - 18420 - R_Ziomek assigned to duty in 2
-2019-11-20 21:33:42,282 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,282 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,282 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,282 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,283 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,283 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,283 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,283 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,283 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,284 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,284 - INFO - 18420 - E_Holinka-Fabin planned hours: 12.0
-2019-11-20 21:33:42,284 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 2
-2019-11-20 21:33:42,284 - INFO - 18420 - 
+2019-11-20 21:53:27,880 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,880 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,880 - INFO - 18452 - D_Prokop planned hours: 0.0
+2019-11-20 21:53:27,880 - INFO - 18452 - D_Prokop assigned to duty in 2
+2019-11-20 21:53:27,880 - INFO - 18452 - R_Ziomek planned hours: 0.0
+2019-11-20 21:53:27,880 - INFO - 18452 - R_Ziomek assigned to duty in 2
+2019-11-20 21:53:27,880 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,883 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,883 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,883 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,883 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,883 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,883 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,883 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,883 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,883 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,883 - INFO - 18452 - E_Holinka-Fabin planned hours: 12.0
+2019-11-20 21:53:27,886 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 2
+2019-11-20 21:53:27,886 - INFO - 18452 - 
 Schedulling day 2 N
-2019-11-20 21:33:42,284 - INFO - 18420 - J_Vyshtaliuk planned hours: 12.0
-2019-11-20 21:33:42,284 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 2
-2019-11-20 21:33:42,284 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,284 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,284 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,285 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,285 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,285 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,285 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,285 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,285 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,285 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,285 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,285 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,285 - INFO - 18420 - K_Banucha planned hours: 12.0
-2019-11-20 21:33:42,285 - INFO - 18420 - K_Banucha assigned to duty in 2
-2019-11-20 21:33:42,285 - INFO - 18420 - E_Burdzicka planned hours: 12.0
-2019-11-20 21:33:42,285 - INFO - 18420 - E_Burdzicka assigned to duty in 2
-2019-11-20 21:33:42,285 - INFO - 18420 - 
+2019-11-20 21:53:27,887 - INFO - 18452 - J_Vyshtaliuk planned hours: 12.0
+2019-11-20 21:53:27,887 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 2
+2019-11-20 21:53:27,887 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,887 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,887 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,887 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,887 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,887 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,887 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,887 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,887 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,887 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,887 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,887 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,887 - INFO - 18452 - K_Banucha planned hours: 12.0
+2019-11-20 21:53:27,892 - INFO - 18452 - K_Banucha assigned to duty in 2
+2019-11-20 21:53:27,893 - INFO - 18452 - E_Burdzicka planned hours: 12.0
+2019-11-20 21:53:27,893 - INFO - 18452 - E_Burdzicka assigned to duty in 2
+2019-11-20 21:53:27,893 - INFO - 18452 - 
 Schedulling day 3 D
-2019-11-20 21:33:42,285 - INFO - 18420 - I_Hazubska planned hours: 12.0
-2019-11-20 21:33:42,285 - INFO - 18420 - I_Hazubska assigned to duty in 3
-2019-11-20 21:33:42,285 - INFO - 18420 - A_Olszowa planned hours: 12.0
-2019-11-20 21:33:42,285 - INFO - 18420 - A_Olszowa assigned to duty in 3
-2019-11-20 21:33:42,285 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,285 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,285 - INFO - 18420 - D_Prokop planned hours: 12.0
-2019-11-20 21:33:42,285 - INFO - 18420 - D_Prokop assigned to duty in 3
-2019-11-20 21:33:42,288 - INFO - 18420 - 
+2019-11-20 21:53:27,894 - INFO - 18452 - I_Hazubska planned hours: 12.0
+2019-11-20 21:53:27,894 - INFO - 18452 - I_Hazubska assigned to duty in 3
+2019-11-20 21:53:27,894 - INFO - 18452 - A_Olszowa planned hours: 12.0
+2019-11-20 21:53:27,894 - INFO - 18452 - A_Olszowa assigned to duty in 3
+2019-11-20 21:53:27,895 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,895 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,896 - INFO - 18452 - D_Prokop planned hours: 12.0
+2019-11-20 21:53:27,896 - INFO - 18452 - D_Prokop assigned to duty in 3
+2019-11-20 21:53:27,897 - INFO - 18452 - 
 Schedulling day 3 N
-2019-11-20 21:33:42,288 - INFO - 18420 - R_Ziomek planned hours: 12.0
-2019-11-20 21:33:42,288 - INFO - 18420 - R_Ziomek assigned to duty in 3
-2019-11-20 21:33:42,288 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,288 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,288 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,289 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,289 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,289 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,289 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,289 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,289 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,289 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,289 - INFO - 18420 - E_Holinka-Fabin planned hours: 24.0
-2019-11-20 21:33:42,289 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 3
-2019-11-20 21:33:42,289 - INFO - 18420 - 
+2019-11-20 21:53:27,897 - INFO - 18452 - R_Ziomek planned hours: 12.0
+2019-11-20 21:53:27,897 - INFO - 18452 - R_Ziomek assigned to duty in 3
+2019-11-20 21:53:27,897 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,897 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,897 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,897 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,897 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,897 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,897 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,897 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,901 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,901 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,902 - INFO - 18452 - E_Holinka-Fabin planned hours: 24.0
+2019-11-20 21:53:27,902 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 3
+2019-11-20 21:53:27,902 - INFO - 18452 - 
 Schedulling day 4 D
-2019-11-20 21:33:42,289 - INFO - 18420 - J_Vyshtaliuk planned hours: 24.0
-2019-11-20 21:33:42,289 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 4
-2019-11-20 21:33:42,290 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,290 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,290 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,290 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,290 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,290 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,290 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,290 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,290 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,290 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,290 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,290 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,290 - INFO - 18420 - K_Banucha planned hours: 24.0
-2019-11-20 21:33:42,290 - INFO - 18420 - K_Banucha assigned to duty in 4
-2019-11-20 21:33:42,290 - INFO - 18420 - 
+2019-11-20 21:53:27,903 - INFO - 18452 - J_Vyshtaliuk planned hours: 24.0
+2019-11-20 21:53:27,903 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 4
+2019-11-20 21:53:27,903 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,903 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,903 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,903 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,903 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,903 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,903 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,903 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,903 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,903 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,905 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,905 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,906 - INFO - 18452 - K_Banucha planned hours: 24.0
+2019-11-20 21:53:27,906 - INFO - 18452 - K_Banucha assigned to duty in 4
+2019-11-20 21:53:27,906 - INFO - 18452 - 
 Schedulling day 4 N
-2019-11-20 21:33:42,290 - INFO - 18420 - E_Burdzicka planned hours: 24.0
-2019-11-20 21:33:42,290 - INFO - 18420 - E_Burdzicka assigned to duty in 4
-2019-11-20 21:33:42,290 - INFO - 18420 - I_Hazubska planned hours: 24.0
-2019-11-20 21:33:42,290 - INFO - 18420 - I_Hazubska assigned to duty in 4
-2019-11-20 21:33:42,290 - INFO - 18420 - A_Olszowa planned hours: 24.0
-2019-11-20 21:33:42,290 - INFO - 18420 - A_Olszowa assigned to duty in 4
-2019-11-20 21:33:42,290 - INFO - 18420 - 
+2019-11-20 21:53:27,906 - INFO - 18452 - E_Burdzicka planned hours: 24.0
+2019-11-20 21:53:27,906 - INFO - 18452 - E_Burdzicka assigned to duty in 4
+2019-11-20 21:53:27,907 - INFO - 18452 - I_Hazubska planned hours: 24.0
+2019-11-20 21:53:27,907 - INFO - 18452 - I_Hazubska assigned to duty in 4
+2019-11-20 21:53:27,907 - INFO - 18452 - A_Olszowa planned hours: 24.0
+2019-11-20 21:53:27,907 - INFO - 18452 - A_Olszowa assigned to duty in 4
+2019-11-20 21:53:27,907 - INFO - 18452 - 
 Schedulling day 5 D
-2019-11-20 21:33:42,290 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,290 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,290 - INFO - 18420 - D_Prokop planned hours: 24.0
-2019-11-20 21:33:42,290 - INFO - 18420 - D_Prokop assigned to duty in 5
-2019-11-20 21:33:42,290 - INFO - 18420 - R_Ziomek planned hours: 24.0
-2019-11-20 21:33:42,290 - INFO - 18420 - R_Ziomek assigned to duty in 5
-2019-11-20 21:33:42,290 - INFO - 18420 - 
+2019-11-20 21:53:27,907 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,908 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,908 - INFO - 18452 - D_Prokop planned hours: 24.0
+2019-11-20 21:53:27,908 - INFO - 18452 - D_Prokop assigned to duty in 5
+2019-11-20 21:53:27,908 - INFO - 18452 - R_Ziomek planned hours: 24.0
+2019-11-20 21:53:27,911 - INFO - 18452 - R_Ziomek assigned to duty in 5
+2019-11-20 21:53:27,911 - INFO - 18452 - 
 Schedulling day 5 N
-2019-11-20 21:33:42,290 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,290 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,290 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,290 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,290 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,290 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,290 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,290 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,290 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,290 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,290 - INFO - 18420 - E_Holinka-Fabin planned hours: 36.0
-2019-11-20 21:33:42,290 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 5
-2019-11-20 21:33:42,294 - INFO - 18420 - J_Vyshtaliuk planned hours: 36.0
-2019-11-20 21:33:42,294 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 5
-2019-11-20 21:33:42,294 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,294 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,294 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,294 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,294 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,294 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,294 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,294 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,294 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,294 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,294 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,295 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,295 - INFO - 18420 - K_Banucha planned hours: 36.0
-2019-11-20 21:33:42,295 - INFO - 18420 - K_Banucha assigned to duty in 5
-2019-11-20 21:33:42,295 - INFO - 18420 - 
+2019-11-20 21:53:27,912 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,912 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,912 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,913 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,913 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,913 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,913 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,914 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,914 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,914 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,914 - INFO - 18452 - E_Holinka-Fabin planned hours: 36.0
+2019-11-20 21:53:27,915 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 5
+2019-11-20 21:53:27,915 - INFO - 18452 - J_Vyshtaliuk planned hours: 36.0
+2019-11-20 21:53:27,915 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 5
+2019-11-20 21:53:27,915 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,916 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,916 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,916 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,916 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,916 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,917 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,917 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,917 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,917 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,917 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,917 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,917 - INFO - 18452 - K_Banucha planned hours: 36.0
+2019-11-20 21:53:27,918 - INFO - 18452 - K_Banucha assigned to duty in 5
+2019-11-20 21:53:27,918 - INFO - 18452 - 
 Schedulling day 6 D
-2019-11-20 21:33:42,295 - INFO - 18420 - E_Burdzicka planned hours: 36.0
-2019-11-20 21:33:42,295 - INFO - 18420 - E_Burdzicka assigned to duty in 6
-2019-11-20 21:33:42,295 - INFO - 18420 - 
+2019-11-20 21:53:27,918 - INFO - 18452 - E_Burdzicka planned hours: 36.0
+2019-11-20 21:53:27,918 - INFO - 18452 - E_Burdzicka assigned to duty in 6
+2019-11-20 21:53:27,918 - INFO - 18452 - 
 Schedulling day 6 N
-2019-11-20 21:33:42,295 - INFO - 18420 - I_Hazubska planned hours: 36.0
-2019-11-20 21:33:42,296 - INFO - 18420 - I_Hazubska assigned to duty in 6
-2019-11-20 21:33:42,296 - INFO - 18420 - A_Olszowa planned hours: 36.0
-2019-11-20 21:33:42,296 - INFO - 18420 - A_Olszowa assigned to duty in 6
-2019-11-20 21:33:42,296 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,296 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,296 - INFO - 18420 - D_Prokop planned hours: 36.0
-2019-11-20 21:33:42,296 - INFO - 18420 - D_Prokop assigned to duty in 6
-2019-11-20 21:33:42,296 - INFO - 18420 - 
+2019-11-20 21:53:27,918 - INFO - 18452 - I_Hazubska planned hours: 36.0
+2019-11-20 21:53:27,918 - INFO - 18452 - I_Hazubska assigned to duty in 6
+2019-11-20 21:53:27,918 - INFO - 18452 - A_Olszowa planned hours: 36.0
+2019-11-20 21:53:27,918 - INFO - 18452 - A_Olszowa assigned to duty in 6
+2019-11-20 21:53:27,918 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,918 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,918 - INFO - 18452 - D_Prokop planned hours: 36.0
+2019-11-20 21:53:27,918 - INFO - 18452 - D_Prokop assigned to duty in 6
+2019-11-20 21:53:27,918 - INFO - 18452 - 
 Schedulling day 7 D
-2019-11-20 21:33:42,296 - INFO - 18420 - R_Ziomek planned hours: 36.0
-2019-11-20 21:33:42,296 - INFO - 18420 - R_Ziomek assigned to duty in 7
-2019-11-20 21:33:42,297 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,297 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,297 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,297 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,297 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,298 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,298 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,298 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,298 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,298 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,299 - INFO - 18420 - E_Holinka-Fabin planned hours: 48.0
-2019-11-20 21:33:42,299 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 7
-2019-11-20 21:33:42,299 - INFO - 18420 - 
+2019-11-20 21:53:27,918 - INFO - 18452 - R_Ziomek planned hours: 36.0
+2019-11-20 21:53:27,918 - INFO - 18452 - R_Ziomek assigned to duty in 7
+2019-11-20 21:53:27,918 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,918 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,918 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,918 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,918 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,918 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,918 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,918 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,918 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,918 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,918 - INFO - 18452 - E_Holinka-Fabin planned hours: 48.0
+2019-11-20 21:53:27,918 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 7
+2019-11-20 21:53:27,918 - INFO - 18452 - 
 Schedulling day 7 N
-2019-11-20 21:33:42,299 - INFO - 18420 - J_Vyshtaliuk planned hours: 48.0
-2019-11-20 21:33:42,299 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 7
-2019-11-20 21:33:42,300 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,300 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,300 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,300 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,300 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,300 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,300 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,301 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,301 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,301 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,301 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,301 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,301 - INFO - 18420 - K_Banucha planned hours: 48.0
-2019-11-20 21:33:42,301 - INFO - 18420 - K_Banucha assigned to duty in 7
-2019-11-20 21:33:42,301 - INFO - 18420 - E_Burdzicka planned hours: 48.0
-2019-11-20 21:33:42,301 - INFO - 18420 - E_Burdzicka assigned to duty in 7
-2019-11-20 21:33:42,301 - INFO - 18420 - 
+2019-11-20 21:53:27,918 - INFO - 18452 - J_Vyshtaliuk planned hours: 48.0
+2019-11-20 21:53:27,918 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 7
+2019-11-20 21:53:27,918 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,918 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,918 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,918 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,922 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,922 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,923 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,923 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,923 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,923 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,923 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,923 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,924 - INFO - 18452 - K_Banucha planned hours: 48.0
+2019-11-20 21:53:27,924 - INFO - 18452 - K_Banucha assigned to duty in 7
+2019-11-20 21:53:27,924 - INFO - 18452 - E_Burdzicka planned hours: 48.0
+2019-11-20 21:53:27,924 - INFO - 18452 - E_Burdzicka assigned to duty in 7
+2019-11-20 21:53:27,924 - INFO - 18452 - 
 Schedulling day 8 D
-2019-11-20 21:33:42,301 - INFO - 18420 - I_Hazubska planned hours: 48.0
-2019-11-20 21:33:42,301 - INFO - 18420 - I_Hazubska assigned to duty in 8
-2019-11-20 21:33:42,301 - INFO - 18420 - A_Olszowa planned hours: 48.0
-2019-11-20 21:33:42,301 - INFO - 18420 - A_Olszowa assigned to duty in 8
-2019-11-20 21:33:42,301 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,301 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,303 - INFO - 18420 - D_Prokop planned hours: 48.0
-2019-11-20 21:33:42,303 - INFO - 18420 - D_Prokop assigned to duty in 8
-2019-11-20 21:33:42,303 - INFO - 18420 - 
+2019-11-20 21:53:27,924 - INFO - 18452 - I_Hazubska planned hours: 48.0
+2019-11-20 21:53:27,924 - INFO - 18452 - I_Hazubska assigned to duty in 8
+2019-11-20 21:53:27,924 - INFO - 18452 - A_Olszowa planned hours: 48.0
+2019-11-20 21:53:27,924 - INFO - 18452 - A_Olszowa assigned to duty in 8
+2019-11-20 21:53:27,924 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,924 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,924 - INFO - 18452 - D_Prokop planned hours: 48.0
+2019-11-20 21:53:27,924 - INFO - 18452 - D_Prokop assigned to duty in 8
+2019-11-20 21:53:27,924 - INFO - 18452 - 
 Schedulling day 8 N
-2019-11-20 21:33:42,303 - INFO - 18420 - R_Ziomek planned hours: 48.0
-2019-11-20 21:33:42,303 - INFO - 18420 - R_Ziomek assigned to duty in 8
-2019-11-20 21:33:42,304 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,304 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,304 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,304 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,304 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,304 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,304 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,304 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,304 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,304 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,305 - INFO - 18420 - E_Holinka-Fabin planned hours: 60.0
-2019-11-20 21:33:42,305 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 8
-2019-11-20 21:33:42,305 - INFO - 18420 - J_Vyshtaliuk planned hours: 60.0
-2019-11-20 21:33:42,305 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 8
-2019-11-20 21:33:42,305 - INFO - 18420 - 
+2019-11-20 21:53:27,925 - INFO - 18452 - R_Ziomek planned hours: 48.0
+2019-11-20 21:53:27,925 - INFO - 18452 - R_Ziomek assigned to duty in 8
+2019-11-20 21:53:27,925 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,925 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,925 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,925 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,925 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,925 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,925 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,925 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,925 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,925 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,925 - INFO - 18452 - E_Holinka-Fabin planned hours: 60.0
+2019-11-20 21:53:27,925 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 8
+2019-11-20 21:53:27,925 - INFO - 18452 - J_Vyshtaliuk planned hours: 60.0
+2019-11-20 21:53:27,925 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 8
+2019-11-20 21:53:27,925 - INFO - 18452 - 
 Schedulling day 9 D
-2019-11-20 21:33:42,305 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,305 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,305 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,305 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,305 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,305 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,305 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,305 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,305 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,305 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,305 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,305 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,305 - INFO - 18420 - K_Banucha planned hours: 60.0
-2019-11-20 21:33:42,305 - INFO - 18420 - K_Banucha assigned to duty in 9
-2019-11-20 21:33:42,305 - INFO - 18420 - E_Burdzicka planned hours: 60.0
-2019-11-20 21:33:42,305 - INFO - 18420 - E_Burdzicka assigned to duty in 9
-2019-11-20 21:33:42,305 - INFO - 18420 - I_Hazubska planned hours: 60.0
-2019-11-20 21:33:42,305 - INFO - 18420 - I_Hazubska assigned to duty in 9
-2019-11-20 21:33:42,305 - INFO - 18420 - 
+2019-11-20 21:53:27,925 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,925 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,925 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,925 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,925 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,925 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,925 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,925 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,925 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,925 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,925 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,925 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,925 - INFO - 18452 - K_Banucha planned hours: 60.0
+2019-11-20 21:53:27,925 - INFO - 18452 - K_Banucha assigned to duty in 9
+2019-11-20 21:53:27,925 - INFO - 18452 - E_Burdzicka planned hours: 60.0
+2019-11-20 21:53:27,925 - INFO - 18452 - E_Burdzicka assigned to duty in 9
+2019-11-20 21:53:27,925 - INFO - 18452 - I_Hazubska planned hours: 60.0
+2019-11-20 21:53:27,925 - INFO - 18452 - I_Hazubska assigned to duty in 9
+2019-11-20 21:53:27,925 - INFO - 18452 - 
 Schedulling day 9 N
-2019-11-20 21:33:42,305 - INFO - 18420 - A_Olszowa planned hours: 60.0
-2019-11-20 21:33:42,305 - INFO - 18420 - A_Olszowa assigned to duty in 9
-2019-11-20 21:33:42,305 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,305 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,305 - INFO - 18420 - D_Prokop planned hours: 60.0
-2019-11-20 21:33:42,305 - INFO - 18420 - D_Prokop assigned to duty in 9
-2019-11-20 21:33:42,305 - INFO - 18420 - 
+2019-11-20 21:53:27,930 - INFO - 18452 - A_Olszowa planned hours: 60.0
+2019-11-20 21:53:27,930 - INFO - 18452 - A_Olszowa assigned to duty in 9
+2019-11-20 21:53:27,930 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,930 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,931 - INFO - 18452 - D_Prokop planned hours: 60.0
+2019-11-20 21:53:27,931 - INFO - 18452 - D_Prokop assigned to duty in 9
+2019-11-20 21:53:27,931 - INFO - 18452 - 
 Schedulling day 10 D
-2019-11-20 21:33:42,305 - INFO - 18420 - R_Ziomek planned hours: 60.0
-2019-11-20 21:33:42,305 - INFO - 18420 - R_Ziomek assigned to duty in 10
-2019-11-20 21:33:42,305 - INFO - 18420 - 
+2019-11-20 21:53:27,931 - INFO - 18452 - R_Ziomek planned hours: 60.0
+2019-11-20 21:53:27,931 - INFO - 18452 - R_Ziomek assigned to duty in 10
+2019-11-20 21:53:27,931 - INFO - 18452 - 
 Schedulling day 10 N
-2019-11-20 21:33:42,305 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,305 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,305 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,305 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,305 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,305 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,305 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,309 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,309 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,309 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,309 - INFO - 18420 - E_Holinka-Fabin planned hours: 72.0
-2019-11-20 21:33:42,309 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 10
-2019-11-20 21:33:42,309 - INFO - 18420 - J_Vyshtaliuk planned hours: 72.0
-2019-11-20 21:33:42,309 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 10
-2019-11-20 21:33:42,309 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,310 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,310 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,310 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,310 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,310 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,310 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,310 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,310 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,310 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,310 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,311 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,311 - INFO - 18420 - K_Banucha planned hours: 72.0
-2019-11-20 21:33:42,311 - INFO - 18420 - K_Banucha assigned to duty in 10
-2019-11-20 21:33:42,311 - INFO - 18420 - 
+2019-11-20 21:53:27,932 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,932 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,932 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,932 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,932 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,932 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,932 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,932 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,932 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,933 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,933 - INFO - 18452 - E_Holinka-Fabin planned hours: 72.0
+2019-11-20 21:53:27,933 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 10
+2019-11-20 21:53:27,933 - INFO - 18452 - J_Vyshtaliuk planned hours: 72.0
+2019-11-20 21:53:27,933 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 10
+2019-11-20 21:53:27,933 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,933 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,933 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,933 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,934 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,934 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,934 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,934 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,934 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,934 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,935 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,935 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,935 - INFO - 18452 - K_Banucha planned hours: 72.0
+2019-11-20 21:53:27,935 - INFO - 18452 - K_Banucha assigned to duty in 10
+2019-11-20 21:53:27,935 - INFO - 18452 - 
 Schedulling day 11 D
-2019-11-20 21:33:42,311 - INFO - 18420 - E_Burdzicka planned hours: 72.0
-2019-11-20 21:33:42,311 - INFO - 18420 - E_Burdzicka assigned to duty in 11
-2019-11-20 21:33:42,311 - INFO - 18420 - I_Hazubska planned hours: 72.0
-2019-11-20 21:33:42,311 - INFO - 18420 - I_Hazubska assigned to duty in 11
-2019-11-20 21:33:42,311 - INFO - 18420 - A_Olszowa planned hours: 72.0
-2019-11-20 21:33:42,311 - INFO - 18420 - A_Olszowa assigned to duty in 11
-2019-11-20 21:33:42,312 - INFO - 18420 - 
+2019-11-20 21:53:27,935 - INFO - 18452 - E_Burdzicka planned hours: 72.0
+2019-11-20 21:53:27,936 - INFO - 18452 - E_Burdzicka assigned to duty in 11
+2019-11-20 21:53:27,936 - INFO - 18452 - I_Hazubska planned hours: 72.0
+2019-11-20 21:53:27,936 - INFO - 18452 - I_Hazubska assigned to duty in 11
+2019-11-20 21:53:27,936 - INFO - 18452 - A_Olszowa planned hours: 72.0
+2019-11-20 21:53:27,936 - INFO - 18452 - A_Olszowa assigned to duty in 11
+2019-11-20 21:53:27,936 - INFO - 18452 - 
 Schedulling day 11 N
-2019-11-20 21:33:42,312 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,312 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,312 - INFO - 18420 - D_Prokop planned hours: 72.0
-2019-11-20 21:33:42,312 - INFO - 18420 - D_Prokop assigned to duty in 11
-2019-11-20 21:33:42,312 - INFO - 18420 - R_Ziomek planned hours: 72.0
-2019-11-20 21:33:42,312 - INFO - 18420 - R_Ziomek assigned to duty in 11
-2019-11-20 21:33:42,312 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,312 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,312 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,312 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,312 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,312 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,312 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,312 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,312 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,312 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,312 - INFO - 18420 - E_Holinka-Fabin planned hours: 84.0
-2019-11-20 21:33:42,312 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 11
-2019-11-20 21:33:42,312 - INFO - 18420 - 
+2019-11-20 21:53:27,936 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,936 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,936 - INFO - 18452 - D_Prokop planned hours: 72.0
+2019-11-20 21:53:27,936 - INFO - 18452 - D_Prokop assigned to duty in 11
+2019-11-20 21:53:27,936 - INFO - 18452 - R_Ziomek planned hours: 72.0
+2019-11-20 21:53:27,936 - INFO - 18452 - R_Ziomek assigned to duty in 11
+2019-11-20 21:53:27,936 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,937 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,937 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,937 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,937 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,937 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,937 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,937 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,938 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,938 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,938 - INFO - 18452 - E_Holinka-Fabin planned hours: 84.0
+2019-11-20 21:53:27,938 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 11
+2019-11-20 21:53:27,938 - INFO - 18452 - 
 Schedulling day 12 D
-2019-11-20 21:33:42,312 - INFO - 18420 - J_Vyshtaliuk planned hours: 84.0
-2019-11-20 21:33:42,312 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 12
-2019-11-20 21:33:42,312 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,312 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,312 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,312 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,312 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,312 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,312 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,312 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,312 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,312 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,312 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,312 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,316 - INFO - 18420 - K_Banucha planned hours: 84.0
-2019-11-20 21:33:42,316 - INFO - 18420 - K_Banucha assigned to duty in 12
-2019-11-20 21:33:42,316 - INFO - 18420 - E_Burdzicka planned hours: 84.0
-2019-11-20 21:33:42,316 - INFO - 18420 - E_Burdzicka assigned to duty in 12
-2019-11-20 21:33:42,316 - INFO - 18420 - 
+2019-11-20 21:53:27,938 - INFO - 18452 - J_Vyshtaliuk planned hours: 84.0
+2019-11-20 21:53:27,938 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 12
+2019-11-20 21:53:27,939 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,939 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,939 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,939 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,939 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,939 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,939 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,939 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,939 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,939 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,939 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,939 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,939 - INFO - 18452 - K_Banucha planned hours: 84.0
+2019-11-20 21:53:27,939 - INFO - 18452 - K_Banucha assigned to duty in 12
+2019-11-20 21:53:27,939 - INFO - 18452 - E_Burdzicka planned hours: 84.0
+2019-11-20 21:53:27,939 - INFO - 18452 - E_Burdzicka assigned to duty in 12
+2019-11-20 21:53:27,939 - INFO - 18452 - 
 Schedulling day 12 N
-2019-11-20 21:33:42,317 - INFO - 18420 - I_Hazubska planned hours: 84.0
-2019-11-20 21:33:42,317 - INFO - 18420 - Nurse I_Hazubska already have all duties in this  month
-2019-11-20 21:33:42,317 - INFO - 18420 - A_Olszowa planned hours: 84.0
-2019-11-20 21:33:42,317 - INFO - 18420 - A_Olszowa assigned to duty in 12
-2019-11-20 21:33:42,317 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,318 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,318 - INFO - 18420 - D_Prokop planned hours: 84.0
-2019-11-20 21:33:42,318 - INFO - 18420 - D_Prokop assigned to duty in 12
-2019-11-20 21:33:42,318 - INFO - 18420 - R_Ziomek planned hours: 84.0
-2019-11-20 21:33:42,318 - INFO - 18420 - R_Ziomek assigned to duty in 12
-2019-11-20 21:33:42,318 - INFO - 18420 - 
+2019-11-20 21:53:27,939 - INFO - 18452 - I_Hazubska planned hours: 84.0
+2019-11-20 21:53:27,939 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:27,939 - INFO - 18452 - A_Olszowa planned hours: 84.0
+2019-11-20 21:53:27,939 - INFO - 18452 - A_Olszowa assigned to duty in 12
+2019-11-20 21:53:27,939 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,939 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,939 - INFO - 18452 - D_Prokop planned hours: 84.0
+2019-11-20 21:53:27,939 - INFO - 18452 - D_Prokop assigned to duty in 12
+2019-11-20 21:53:27,942 - INFO - 18452 - R_Ziomek planned hours: 84.0
+2019-11-20 21:53:27,942 - INFO - 18452 - R_Ziomek assigned to duty in 12
+2019-11-20 21:53:27,942 - INFO - 18452 - 
 Schedulling day 13 D
-2019-11-20 21:33:42,318 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,318 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,318 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,318 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,318 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,318 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,318 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,318 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,318 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,318 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,318 - INFO - 18420 - E_Holinka-Fabin planned hours: 96.0
-2019-11-20 21:33:42,318 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 13
-2019-11-20 21:33:42,318 - INFO - 18420 - J_Vyshtaliuk planned hours: 96.0
-2019-11-20 21:33:42,318 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 13
-2019-11-20 21:33:42,318 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,318 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,322 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,322 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,322 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,322 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,322 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,322 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,322 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,323 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,323 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,323 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,323 - INFO - 18420 - K_Banucha planned hours: 96.0
-2019-11-20 21:33:42,323 - INFO - 18420 - K_Banucha assigned to duty in 13
-2019-11-20 21:33:42,323 - INFO - 18420 - 
+2019-11-20 21:53:27,942 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,943 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,943 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,943 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,943 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,943 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,943 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,943 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,943 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,943 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,943 - INFO - 18452 - E_Holinka-Fabin planned hours: 96.0
+2019-11-20 21:53:27,943 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 13
+2019-11-20 21:53:27,945 - INFO - 18452 - J_Vyshtaliuk planned hours: 96.0
+2019-11-20 21:53:27,945 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 13
+2019-11-20 21:53:27,945 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,945 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,945 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,945 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,945 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,945 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,945 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,946 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,946 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,946 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,946 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,946 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,946 - INFO - 18452 - K_Banucha planned hours: 96.0
+2019-11-20 21:53:27,946 - INFO - 18452 - K_Banucha assigned to duty in 13
+2019-11-20 21:53:27,946 - INFO - 18452 - 
 Schedulling day 13 N
-2019-11-20 21:33:42,323 - INFO - 18420 - E_Burdzicka planned hours: 96.0
-2019-11-20 21:33:42,323 - INFO - 18420 - E_Burdzicka assigned to duty in 13
-2019-11-20 21:33:42,323 - INFO - 18420 - I_Hazubska planned hours: 84.0
-2019-11-20 21:33:42,323 - INFO - 18420 - Nurse I_Hazubska already have all duties in this  month
-2019-11-20 21:33:42,323 - INFO - 18420 - A_Olszowa planned hours: 96.0
-2019-11-20 21:33:42,325 - INFO - 18420 - A_Olszowa assigned to duty in 13
-2019-11-20 21:33:42,325 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,325 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,325 - INFO - 18420 - D_Prokop planned hours: 96.0
-2019-11-20 21:33:42,325 - INFO - 18420 - D_Prokop assigned to duty in 13
-2019-11-20 21:33:42,325 - INFO - 18420 - 
+2019-11-20 21:53:27,946 - INFO - 18452 - E_Burdzicka planned hours: 96.0
+2019-11-20 21:53:27,946 - INFO - 18452 - E_Burdzicka assigned to duty in 13
+2019-11-20 21:53:27,946 - INFO - 18452 - I_Hazubska planned hours: 84.0
+2019-11-20 21:53:27,946 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:27,946 - INFO - 18452 - A_Olszowa planned hours: 96.0
+2019-11-20 21:53:27,946 - INFO - 18452 - A_Olszowa assigned to duty in 13
+2019-11-20 21:53:27,946 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,946 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,946 - INFO - 18452 - D_Prokop planned hours: 96.0
+2019-11-20 21:53:27,946 - INFO - 18452 - D_Prokop assigned to duty in 13
+2019-11-20 21:53:27,946 - INFO - 18452 - 
 Schedulling day 14 D
-2019-11-20 21:33:42,325 - INFO - 18420 - R_Ziomek planned hours: 96.0
-2019-11-20 21:33:42,325 - INFO - 18420 - R_Ziomek assigned to duty in 14
-2019-11-20 21:33:42,326 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - E_Holinka-Fabin planned hours: 108.0
-2019-11-20 21:33:42,326 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 14
-2019-11-20 21:33:42,326 - INFO - 18420 - 
+2019-11-20 21:53:27,946 - INFO - 18452 - R_Ziomek planned hours: 96.0
+2019-11-20 21:53:27,946 - INFO - 18452 - R_Ziomek assigned to duty in 14
+2019-11-20 21:53:27,946 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,946 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,946 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,946 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,946 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,946 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,946 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,946 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,946 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,946 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,946 - INFO - 18452 - E_Holinka-Fabin planned hours: 108.0
+2019-11-20 21:53:27,946 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 14
+2019-11-20 21:53:27,946 - INFO - 18452 - 
 Schedulling day 14 N
-2019-11-20 21:33:42,326 - INFO - 18420 - J_Vyshtaliuk planned hours: 108.0
-2019-11-20 21:33:42,326 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 14
-2019-11-20 21:33:42,326 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - K_Banucha planned hours: 108.0
-2019-11-20 21:33:42,326 - INFO - 18420 - K_Banucha assigned to duty in 14
-2019-11-20 21:33:42,326 - INFO - 18420 - E_Burdzicka planned hours: 108.0
-2019-11-20 21:33:42,326 - INFO - 18420 - E_Burdzicka assigned to duty in 14
-2019-11-20 21:33:42,326 - INFO - 18420 - 
+2019-11-20 21:53:27,946 - INFO - 18452 - J_Vyshtaliuk planned hours: 108.0
+2019-11-20 21:53:27,946 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 14
+2019-11-20 21:53:27,950 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,950 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,950 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,950 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,950 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,950 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,950 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,950 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,950 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,950 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,950 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,950 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,950 - INFO - 18452 - K_Banucha planned hours: 108.0
+2019-11-20 21:53:27,950 - INFO - 18452 - K_Banucha assigned to duty in 14
+2019-11-20 21:53:27,950 - INFO - 18452 - E_Burdzicka planned hours: 108.0
+2019-11-20 21:53:27,950 - INFO - 18452 - E_Burdzicka assigned to duty in 14
+2019-11-20 21:53:27,950 - INFO - 18452 - 
 Schedulling day 15 D
-2019-11-20 21:33:42,326 - INFO - 18420 - I_Hazubska planned hours: 84.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse I_Hazubska already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - A_Olszowa planned hours: 108.0
-2019-11-20 21:33:42,326 - INFO - 18420 - A_Olszowa assigned to duty in 15
-2019-11-20 21:33:42,326 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - D_Prokop planned hours: 108.0
-2019-11-20 21:33:42,326 - INFO - 18420 - D_Prokop assigned to duty in 15
-2019-11-20 21:33:42,326 - INFO - 18420 - R_Ziomek planned hours: 108.0
-2019-11-20 21:33:42,326 - INFO - 18420 - R_Ziomek assigned to duty in 15
-2019-11-20 21:33:42,326 - INFO - 18420 - 
+2019-11-20 21:53:27,952 - INFO - 18452 - I_Hazubska planned hours: 84.0
+2019-11-20 21:53:27,952 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:27,953 - INFO - 18452 - A_Olszowa planned hours: 108.0
+2019-11-20 21:53:27,953 - INFO - 18452 - A_Olszowa assigned to duty in 15
+2019-11-20 21:53:27,953 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,953 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,953 - INFO - 18452 - D_Prokop planned hours: 108.0
+2019-11-20 21:53:27,953 - INFO - 18452 - D_Prokop assigned to duty in 15
+2019-11-20 21:53:27,953 - INFO - 18452 - R_Ziomek planned hours: 108.0
+2019-11-20 21:53:27,954 - INFO - 18452 - R_Ziomek assigned to duty in 15
+2019-11-20 21:53:27,954 - INFO - 18452 - 
 Schedulling day 15 N
-2019-11-20 21:33:42,326 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,326 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,326 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,330 - INFO - 18420 - E_Holinka-Fabin planned hours: 120.0
-2019-11-20 21:33:42,330 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 15
-2019-11-20 21:33:42,330 - INFO - 18420 - J_Vyshtaliuk planned hours: 120.0
-2019-11-20 21:33:42,330 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 15
-2019-11-20 21:33:42,330 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,330 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,330 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,330 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,331 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,331 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,331 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,331 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,331 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,331 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,331 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,331 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,332 - INFO - 18420 - K_Banucha planned hours: 120.0
-2019-11-20 21:33:42,332 - INFO - 18420 - K_Banucha assigned to duty in 15
-2019-11-20 21:33:42,332 - INFO - 18420 - 
+2019-11-20 21:53:27,954 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,954 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,954 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,954 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,954 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,955 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,955 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,955 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,955 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,955 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,955 - INFO - 18452 - E_Holinka-Fabin planned hours: 120.0
+2019-11-20 21:53:27,955 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 15
+2019-11-20 21:53:27,955 - INFO - 18452 - J_Vyshtaliuk planned hours: 120.0
+2019-11-20 21:53:27,955 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 15
+2019-11-20 21:53:27,955 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,955 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,955 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,955 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,955 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,955 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,955 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,955 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,955 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,955 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,955 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,955 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,955 - INFO - 18452 - K_Banucha planned hours: 120.0
+2019-11-20 21:53:27,955 - INFO - 18452 - K_Banucha assigned to duty in 15
+2019-11-20 21:53:27,955 - INFO - 18452 - 
 Schedulling day 16 D
-2019-11-20 21:33:42,332 - INFO - 18420 - E_Burdzicka planned hours: 120.0
-2019-11-20 21:33:42,332 - INFO - 18420 - E_Burdzicka assigned to duty in 16
-2019-11-20 21:33:42,332 - INFO - 18420 - I_Hazubska planned hours: 84.0
-2019-11-20 21:33:42,332 - INFO - 18420 - Nurse I_Hazubska already have all duties in this  month
-2019-11-20 21:33:42,332 - INFO - 18420 - A_Olszowa planned hours: 120.0
-2019-11-20 21:33:42,332 - INFO - 18420 - A_Olszowa assigned to duty in 16
-2019-11-20 21:33:42,333 - INFO - 18420 - 
+2019-11-20 21:53:27,955 - INFO - 18452 - E_Burdzicka planned hours: 120.0
+2019-11-20 21:53:27,955 - INFO - 18452 - E_Burdzicka assigned to duty in 16
+2019-11-20 21:53:27,955 - INFO - 18452 - I_Hazubska planned hours: 84.0
+2019-11-20 21:53:27,955 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:27,955 - INFO - 18452 - A_Olszowa planned hours: 120.0
+2019-11-20 21:53:27,955 - INFO - 18452 - A_Olszowa assigned to duty in 16
+2019-11-20 21:53:27,955 - INFO - 18452 - 
 Schedulling day 16 N
-2019-11-20 21:33:42,333 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,333 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,333 - INFO - 18420 - D_Prokop planned hours: 120.0
-2019-11-20 21:33:42,333 - INFO - 18420 - D_Prokop assigned to duty in 16
-2019-11-20 21:33:42,333 - INFO - 18420 - R_Ziomek planned hours: 120.0
-2019-11-20 21:33:42,333 - INFO - 18420 - R_Ziomek assigned to duty in 16
-2019-11-20 21:33:42,333 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,333 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,333 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,333 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,333 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,333 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,333 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,333 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,333 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,333 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,333 - INFO - 18420 - E_Holinka-Fabin planned hours: 132.0
-2019-11-20 21:33:42,333 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 16
-2019-11-20 21:33:42,334 - INFO - 18420 - 
+2019-11-20 21:53:27,955 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,955 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,959 - INFO - 18452 - D_Prokop planned hours: 120.0
+2019-11-20 21:53:27,959 - INFO - 18452 - D_Prokop assigned to duty in 16
+2019-11-20 21:53:27,959 - INFO - 18452 - R_Ziomek planned hours: 120.0
+2019-11-20 21:53:27,959 - INFO - 18452 - R_Ziomek assigned to duty in 16
+2019-11-20 21:53:27,959 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,960 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,960 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,960 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,960 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,960 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,960 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,960 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,960 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,961 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,961 - INFO - 18452 - E_Holinka-Fabin planned hours: 132.0
+2019-11-20 21:53:27,961 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 16
+2019-11-20 21:53:27,961 - INFO - 18452 - 
 Schedulling day 17 D
-2019-11-20 21:33:42,334 - INFO - 18420 - J_Vyshtaliuk planned hours: 132.0
-2019-11-20 21:33:42,334 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 17
-2019-11-20 21:33:42,334 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,334 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,334 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,334 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,334 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,334 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,334 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,334 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,334 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,334 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,334 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,334 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,334 - INFO - 18420 - K_Banucha planned hours: 132.0
-2019-11-20 21:33:42,334 - INFO - 18420 - K_Banucha assigned to duty in 17
-2019-11-20 21:33:42,334 - INFO - 18420 - E_Burdzicka planned hours: 132.0
-2019-11-20 21:33:42,334 - INFO - 18420 - E_Burdzicka assigned to duty in 17
-2019-11-20 21:33:42,334 - INFO - 18420 - 
+2019-11-20 21:53:27,961 - INFO - 18452 - J_Vyshtaliuk planned hours: 132.0
+2019-11-20 21:53:27,961 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 17
+2019-11-20 21:53:27,961 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,961 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,961 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,961 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,961 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,961 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,961 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,963 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,963 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,963 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,963 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,963 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,963 - INFO - 18452 - K_Banucha planned hours: 132.0
+2019-11-20 21:53:27,963 - INFO - 18452 - K_Banucha assigned to duty in 17
+2019-11-20 21:53:27,963 - INFO - 18452 - E_Burdzicka planned hours: 132.0
+2019-11-20 21:53:27,964 - INFO - 18452 - E_Burdzicka assigned to duty in 17
+2019-11-20 21:53:27,964 - INFO - 18452 - 
 Schedulling day 17 N
-2019-11-20 21:33:42,335 - INFO - 18420 - I_Hazubska planned hours: 84.0
-2019-11-20 21:33:42,335 - INFO - 18420 - Nurse I_Hazubska already have all duties in this  month
-2019-11-20 21:33:42,335 - INFO - 18420 - A_Olszowa planned hours: 132.0
-2019-11-20 21:33:42,335 - INFO - 18420 - A_Olszowa assigned to duty in 17
-2019-11-20 21:33:42,335 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,335 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,335 - INFO - 18420 - D_Prokop planned hours: 132.0
-2019-11-20 21:33:42,335 - INFO - 18420 - D_Prokop assigned to duty in 17
-2019-11-20 21:33:42,335 - INFO - 18420 - 
+2019-11-20 21:53:27,964 - INFO - 18452 - I_Hazubska planned hours: 84.0
+2019-11-20 21:53:27,964 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:27,964 - INFO - 18452 - A_Olszowa planned hours: 132.0
+2019-11-20 21:53:27,964 - INFO - 18452 - A_Olszowa assigned to duty in 17
+2019-11-20 21:53:27,964 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,964 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,964 - INFO - 18452 - D_Prokop planned hours: 132.0
+2019-11-20 21:53:27,964 - INFO - 18452 - D_Prokop assigned to duty in 17
+2019-11-20 21:53:27,965 - INFO - 18452 - 
 Schedulling day 18 D
-2019-11-20 21:33:42,335 - INFO - 18420 - R_Ziomek planned hours: 132.0
-2019-11-20 21:33:42,335 - INFO - 18420 - R_Ziomek assigned to duty in 18
-2019-11-20 21:33:42,335 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,335 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,335 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,335 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,335 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,335 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,335 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,335 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,336 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,336 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,336 - INFO - 18420 - E_Holinka-Fabin planned hours: 144.0
-2019-11-20 21:33:42,336 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 18
-2019-11-20 21:33:42,336 - INFO - 18420 - 
+2019-11-20 21:53:27,965 - INFO - 18452 - R_Ziomek planned hours: 132.0
+2019-11-20 21:53:27,965 - INFO - 18452 - R_Ziomek assigned to duty in 18
+2019-11-20 21:53:27,965 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,965 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,965 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,965 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,965 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,965 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,965 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,965 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,965 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,965 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,967 - INFO - 18452 - E_Holinka-Fabin planned hours: 144.0
+2019-11-20 21:53:27,967 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 18
+2019-11-20 21:53:27,967 - INFO - 18452 - 
 Schedulling day 18 N
-2019-11-20 21:33:42,336 - INFO - 18420 - J_Vyshtaliuk planned hours: 144.0
-2019-11-20 21:33:42,336 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 18
-2019-11-20 21:33:42,336 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,336 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,336 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,336 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,336 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,336 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,336 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,336 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,336 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,336 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,336 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,336 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,336 - INFO - 18420 - K_Banucha planned hours: 144.0
-2019-11-20 21:33:42,337 - INFO - 18420 - K_Banucha assigned to duty in 18
-2019-11-20 21:33:42,337 - INFO - 18420 - E_Burdzicka planned hours: 144.0
-2019-11-20 21:33:42,337 - INFO - 18420 - E_Burdzicka assigned to duty in 18
-2019-11-20 21:33:42,337 - INFO - 18420 - 
+2019-11-20 21:53:27,967 - INFO - 18452 - J_Vyshtaliuk planned hours: 144.0
+2019-11-20 21:53:27,967 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 18
+2019-11-20 21:53:27,968 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - K_Banucha planned hours: 144.0
+2019-11-20 21:53:27,968 - INFO - 18452 - K_Banucha assigned to duty in 18
+2019-11-20 21:53:27,968 - INFO - 18452 - E_Burdzicka planned hours: 144.0
+2019-11-20 21:53:27,968 - INFO - 18452 - E_Burdzicka assigned to duty in 18
+2019-11-20 21:53:27,968 - INFO - 18452 - 
 Schedulling day 19 D
-2019-11-20 21:33:42,337 - INFO - 18420 - I_Hazubska planned hours: 84.0
-2019-11-20 21:33:42,337 - INFO - 18420 - Nurse I_Hazubska already have all duties in this  month
-2019-11-20 21:33:42,337 - INFO - 18420 - A_Olszowa planned hours: 144.0
-2019-11-20 21:33:42,337 - INFO - 18420 - A_Olszowa assigned to duty in 19
-2019-11-20 21:33:42,337 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,337 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,337 - INFO - 18420 - D_Prokop planned hours: 144.0
-2019-11-20 21:33:42,337 - INFO - 18420 - D_Prokop assigned to duty in 19
-2019-11-20 21:33:42,337 - INFO - 18420 - R_Ziomek planned hours: 144.0
-2019-11-20 21:33:42,337 - INFO - 18420 - R_Ziomek assigned to duty in 19
-2019-11-20 21:33:42,337 - INFO - 18420 - 
+2019-11-20 21:53:27,968 - INFO - 18452 - I_Hazubska planned hours: 84.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - A_Olszowa planned hours: 144.0
+2019-11-20 21:53:27,968 - INFO - 18452 - A_Olszowa assigned to duty in 19
+2019-11-20 21:53:27,968 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - D_Prokop planned hours: 144.0
+2019-11-20 21:53:27,968 - INFO - 18452 - D_Prokop assigned to duty in 19
+2019-11-20 21:53:27,968 - INFO - 18452 - R_Ziomek planned hours: 144.0
+2019-11-20 21:53:27,968 - INFO - 18452 - R_Ziomek assigned to duty in 19
+2019-11-20 21:53:27,968 - INFO - 18452 - 
 Schedulling day 19 N
-2019-11-20 21:33:42,337 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,337 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,337 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,337 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,339 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,339 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,339 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,339 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,339 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,339 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,339 - INFO - 18420 - E_Holinka-Fabin planned hours: 156.0
-2019-11-20 21:33:42,339 - INFO - 18420 - E_Holinka-Fabin assigned to duty in 19
-2019-11-20 21:33:42,339 - INFO - 18420 - J_Vyshtaliuk planned hours: 156.0
-2019-11-20 21:33:42,339 - INFO - 18420 - J_Vyshtaliuk assigned to duty in 19
-2019-11-20 21:33:42,339 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,339 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,339 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,339 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,339 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,339 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,339 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,339 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,339 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,339 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,339 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,339 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,339 - INFO - 18420 - K_Banucha planned hours: 156.0
-2019-11-20 21:33:42,339 - INFO - 18420 - K_Banucha assigned to duty in 19
-2019-11-20 21:33:42,339 - INFO - 18420 - 
+2019-11-20 21:53:27,968 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,968 - INFO - 18452 - E_Holinka-Fabin planned hours: 156.0
+2019-11-20 21:53:27,968 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 19
+2019-11-20 21:53:27,968 - INFO - 18452 - J_Vyshtaliuk planned hours: 156.0
+2019-11-20 21:53:27,968 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 19
+2019-11-20 21:53:27,968 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,968 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,972 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,972 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,972 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,972 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,973 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,973 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,973 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,973 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,973 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,973 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,974 - INFO - 18452 - K_Banucha planned hours: 156.0
+2019-11-20 21:53:27,974 - INFO - 18452 - K_Banucha assigned to duty in 19
+2019-11-20 21:53:27,974 - INFO - 18452 - 
 Schedulling day 20 D
-2019-11-20 21:33:42,339 - INFO - 18420 - E_Burdzicka planned hours: 156.0
-2019-11-20 21:33:42,339 - INFO - 18420 - E_Burdzicka assigned to duty in 20
-2019-11-20 21:33:42,339 - INFO - 18420 - I_Hazubska planned hours: 84.0
-2019-11-20 21:33:42,339 - INFO - 18420 - Nurse I_Hazubska already have all duties in this  month
-2019-11-20 21:33:42,339 - INFO - 18420 - A_Olszowa planned hours: 156.0
-2019-11-20 21:33:42,339 - INFO - 18420 - A_Olszowa assigned to duty in 20
-2019-11-20 21:33:42,339 - INFO - 18420 - 
+2019-11-20 21:53:27,974 - INFO - 18452 - E_Burdzicka planned hours: 156.0
+2019-11-20 21:53:27,974 - INFO - 18452 - E_Burdzicka assigned to duty in 20
+2019-11-20 21:53:27,974 - INFO - 18452 - I_Hazubska planned hours: 84.0
+2019-11-20 21:53:27,976 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:27,976 - INFO - 18452 - A_Olszowa planned hours: 156.0
+2019-11-20 21:53:27,976 - INFO - 18452 - A_Olszowa assigned to duty in 20
+2019-11-20 21:53:27,976 - INFO - 18452 - 
 Schedulling day 20 N
-2019-11-20 21:33:42,339 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,339 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - D_Prokop planned hours: 156.0
-2019-11-20 21:33:42,340 - INFO - 18420 - D_Prokop assigned to duty in 20
-2019-11-20 21:33:42,340 - INFO - 18420 - R_Ziomek planned hours: 156.0
-2019-11-20 21:33:42,340 - INFO - 18420 - R_Ziomek assigned to duty in 20
-2019-11-20 21:33:42,340 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - E_Holinka-Fabin planned hours: 168.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse E_Holinka-Fabin already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - J_Vyshtaliuk planned hours: 168.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse J_Vyshtaliuk already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - W_Naryjek planned hours: 156.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - T_Wieclawek planned hours: 60.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - E_Maslarz planned hours: 48.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - K_Banucha planned hours: 168.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse K_Banucha already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - E_Burdzicka planned hours: 168.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse E_Burdzicka already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - I_Hazubska planned hours: 84.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse I_Hazubska already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - A_Olszowa planned hours: 168.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse A_Olszowa already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - D_Prokop planned hours: 168.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse D_Prokop already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - R_Ziomek planned hours: 168.0
-2019-11-20 21:33:42,340 - INFO - 18420 - Nurse R_Ziomek already have all duties in this  month
-2019-11-20 21:33:42,340 - INFO - 18420 - There is not enough nurses in this month to schedule work
-2019-11-20 21:33:42,340 - INFO - 18420 - Done :D
+2019-11-20 21:53:27,976 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,977 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,977 - INFO - 18452 - D_Prokop planned hours: 156.0
+2019-11-20 21:53:27,977 - INFO - 18452 - D_Prokop assigned to duty in 20
+2019-11-20 21:53:27,977 - INFO - 18452 - R_Ziomek planned hours: 156.0
+2019-11-20 21:53:27,977 - INFO - 18452 - R_Ziomek assigned to duty in 20
+2019-11-20 21:53:27,977 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:27,977 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - E_Holinka-Fabin planned hours: 168.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse E_Holinka-Fabin already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - J_Vyshtaliuk planned hours: 168.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse J_Vyshtaliuk already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:27,978 - INFO - 18452 - K_Banucha planned hours: 168.0
+2019-11-20 21:53:27,978 - INFO - 18452 - Nurse K_Banucha already have all duties in this  month
+2019-11-20 21:53:27,982 - INFO - 18452 - E_Burdzicka planned hours: 168.0
+2019-11-20 21:53:27,982 - INFO - 18452 - Nurse E_Burdzicka already have all duties in this  month
+2019-11-20 21:53:27,982 - INFO - 18452 - I_Hazubska planned hours: 84.0
+2019-11-20 21:53:27,982 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:27,982 - INFO - 18452 - A_Olszowa planned hours: 168.0
+2019-11-20 21:53:27,982 - INFO - 18452 - Nurse A_Olszowa already have all duties in this  month
+2019-11-20 21:53:27,983 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:27,983 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:27,983 - INFO - 18452 - D_Prokop planned hours: 168.0
+2019-11-20 21:53:27,983 - INFO - 18452 - Nurse D_Prokop already have all duties in this  month
+2019-11-20 21:53:27,983 - INFO - 18452 - R_Ziomek planned hours: 168.0
+2019-11-20 21:53:27,983 - INFO - 18452 - Nurse R_Ziomek already have all duties in this  month
+2019-11-20 21:53:27,983 - INFO - 18452 - There is not enough nurses in this month to schedule work
+2019-11-20 21:53:27,983 - INFO - 18452 - Done :D
 
 
 
-2019-11-20 21:33:42,340 - INFO - 18420 - ScheduleTab: createListCTRL: create calendar for days: 31
-2019-11-20 21:33:47,063 - INFO - 18420 - ScheduleTab: calculateHours: calculated SUNDAYS: 4
-2019-11-20 21:33:47,064 - INFO - 18420 - ScheduleTab: calculateHours: calculated SATURDAYS: 4
-2019-11-20 21:33:47,064 - INFO - 18420 - ScheduleTab: calculateHours: calculated WORKING DAYS: 22
-2019-11-20 21:33:47,064 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:47,065 - INFO - 18420 - Nurse: E_Holinka-Fabin should work in this month for 166.76
-2019-11-20 21:33:47,065 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:47,065 - INFO - 18420 - Nurse: J_Vyshtaliuk should work in this month for 166.76
-2019-11-20 21:33:47,065 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:47,065 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:47,066 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:47,066 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:47,066 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:47,067 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:47,067 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:47,067 - INFO - 18420 - Nurse: K_Banucha should work in this month for 166.76
-2019-11-20 21:33:47,067 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:47,067 - INFO - 18420 - Nurse: E_Burdzicka should work in this month for 166.76
-2019-11-20 21:33:47,067 - INFO - 18420 - Nurse timejob is 0.5
-2019-11-20 21:33:47,068 - INFO - 18420 - Nurse: I_Hazubska should work in this month for 83.38
-2019-11-20 21:33:47,068 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:47,069 - INFO - 18420 - Nurse: A_Olszowa should work in this month for 166.76
-2019-11-20 21:33:47,069 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:47,070 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:47,070 - INFO - 18420 - Nurse: D_Prokop should work in this month for 166.76
-2019-11-20 21:33:47,070 - INFO - 18420 - Nurse timejob is 1
-2019-11-20 21:33:47,070 - INFO - 18420 - Nurse: R_Ziomek should work in this month for 166.76
-2019-11-20 21:33:47,070 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:47,071 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:47,071 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:47,071 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:47,071 - INFO - 18420 - Nurse timejob is 0
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 3 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 5 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 6 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 9 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 10 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 14 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 17 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 18 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 21 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 22 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 25 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 26 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 29 to nurse W_Naryjek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 4 to nurse T_Wieclawek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 6 to nurse T_Wieclawek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 10 to nurse T_Wieclawek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 16 to nurse T_Wieclawek
-2019-11-20 21:33:47,071 - INFO - 18420 - SetContractors: adding duty: 28 to nurse T_Wieclawek
-2019-11-20 21:33:47,075 - INFO - 18420 - SetContractors: adding duty: 7 to nurse E_Maslarz
-2019-11-20 21:33:47,075 - INFO - 18420 - SetContractors: adding duty: 20 to nurse E_Maslarz
-2019-11-20 21:33:47,075 - INFO - 18420 - SetContractors: adding duty: 24 to nurse E_Maslarz
-2019-11-20 21:33:47,075 - INFO - 18420 - SetContractors: adding duty: 30 to nurse E_Maslarz
-2019-11-20 21:33:47,075 - INFO - 18420 - 
+2019-11-20 21:53:27,983 - INFO - 18452 - ScheduleTab: createListCTRL: create calendar for days: 31
+2019-11-20 21:53:32,314 - INFO - 18452 - NurseTab: loadNurses
+2019-11-20 21:53:32,315 - INFO - 18452 - Nurse: created: E_Holinka-Fabin timejob: 1
+2019-11-20 21:53:32,315 - INFO - 18452 - Nurse: created: J_Vyshtaliuk timejob: 1
+2019-11-20 21:53:32,315 - INFO - 18452 - Nurse: created: W_Naryjek timejob: 0
+2019-11-20 21:53:32,315 - INFO - 18452 - Nurse: created: T_Wieclawek timejob: 0
+2019-11-20 21:53:32,315 - INFO - 18452 - Nurse: created: E_Maslarz timejob: 0
+2019-11-20 21:53:32,316 - INFO - 18452 - Nurse: created: D_Ben-Madej timejob: 0
+2019-11-20 21:53:32,316 - INFO - 18452 - Nurse: created: V_Lodzinska timejob: 0
+2019-11-20 21:53:32,316 - INFO - 18452 - Nurse: created: D_Szwaja timejob: 0
+2019-11-20 21:53:32,316 - INFO - 18452 - Nurse: created: K_Banucha timejob: 1
+2019-11-20 21:53:32,316 - INFO - 18452 - Nurse: created: E_Burdzicka timejob: 1
+2019-11-20 21:53:32,316 - INFO - 18452 - Nurse: created: I_Hazubska timejob: 0.5
+2019-11-20 21:53:32,316 - INFO - 18452 - Nurse: created: A_Olszowa timejob: 1
+2019-11-20 21:53:32,316 - INFO - 18452 - Nurse: created: M_Kolodziej timejob: 0
+2019-11-20 21:53:32,317 - INFO - 18452 - Nurse: created: D_Prokop timejob: 1
+2019-11-20 21:53:32,317 - INFO - 18452 - Nurse: created: R_Ziomek timejob: 1
+2019-11-20 21:53:32,317 - INFO - 18452 - Nurse: created: T_Rodacka timejob: 0
+2019-11-20 21:53:32,317 - INFO - 18452 - Nurse: created: I_Bielinska timejob: 0
+2019-11-20 21:53:32,317 - INFO - 18452 - Nurse: created: B_Buczkowska timejob: 0
+2019-11-20 21:53:32,317 - INFO - 18452 - Nurse: created: L_Osak timejob: 0
+2019-11-20 21:53:32,317 - INFO - 18452 - Nurse: created: D_Palica timejob: 0
+2019-11-20 21:53:32,317 - INFO - 18452 - NurseTab: loadNurses: created: 20 nurses
+2019-11-20 21:53:37,029 - INFO - 18452 - ScheduleTab: calculateHours: calculated SUNDAYS: 4
+2019-11-20 21:53:37,029 - INFO - 18452 - ScheduleTab: calculateHours: calculated SATURDAYS: 4
+2019-11-20 21:53:37,030 - INFO - 18452 - ScheduleTab: calculateHours: calculated WORKING DAYS: 20
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse: E_Holinka-Fabin should work in this month for 151.6
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse: J_Vyshtaliuk should work in this month for 151.6
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse: K_Banucha should work in this month for 151.6
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse: E_Burdzicka should work in this month for 151.6
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 0.5
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse: I_Hazubska should work in this month for 75.8
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse: A_Olszowa should work in this month for 151.6
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:37,030 - INFO - 18452 - Nurse: D_Prokop should work in this month for 151.6
+2019-11-20 21:53:37,034 - INFO - 18452 - Nurse timejob is 1
+2019-11-20 21:53:37,034 - INFO - 18452 - Nurse: R_Ziomek should work in this month for 151.6
+2019-11-20 21:53:37,035 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:37,035 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:37,035 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:37,035 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:37,035 - INFO - 18452 - Nurse timejob is 0
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 3 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 5 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 6 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 9 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 10 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 14 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 17 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 18 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 21 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 22 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 25 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 26 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 29 to nurse W_Naryjek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 4 to nurse T_Wieclawek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 6 to nurse T_Wieclawek
+2019-11-20 21:53:37,035 - INFO - 18452 - SetContractors: adding duty: 10 to nurse T_Wieclawek
+2019-11-20 21:53:37,039 - INFO - 18452 - SetContractors: adding duty: 16 to nurse T_Wieclawek
+2019-11-20 21:53:37,039 - INFO - 18452 - SetContractors: adding duty: 28 to nurse T_Wieclawek
+2019-11-20 21:53:37,039 - INFO - 18452 - SetContractors: adding duty: 7 to nurse E_Maslarz
+2019-11-20 21:53:37,040 - INFO - 18452 - SetContractors: adding duty: 20 to nurse E_Maslarz
+2019-11-20 21:53:37,040 - INFO - 18452 - SetContractors: adding duty: 24 to nurse E_Maslarz
+2019-11-20 21:53:37,040 - INFO - 18452 - SetContractors: adding duty: 30 to nurse E_Maslarz
+2019-11-20 21:53:37,040 - INFO - 18452 - 
 Schedulling day 1 D
-2019-11-20 21:33:47,075 - INFO - 18420 - 
+2019-11-20 21:53:37,041 - INFO - 18452 - 
 Schedulling day 1 N
-2019-11-20 21:33:47,076 - INFO - 18420 - 
+2019-11-20 21:53:37,042 - INFO - 18452 - 
 Schedulling day 2 D
-2019-11-20 21:33:47,076 - INFO - 18420 - 
+2019-11-20 21:53:37,042 - INFO - 18452 - 
 Schedulling day 2 N
-2019-11-20 21:33:47,076 - INFO - 18420 - 
+2019-11-20 21:53:37,042 - INFO - 18452 - 
 Schedulling day 3 D
-2019-11-20 21:33:47,076 - INFO - 18420 - 
+2019-11-20 21:53:37,042 - INFO - 18452 - 
 Schedulling day 3 N
-2019-11-20 21:33:47,076 - INFO - 18420 - 
+2019-11-20 21:53:37,042 - INFO - 18452 - 
 Schedulling day 4 D
-2019-11-20 21:33:47,076 - INFO - 18420 - 
+2019-11-20 21:53:37,043 - INFO - 18452 - 
 Schedulling day 4 N
-2019-11-20 21:33:47,077 - INFO - 18420 - 
+2019-11-20 21:53:37,043 - INFO - 18452 - 
 Schedulling day 5 D
-2019-11-20 21:33:47,077 - INFO - 18420 - 
+2019-11-20 21:53:37,043 - INFO - 18452 - 
 Schedulling day 5 N
-2019-11-20 21:33:47,077 - INFO - 18420 - 
+2019-11-20 21:53:37,043 - INFO - 18452 - 
 Schedulling day 6 D
-2019-11-20 21:33:47,077 - INFO - 18420 - 
+2019-11-20 21:53:37,043 - INFO - 18452 - 
 Schedulling day 6 N
-2019-11-20 21:33:47,077 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 7 D
-2019-11-20 21:33:47,077 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 7 N
-2019-11-20 21:33:47,077 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 8 D
-2019-11-20 21:33:47,078 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 8 N
-2019-11-20 21:33:47,078 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 9 D
-2019-11-20 21:33:47,078 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 9 N
-2019-11-20 21:33:47,078 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 10 D
-2019-11-20 21:33:47,078 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 10 N
-2019-11-20 21:33:47,078 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 11 D
-2019-11-20 21:33:47,078 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 11 N
-2019-11-20 21:33:47,078 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 12 D
-2019-11-20 21:33:47,079 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 12 N
-2019-11-20 21:33:47,079 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 13 D
-2019-11-20 21:33:47,079 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 13 N
-2019-11-20 21:33:47,080 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 14 D
-2019-11-20 21:33:47,080 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 14 N
-2019-11-20 21:33:47,081 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 15 D
-2019-11-20 21:33:47,081 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 15 N
-2019-11-20 21:33:47,081 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 16 D
-2019-11-20 21:33:47,083 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 16 N
-2019-11-20 21:33:47,083 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 17 D
-2019-11-20 21:33:47,084 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 17 N
-2019-11-20 21:33:47,084 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 18 D
-2019-11-20 21:33:47,084 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 18 N
-2019-11-20 21:33:47,085 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 19 D
-2019-11-20 21:33:47,085 - INFO - 18420 - 
+2019-11-20 21:53:37,044 - INFO - 18452 - 
 Schedulling day 19 N
-2019-11-20 21:33:47,085 - INFO - 18420 - 
+2019-11-20 21:53:37,048 - INFO - 18452 - 
 Schedulling day 20 D
-2019-11-20 21:33:47,085 - INFO - 18420 - 
+2019-11-20 21:53:37,049 - INFO - 18452 - 
 Schedulling day 20 N
-2019-11-20 21:33:47,085 - INFO - 18420 - E_Holinka-Fabin planned hours: 168.0
-2019-11-20 21:33:47,085 - INFO - 18420 - Nurse E_Holinka-Fabin already have all duties in this  month
-2019-11-20 21:33:47,085 - INFO - 18420 - J_Vyshtaliuk planned hours: 168.0
-2019-11-20 21:33:47,085 - INFO - 18420 - Nurse J_Vyshtaliuk already have all duties in this  month
-2019-11-20 21:33:47,085 - INFO - 18420 - W_Naryjek planned hours: 312.0
-2019-11-20 21:33:47,085 - INFO - 18420 - Nurse W_Naryjek already have all duties in this  month
-2019-11-20 21:33:47,085 - INFO - 18420 - T_Wieclawek planned hours: 120.0
-2019-11-20 21:33:47,085 - INFO - 18420 - Nurse T_Wieclawek already have all duties in this  month
-2019-11-20 21:33:47,085 - INFO - 18420 - E_Maslarz planned hours: 96.0
-2019-11-20 21:33:47,085 - INFO - 18420 - Nurse E_Maslarz already have all duties in this  month
-2019-11-20 21:33:47,085 - INFO - 18420 - D_Ben-Madej planned hours: 0.0
-2019-11-20 21:33:47,085 - INFO - 18420 - Nurse D_Ben-Madej already have all duties in this  month
-2019-11-20 21:33:47,085 - INFO - 18420 - V_Lodzinska planned hours: 0.0
-2019-11-20 21:33:47,085 - INFO - 18420 - Nurse V_Lodzinska already have all duties in this  month
-2019-11-20 21:33:47,085 - INFO - 18420 - D_Szwaja planned hours: 0.0
-2019-11-20 21:33:47,085 - INFO - 18420 - Nurse D_Szwaja already have all duties in this  month
-2019-11-20 21:33:47,085 - INFO - 18420 - K_Banucha planned hours: 168.0
-2019-11-20 21:33:47,085 - INFO - 18420 - Nurse K_Banucha already have all duties in this  month
-2019-11-20 21:33:47,085 - INFO - 18420 - E_Burdzicka planned hours: 168.0
-2019-11-20 21:33:47,085 - INFO - 18420 - Nurse E_Burdzicka already have all duties in this  month
-2019-11-20 21:33:47,085 - INFO - 18420 - I_Hazubska planned hours: 84.0
-2019-11-20 21:33:47,089 - INFO - 18420 - Nurse I_Hazubska already have all duties in this  month
-2019-11-20 21:33:47,089 - INFO - 18420 - A_Olszowa planned hours: 168.0
-2019-11-20 21:33:47,089 - INFO - 18420 - Nurse A_Olszowa already have all duties in this  month
-2019-11-20 21:33:47,089 - INFO - 18420 - M_Kolodziej planned hours: 0.0
-2019-11-20 21:33:47,089 - INFO - 18420 - Nurse M_Kolodziej already have all duties in this  month
-2019-11-20 21:33:47,089 - INFO - 18420 - D_Prokop planned hours: 168.0
-2019-11-20 21:33:47,089 - INFO - 18420 - Nurse D_Prokop already have all duties in this  month
-2019-11-20 21:33:47,089 - INFO - 18420 - R_Ziomek planned hours: 168.0
-2019-11-20 21:33:47,089 - INFO - 18420 - Nurse R_Ziomek already have all duties in this  month
-2019-11-20 21:33:47,089 - INFO - 18420 - T_Rodacka planned hours: 0.0
-2019-11-20 21:33:47,089 - INFO - 18420 - Nurse T_Rodacka already have all duties in this  month
-2019-11-20 21:33:47,091 - INFO - 18420 - I_Bielinska planned hours: 0.0
-2019-11-20 21:33:47,091 - INFO - 18420 - Nurse I_Bielinska already have all duties in this  month
-2019-11-20 21:33:47,091 - INFO - 18420 - B_Buczkowska planned hours: 0.0
-2019-11-20 21:33:47,091 - INFO - 18420 - Nurse B_Buczkowska already have all duties in this  month
-2019-11-20 21:33:47,092 - INFO - 18420 - L_Osak planned hours: 0.0
-2019-11-20 21:33:47,092 - INFO - 18420 - Nurse L_Osak already have all duties in this  month
-2019-11-20 21:33:47,092 - INFO - 18420 - D_Palica planned hours: 0.0
-2019-11-20 21:33:47,092 - INFO - 18420 - Nurse D_Palica already have all duties in this  month
-2019-11-20 21:33:47,092 - INFO - 18420 - There is not enough nurses in this month to schedule work
-2019-11-20 21:33:47,092 - INFO - 18420 - Done :D
+2019-11-20 21:53:37,049 - INFO - 18452 - E_Holinka-Fabin planned hours: 0.0
+2019-11-20 21:53:37,049 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 20
+2019-11-20 21:53:37,049 - INFO - 18452 - 
+Schedulling day 21 D
+2019-11-20 21:53:37,050 - INFO - 18452 - J_Vyshtaliuk planned hours: 0.0
+2019-11-20 21:53:37,050 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 21
+2019-11-20 21:53:37,050 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,050 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,050 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,050 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,050 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,050 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,050 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,050 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,050 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,050 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,050 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,050 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,050 - INFO - 18452 - K_Banucha planned hours: 0.0
+2019-11-20 21:53:37,050 - INFO - 18452 - K_Banucha assigned to duty in 21
+2019-11-20 21:53:37,050 - INFO - 18452 - E_Burdzicka planned hours: 0.0
+2019-11-20 21:53:37,050 - INFO - 18452 - E_Burdzicka assigned to duty in 21
+2019-11-20 21:53:37,050 - INFO - 18452 - 
+Schedulling day 21 N
+2019-11-20 21:53:37,050 - INFO - 18452 - I_Hazubska planned hours: 0.0
+2019-11-20 21:53:37,050 - INFO - 18452 - I_Hazubska assigned to duty in 21
+2019-11-20 21:53:37,050 - INFO - 18452 - 
+Schedulling day 22 D
+2019-11-20 21:53:37,050 - INFO - 18452 - A_Olszowa planned hours: 0.0
+2019-11-20 21:53:37,050 - INFO - 18452 - A_Olszowa assigned to duty in 22
+2019-11-20 21:53:37,054 - INFO - 18452 - 
+Schedulling day 22 N
+2019-11-20 21:53:37,054 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,056 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,056 - INFO - 18452 - D_Prokop planned hours: 0.0
+2019-11-20 21:53:37,057 - INFO - 18452 - D_Prokop assigned to duty in 22
+2019-11-20 21:53:37,057 - INFO - 18452 - R_Ziomek planned hours: 0.0
+2019-11-20 21:53:37,057 - INFO - 18452 - R_Ziomek assigned to duty in 22
+2019-11-20 21:53:37,057 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:37,057 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:37,058 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:37,058 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:37,058 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:37,059 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:37,059 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:37,059 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:37,059 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:37,059 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:37,059 - INFO - 18452 - E_Holinka-Fabin planned hours: 12.0
+2019-11-20 21:53:37,059 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 22
+2019-11-20 21:53:37,059 - INFO - 18452 - 
+Schedulling day 23 D
+2019-11-20 21:53:37,059 - INFO - 18452 - J_Vyshtaliuk planned hours: 12.0
+2019-11-20 21:53:37,059 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 23
+2019-11-20 21:53:37,059 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,059 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,059 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,059 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,059 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,059 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,059 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,059 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,059 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,059 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,059 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,059 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,063 - INFO - 18452 - K_Banucha planned hours: 12.0
+2019-11-20 21:53:37,063 - INFO - 18452 - K_Banucha assigned to duty in 23
+2019-11-20 21:53:37,063 - INFO - 18452 - E_Burdzicka planned hours: 12.0
+2019-11-20 21:53:37,063 - INFO - 18452 - E_Burdzicka assigned to duty in 23
+2019-11-20 21:53:37,063 - INFO - 18452 - 
+Schedulling day 23 N
+2019-11-20 21:53:37,064 - INFO - 18452 - I_Hazubska planned hours: 12.0
+2019-11-20 21:53:37,064 - INFO - 18452 - I_Hazubska assigned to duty in 23
+2019-11-20 21:53:37,064 - INFO - 18452 - A_Olszowa planned hours: 12.0
+2019-11-20 21:53:37,064 - INFO - 18452 - A_Olszowa assigned to duty in 23
+2019-11-20 21:53:37,064 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,064 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,064 - INFO - 18452 - D_Prokop planned hours: 12.0
+2019-11-20 21:53:37,064 - INFO - 18452 - D_Prokop assigned to duty in 23
+2019-11-20 21:53:37,064 - INFO - 18452 - 
+Schedulling day 24 D
+2019-11-20 21:53:37,064 - INFO - 18452 - R_Ziomek planned hours: 12.0
+2019-11-20 21:53:37,064 - INFO - 18452 - R_Ziomek assigned to duty in 24
+2019-11-20 21:53:37,064 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:37,064 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:37,064 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:37,064 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:37,064 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:37,064 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:37,064 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:37,064 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:37,064 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:37,064 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:37,064 - INFO - 18452 - E_Holinka-Fabin planned hours: 24.0
+2019-11-20 21:53:37,064 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 24
+2019-11-20 21:53:37,068 - INFO - 18452 - J_Vyshtaliuk planned hours: 24.0
+2019-11-20 21:53:37,068 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 24
+2019-11-20 21:53:37,068 - INFO - 18452 - 
+Schedulling day 24 N
+2019-11-20 21:53:37,068 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,068 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,068 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,068 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,068 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,068 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,068 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,068 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,068 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,070 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,070 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,070 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,070 - INFO - 18452 - K_Banucha planned hours: 24.0
+2019-11-20 21:53:37,070 - INFO - 18452 - K_Banucha assigned to duty in 24
+2019-11-20 21:53:37,070 - INFO - 18452 - 
+Schedulling day 25 D
+2019-11-20 21:53:37,070 - INFO - 18452 - E_Burdzicka planned hours: 24.0
+2019-11-20 21:53:37,070 - INFO - 18452 - E_Burdzicka assigned to duty in 25
+2019-11-20 21:53:37,071 - INFO - 18452 - I_Hazubska planned hours: 24.0
+2019-11-20 21:53:37,071 - INFO - 18452 - I_Hazubska assigned to duty in 25
+2019-11-20 21:53:37,071 - INFO - 18452 - A_Olszowa planned hours: 24.0
+2019-11-20 21:53:37,071 - INFO - 18452 - A_Olszowa assigned to duty in 25
+2019-11-20 21:53:37,071 - INFO - 18452 - 
+Schedulling day 25 N
+2019-11-20 21:53:37,071 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,071 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,071 - INFO - 18452 - D_Prokop planned hours: 24.0
+2019-11-20 21:53:37,072 - INFO - 18452 - D_Prokop assigned to duty in 25
+2019-11-20 21:53:37,072 - INFO - 18452 - 
+Schedulling day 26 D
+2019-11-20 21:53:37,072 - INFO - 18452 - R_Ziomek planned hours: 24.0
+2019-11-20 21:53:37,073 - INFO - 18452 - R_Ziomek assigned to duty in 26
+2019-11-20 21:53:37,073 - INFO - 18452 - 
+Schedulling day 26 N
+2019-11-20 21:53:37,073 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:37,073 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:37,073 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:37,073 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:37,073 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:37,073 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:37,074 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:37,074 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:37,074 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:37,074 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:37,074 - INFO - 18452 - E_Holinka-Fabin planned hours: 36.0
+2019-11-20 21:53:37,074 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 26
+2019-11-20 21:53:37,074 - INFO - 18452 - J_Vyshtaliuk planned hours: 36.0
+2019-11-20 21:53:37,074 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 26
+2019-11-20 21:53:37,074 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,074 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,074 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,074 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,074 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,074 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,074 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,074 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,074 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,074 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,074 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,074 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,074 - INFO - 18452 - K_Banucha planned hours: 36.0
+2019-11-20 21:53:37,074 - INFO - 18452 - K_Banucha assigned to duty in 26
+2019-11-20 21:53:37,074 - INFO - 18452 - 
+Schedulling day 27 D
+2019-11-20 21:53:37,074 - INFO - 18452 - E_Burdzicka planned hours: 36.0
+2019-11-20 21:53:37,074 - INFO - 18452 - E_Burdzicka assigned to duty in 27
+2019-11-20 21:53:37,074 - INFO - 18452 - I_Hazubska planned hours: 36.0
+2019-11-20 21:53:37,074 - INFO - 18452 - I_Hazubska assigned to duty in 27
+2019-11-20 21:53:37,074 - INFO - 18452 - A_Olszowa planned hours: 36.0
+2019-11-20 21:53:37,074 - INFO - 18452 - A_Olszowa assigned to duty in 27
+2019-11-20 21:53:37,074 - INFO - 18452 - 
+Schedulling day 27 N
+2019-11-20 21:53:37,074 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,074 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,078 - INFO - 18452 - D_Prokop planned hours: 36.0
+2019-11-20 21:53:37,078 - INFO - 18452 - D_Prokop assigned to duty in 27
+2019-11-20 21:53:37,078 - INFO - 18452 - R_Ziomek planned hours: 36.0
+2019-11-20 21:53:37,078 - INFO - 18452 - R_Ziomek assigned to duty in 27
+2019-11-20 21:53:37,078 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:37,078 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:37,078 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:37,079 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:37,079 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:37,079 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:37,079 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:37,079 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:37,079 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:37,079 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:37,079 - INFO - 18452 - E_Holinka-Fabin planned hours: 48.0
+2019-11-20 21:53:37,079 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 27
+2019-11-20 21:53:37,079 - INFO - 18452 - 
+Schedulling day 28 D
+2019-11-20 21:53:37,079 - INFO - 18452 - J_Vyshtaliuk planned hours: 48.0
+2019-11-20 21:53:37,079 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 28
+2019-11-20 21:53:37,079 - INFO - 18452 - 
+Schedulling day 28 N
+2019-11-20 21:53:37,079 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,079 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,079 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,079 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,079 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,079 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,079 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,079 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,079 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,079 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,079 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,079 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,083 - INFO - 18452 - K_Banucha planned hours: 48.0
+2019-11-20 21:53:37,083 - INFO - 18452 - K_Banucha assigned to duty in 28
+2019-11-20 21:53:37,083 - INFO - 18452 - E_Burdzicka planned hours: 48.0
+2019-11-20 21:53:37,083 - INFO - 18452 - E_Burdzicka assigned to duty in 28
+2019-11-20 21:53:37,083 - INFO - 18452 - I_Hazubska planned hours: 48.0
+2019-11-20 21:53:37,083 - INFO - 18452 - I_Hazubska assigned to duty in 28
+2019-11-20 21:53:37,083 - INFO - 18452 - 
+Schedulling day 29 D
+2019-11-20 21:53:37,084 - INFO - 18452 - A_Olszowa planned hours: 48.0
+2019-11-20 21:53:37,084 - INFO - 18452 - A_Olszowa assigned to duty in 29
+2019-11-20 21:53:37,084 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,084 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,084 - INFO - 18452 - D_Prokop planned hours: 48.0
+2019-11-20 21:53:37,084 - INFO - 18452 - D_Prokop assigned to duty in 29
+2019-11-20 21:53:37,084 - INFO - 18452 - R_Ziomek planned hours: 48.0
+2019-11-20 21:53:37,085 - INFO - 18452 - R_Ziomek assigned to duty in 29
+2019-11-20 21:53:37,085 - INFO - 18452 - 
+Schedulling day 29 N
+2019-11-20 21:53:37,085 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:37,085 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:37,085 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:37,085 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:37,085 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:37,085 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:37,085 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:37,085 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:37,085 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - E_Holinka-Fabin planned hours: 60.0
+2019-11-20 21:53:37,086 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 29
+2019-11-20 21:53:37,086 - INFO - 18452 - 
+Schedulling day 30 D
+2019-11-20 21:53:37,086 - INFO - 18452 - J_Vyshtaliuk planned hours: 60.0
+2019-11-20 21:53:37,086 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 30
+2019-11-20 21:53:37,086 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - K_Banucha planned hours: 60.0
+2019-11-20 21:53:37,086 - INFO - 18452 - K_Banucha assigned to duty in 30
+2019-11-20 21:53:37,086 - INFO - 18452 - E_Burdzicka planned hours: 60.0
+2019-11-20 21:53:37,086 - INFO - 18452 - E_Burdzicka assigned to duty in 30
+2019-11-20 21:53:37,086 - INFO - 18452 - 
+Schedulling day 30 N
+2019-11-20 21:53:37,086 - INFO - 18452 - I_Hazubska planned hours: 60.0
+2019-11-20 21:53:37,086 - INFO - 18452 - I_Hazubska assigned to duty in 30
+2019-11-20 21:53:37,086 - INFO - 18452 - 
+Schedulling day 31 D
+2019-11-20 21:53:37,086 - INFO - 18452 - A_Olszowa planned hours: 60.0
+2019-11-20 21:53:37,086 - INFO - 18452 - A_Olszowa assigned to duty in 31
+2019-11-20 21:53:37,086 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - D_Prokop planned hours: 60.0
+2019-11-20 21:53:37,086 - INFO - 18452 - D_Prokop assigned to duty in 31
+2019-11-20 21:53:37,086 - INFO - 18452 - R_Ziomek planned hours: 60.0
+2019-11-20 21:53:37,086 - INFO - 18452 - R_Ziomek assigned to duty in 31
+2019-11-20 21:53:37,086 - INFO - 18452 - 
+Schedulling day 31 N
+2019-11-20 21:53:37,086 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - E_Holinka-Fabin planned hours: 72.0
+2019-11-20 21:53:37,086 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 31
+2019-11-20 21:53:37,086 - INFO - 18452 - J_Vyshtaliuk planned hours: 72.0
+2019-11-20 21:53:37,086 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 31
+2019-11-20 21:53:37,086 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,086 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,086 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,090 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,090 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,090 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,090 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,090 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,090 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,090 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,090 - INFO - 18452 - K_Banucha planned hours: 72.0
+2019-11-20 21:53:37,090 - INFO - 18452 - K_Banucha assigned to duty in 31
+2019-11-20 21:53:37,090 - INFO - 18452 - 
+Schedulling day 1 D
+2019-11-20 21:53:37,090 - INFO - 18452 - E_Burdzicka planned hours: 72.0
+2019-11-20 21:53:37,091 - INFO - 18452 - E_Burdzicka assigned to duty in 1
+2019-11-20 21:53:37,091 - INFO - 18452 - I_Hazubska planned hours: 72.0
+2019-11-20 21:53:37,091 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:37,091 - INFO - 18452 - A_Olszowa planned hours: 72.0
+2019-11-20 21:53:37,091 - INFO - 18452 - A_Olszowa assigned to duty in 1
+2019-11-20 21:53:37,091 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,091 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,091 - INFO - 18452 - D_Prokop planned hours: 72.0
+2019-11-20 21:53:37,091 - INFO - 18452 - D_Prokop assigned to duty in 1
+2019-11-20 21:53:37,091 - INFO - 18452 - 
+Schedulling day 1 N
+2019-11-20 21:53:37,091 - INFO - 18452 - R_Ziomek planned hours: 72.0
+2019-11-20 21:53:37,091 - INFO - 18452 - R_Ziomek assigned to duty in 1
+2019-11-20 21:53:37,091 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:37,091 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:37,091 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:37,091 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:37,092 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:37,092 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:37,092 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:37,092 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:37,092 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:37,092 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:37,092 - INFO - 18452 - E_Holinka-Fabin planned hours: 84.0
+2019-11-20 21:53:37,092 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 1
+2019-11-20 21:53:37,092 - INFO - 18452 - J_Vyshtaliuk planned hours: 84.0
+2019-11-20 21:53:37,092 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 1
+2019-11-20 21:53:37,092 - INFO - 18452 - 
+Schedulling day 2 D
+2019-11-20 21:53:37,092 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,092 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,092 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,092 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,092 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,092 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,092 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,092 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,093 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,093 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,093 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,093 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,093 - INFO - 18452 - K_Banucha planned hours: 84.0
+2019-11-20 21:53:37,093 - INFO - 18452 - K_Banucha assigned to duty in 2
+2019-11-20 21:53:37,093 - INFO - 18452 - E_Burdzicka planned hours: 84.0
+2019-11-20 21:53:37,093 - INFO - 18452 - E_Burdzicka assigned to duty in 2
+2019-11-20 21:53:37,093 - INFO - 18452 - I_Hazubska planned hours: 72.0
+2019-11-20 21:53:37,093 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:37,093 - INFO - 18452 - A_Olszowa planned hours: 84.0
+2019-11-20 21:53:37,093 - INFO - 18452 - A_Olszowa assigned to duty in 2
+2019-11-20 21:53:37,093 - INFO - 18452 - 
+Schedulling day 2 N
+2019-11-20 21:53:37,093 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,093 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,093 - INFO - 18452 - D_Prokop planned hours: 84.0
+2019-11-20 21:53:37,093 - INFO - 18452 - D_Prokop assigned to duty in 2
+2019-11-20 21:53:37,094 - INFO - 18452 - R_Ziomek planned hours: 84.0
+2019-11-20 21:53:37,094 - INFO - 18452 - R_Ziomek assigned to duty in 2
+2019-11-20 21:53:37,094 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:37,094 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:37,094 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:37,094 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:37,094 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:37,094 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:37,094 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:37,094 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:37,094 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:37,094 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:37,094 - INFO - 18452 - E_Holinka-Fabin planned hours: 96.0
+2019-11-20 21:53:37,094 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 2
+2019-11-20 21:53:37,094 - INFO - 18452 - 
+Schedulling day 3 D
+2019-11-20 21:53:37,095 - INFO - 18452 - J_Vyshtaliuk planned hours: 96.0
+2019-11-20 21:53:37,095 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 3
+2019-11-20 21:53:37,095 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - K_Banucha planned hours: 96.0
+2019-11-20 21:53:37,095 - INFO - 18452 - K_Banucha assigned to duty in 3
+2019-11-20 21:53:37,095 - INFO - 18452 - E_Burdzicka planned hours: 96.0
+2019-11-20 21:53:37,095 - INFO - 18452 - E_Burdzicka assigned to duty in 3
+2019-11-20 21:53:37,095 - INFO - 18452 - 
+Schedulling day 3 N
+2019-11-20 21:53:37,095 - INFO - 18452 - I_Hazubska planned hours: 72.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - A_Olszowa planned hours: 96.0
+2019-11-20 21:53:37,095 - INFO - 18452 - A_Olszowa assigned to duty in 3
+2019-11-20 21:53:37,095 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - D_Prokop planned hours: 96.0
+2019-11-20 21:53:37,095 - INFO - 18452 - D_Prokop assigned to duty in 3
+2019-11-20 21:53:37,095 - INFO - 18452 - R_Ziomek planned hours: 96.0
+2019-11-20 21:53:37,095 - INFO - 18452 - R_Ziomek assigned to duty in 3
+2019-11-20 21:53:37,095 - INFO - 18452 - 
+Schedulling day 4 D
+2019-11-20 21:53:37,095 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - E_Holinka-Fabin planned hours: 108.0
+2019-11-20 21:53:37,095 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 4
+2019-11-20 21:53:37,095 - INFO - 18452 - J_Vyshtaliuk planned hours: 108.0
+2019-11-20 21:53:37,095 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 4
+2019-11-20 21:53:37,095 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - K_Banucha planned hours: 108.0
+2019-11-20 21:53:37,095 - INFO - 18452 - K_Banucha assigned to duty in 4
+2019-11-20 21:53:37,095 - INFO - 18452 - 
+Schedulling day 4 N
+2019-11-20 21:53:37,095 - INFO - 18452 - E_Burdzicka planned hours: 108.0
+2019-11-20 21:53:37,095 - INFO - 18452 - E_Burdzicka assigned to duty in 4
+2019-11-20 21:53:37,095 - INFO - 18452 - I_Hazubska planned hours: 72.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - A_Olszowa planned hours: 108.0
+2019-11-20 21:53:37,095 - INFO - 18452 - A_Olszowa assigned to duty in 4
+2019-11-20 21:53:37,095 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - D_Prokop planned hours: 108.0
+2019-11-20 21:53:37,095 - INFO - 18452 - D_Prokop assigned to duty in 4
+2019-11-20 21:53:37,095 - INFO - 18452 - 
+Schedulling day 5 D
+2019-11-20 21:53:37,095 - INFO - 18452 - R_Ziomek planned hours: 108.0
+2019-11-20 21:53:37,095 - INFO - 18452 - R_Ziomek assigned to duty in 5
+2019-11-20 21:53:37,095 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:37,095 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:37,095 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:37,099 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:37,099 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:37,099 - INFO - 18452 - E_Holinka-Fabin planned hours: 120.0
+2019-11-20 21:53:37,099 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 5
+2019-11-20 21:53:37,099 - INFO - 18452 - J_Vyshtaliuk planned hours: 120.0
+2019-11-20 21:53:37,099 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 5
+2019-11-20 21:53:37,099 - INFO - 18452 - 
+Schedulling day 5 N
+2019-11-20 21:53:37,100 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,100 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,100 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,100 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,100 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,100 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,100 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,100 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,100 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,100 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,100 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,100 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,100 - INFO - 18452 - K_Banucha planned hours: 120.0
+2019-11-20 21:53:37,100 - INFO - 18452 - K_Banucha assigned to duty in 5
+2019-11-20 21:53:37,100 - INFO - 18452 - E_Burdzicka planned hours: 120.0
+2019-11-20 21:53:37,100 - INFO - 18452 - E_Burdzicka assigned to duty in 5
+2019-11-20 21:53:37,101 - INFO - 18452 - I_Hazubska planned hours: 72.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - A_Olszowa planned hours: 120.0
+2019-11-20 21:53:37,101 - INFO - 18452 - A_Olszowa assigned to duty in 5
+2019-11-20 21:53:37,101 - INFO - 18452 - 
+Schedulling day 6 D
+2019-11-20 21:53:37,101 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - D_Prokop planned hours: 120.0
+2019-11-20 21:53:37,101 - INFO - 18452 - D_Prokop assigned to duty in 6
+2019-11-20 21:53:37,101 - INFO - 18452 - R_Ziomek planned hours: 120.0
+2019-11-20 21:53:37,101 - INFO - 18452 - R_Ziomek assigned to duty in 6
+2019-11-20 21:53:37,101 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - E_Holinka-Fabin planned hours: 132.0
+2019-11-20 21:53:37,101 - INFO - 18452 - E_Holinka-Fabin assigned to duty in 6
+2019-11-20 21:53:37,101 - INFO - 18452 - 
+Schedulling day 6 N
+2019-11-20 21:53:37,101 - INFO - 18452 - J_Vyshtaliuk planned hours: 132.0
+2019-11-20 21:53:37,101 - INFO - 18452 - J_Vyshtaliuk assigned to duty in 6
+2019-11-20 21:53:37,101 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - K_Banucha planned hours: 132.0
+2019-11-20 21:53:37,101 - INFO - 18452 - K_Banucha assigned to duty in 6
+2019-11-20 21:53:37,101 - INFO - 18452 - E_Burdzicka planned hours: 132.0
+2019-11-20 21:53:37,101 - INFO - 18452 - E_Burdzicka assigned to duty in 6
+2019-11-20 21:53:37,101 - INFO - 18452 - 
+Schedulling day 7 D
+2019-11-20 21:53:37,101 - INFO - 18452 - I_Hazubska planned hours: 72.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - A_Olszowa planned hours: 132.0
+2019-11-20 21:53:37,101 - INFO - 18452 - A_Olszowa assigned to duty in 7
+2019-11-20 21:53:37,101 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - D_Prokop planned hours: 132.0
+2019-11-20 21:53:37,101 - INFO - 18452 - D_Prokop assigned to duty in 7
+2019-11-20 21:53:37,101 - INFO - 18452 - R_Ziomek planned hours: 132.0
+2019-11-20 21:53:37,101 - INFO - 18452 - R_Ziomek assigned to duty in 7
+2019-11-20 21:53:37,101 - INFO - 18452 - 
+Schedulling day 7 N
+2019-11-20 21:53:37,101 - INFO - 18452 - T_Rodacka planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse T_Rodacka already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - I_Bielinska planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse I_Bielinska already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - B_Buczkowska planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse B_Buczkowska already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - L_Osak planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse L_Osak already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - D_Palica planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse D_Palica already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - E_Holinka-Fabin planned hours: 144.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse E_Holinka-Fabin already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - J_Vyshtaliuk planned hours: 144.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse J_Vyshtaliuk already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - W_Naryjek planned hours: 156.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse W_Naryjek already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - T_Wieclawek planned hours: 60.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse T_Wieclawek already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - E_Maslarz planned hours: 48.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse E_Maslarz already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - D_Ben-Madej planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse D_Ben-Madej already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - V_Lodzinska planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse V_Lodzinska already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - D_Szwaja planned hours: 0.0
+2019-11-20 21:53:37,101 - INFO - 18452 - Nurse D_Szwaja already have all duties in this  month
+2019-11-20 21:53:37,101 - INFO - 18452 - K_Banucha planned hours: 144.0
+2019-11-20 21:53:37,105 - INFO - 18452 - Nurse K_Banucha already have all duties in this  month
+2019-11-20 21:53:37,105 - INFO - 18452 - E_Burdzicka planned hours: 144.0
+2019-11-20 21:53:37,105 - INFO - 18452 - Nurse E_Burdzicka already have all duties in this  month
+2019-11-20 21:53:37,105 - INFO - 18452 - I_Hazubska planned hours: 72.0
+2019-11-20 21:53:37,105 - INFO - 18452 - Nurse I_Hazubska already have all duties in this  month
+2019-11-20 21:53:37,105 - INFO - 18452 - A_Olszowa planned hours: 144.0
+2019-11-20 21:53:37,105 - INFO - 18452 - Nurse A_Olszowa already have all duties in this  month
+2019-11-20 21:53:37,105 - INFO - 18452 - M_Kolodziej planned hours: 0.0
+2019-11-20 21:53:37,106 - INFO - 18452 - Nurse M_Kolodziej already have all duties in this  month
+2019-11-20 21:53:37,106 - INFO - 18452 - D_Prokop planned hours: 144.0
+2019-11-20 21:53:37,106 - INFO - 18452 - Nurse D_Prokop already have all duties in this  month
+2019-11-20 21:53:37,106 - INFO - 18452 - R_Ziomek planned hours: 144.0
+2019-11-20 21:53:37,106 - INFO - 18452 - Nurse R_Ziomek already have all duties in this  month
+2019-11-20 21:53:37,106 - INFO - 18452 - There is not enough nurses in this month to schedule work
+2019-11-20 21:53:37,106 - INFO - 18452 - Done :D
 
 
 
-2019-11-20 21:33:47,092 - INFO - 18420 - ScheduleTab: createListCTRL: create calendar for days: 30
+2019-11-20 21:53:37,106 - INFO - 18452 - ScheduleTab: createListCTRL: create calendar for days: 28

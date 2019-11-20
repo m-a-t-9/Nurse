@@ -1,7 +1,8 @@
 import wx
 import wx.lib.mixins.listctrl  as  listmix
 import calendar
-from Scheduler import *
+from datetime import datetime
+
 from Duty import *
 
 class EditableListCtrl(wx.ListCtrl, listmix.TextEditMixin):
