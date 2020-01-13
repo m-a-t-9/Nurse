@@ -2,6 +2,7 @@ import wx
 import wx.lib.mixins.listctrl  as  listmix
 import calendar
 from datetime import datetime
+import xml.etree.ElementTree as ET
 
 from Duty import *
 from HTMLExporter import *
@@ -136,7 +137,25 @@ class ScheduleTab(wx.Panel):
         self.nurses = self.NIF("GET_NURSES")
         self.schedule()
         self.createListCTRL()
+    
+    def OnOpen(self):
+        with wx.FileDialog(self, "Open schedule file", wildcard="HTML files (*.html)|*.html",style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST) as fileDialog:
+            if fileDialog.ShowModal() == wx.ID_CANCEL:
+                return     # the user changed their mind
+            # Proceed loading the file chosen by the user
+            pathname = fileDialog.GetPath()
+            try:
+                self.loadSchedule(pathname)
+            except IOError:
+                wx.LogError("Cannot open file '%s'." % newfile)
+    
+    def loadSchedule(self, pathname):
+        self.tree = ET.parse(pathname)
+        self.root = tree.getroot()
+        #add month in html somewhere
+        self.createListCTRL(month, loaded=True) #to be implemented here
         
+    
     def validateNurse(self, nurse, duty, withDuties=True):
         if withDuties:
             if not nurse.checkDuties():
@@ -176,8 +195,6 @@ class ScheduleTab(wx.Panel):
         self.calculateHours()
         #self.setContractors()
         j = 0
-        end = []
-        damageCounter = 10000
         notFinished = []
         for i in range(len(self.duties)):
             self.logPreviousWeek(i)

@@ -1,0 +1,11 @@
+TODO
+
+1. move holidays from nurse tab to schedule tab
+2. rest hours planning
+3. edit on fly
+5. button 'uloz grafik' - implementation
+6. Add nurse
+7. remove nurse
+8. edit nurse
+9. load schedule from file - started
+4. py to exe

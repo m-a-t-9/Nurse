@@ -41,10 +41,14 @@ class Example(wx.Frame):
         imp = wx.MenuItem(fileMenu, wx.ID_ANY, 'Importuj liste pielegniarek')
         fileMenu.Append(imp)
         
+        opn = wx.MenuItem(fileMenu, wx.ID_ANY, 'Zaladuj istniejacy grafik z pliku')
+        fileMenu.Append(opn)
+        
         qmi = wx.MenuItem(fileMenu, wx.ID_EXIT, '&Wyjscie\tCtrl+W')
         fileMenu.Append(qmi)
 
         self.Bind(wx.EVT_MENU, self.OnQuit, qmi)
+        self.Bind(wx.EVT_MENU, self.OnOpen, opn)
         self.Bind(wx.EVT_MENU, self.OnImport, imp)
         
 
@@ -65,6 +69,10 @@ class Example(wx.Frame):
 
     def OnNew(self, e):
         self.scheduleTab.OnNew(e.GetId()+1)
+        self.nb.ChangeSelection(self.scheduleTab.page)
+       
+    def OnOpen(self, e):
+        self.scheduleTab.OnOpen()
         self.nb.ChangeSelection(self.scheduleTab.page)
        
     def OnQuit(self, e):

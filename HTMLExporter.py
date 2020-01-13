@@ -55,14 +55,10 @@ class HTMLExporter:
             
         
     def createHeaderOfDoc(self):
-        self.f.write('<!DOCTYPE html><html><head><meta charset="utf-8"><title>Grafik</title></head><style> \
-                        table, th, tr {     \
-                            border: 1px solid black;}    \
-                        th { width: 20px;}  \
-                     </style><body>')
+        self.f.write('<html><head><meta charset="utf-8" /><title>Grafik</title></head><style>table, th, tr {border: 1px solid black;}th { width: 20px;}</style><body>')
         
     def createTableHeader(self):
-        self.f.write('<table style="border: 1px solid black">')
+        self.f.write('<table>')
         
     def createTableFooter(self):
         self.f.write("</table>")
