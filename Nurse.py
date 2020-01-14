@@ -67,8 +67,8 @@ class Nurse:
 		return (float(len(self.dailyDuties) + len(self.nightlyDuties)) * 12)
 
 	def checkHoliday(self, duty):
-		if str(duty.day) in self.holidays:
-			self.logger.info("Nurse " + self.name + " is on a holiday at day " + str(duty.day))
+		if str(duty.day) + "." + self.monthFix(duty.month) in self.holidays:
+			self.logger.info("Nurse " + self.name + " is on a holiday at day " + str(duty.day) + "." + self.monthFix(duty.month))
 			return True
 		if duty.type == "N":
 			if str(duty.day + 1) in self.holidays:
@@ -76,6 +76,12 @@ class Nurse:
 				return True
 		if duty.dayName == 'sobota' or duty.dayName == 'niedziela':
 			return self.checkIsNextWeekOff([duty.dayName, duty.day]) 
+
+	def monthFix(self, month):
+		if len(str(month)) == 1:
+			return "0" + str(month)
+		else:
+			return str(month)
 
 	def checkPreviousDay(self, consideredDay):
 		self.logger.info("Nurse: checkPreviousDay: nurse " + self.name + " consideredDay: " + consideredDay[0] + " " + str(consideredDay[1]))

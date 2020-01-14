@@ -64,13 +64,13 @@ class ScheduleTab(wx.Panel):
         self.hbox = wx.BoxSizer(wx.VERTICAL)
         dutiesForColumn = self.getOnlyDayDuties()
         self.logger.info("ScheduleTab: createListCTRL: create calendar for days: " + str(dutiesForColumn))
-        self.list = EditableListCtrl(self, style=wx.LC_REPORT)
+        self.list = EditableListCtrl(self, style=wx.LC_REPORT|wx.LC_SINGLE_SEL|wx.LC_VRULES)
         
         self.list.InsertColumn(0, "Imie i Nazwisko", width=150)
         i = 0
         
         for duty in dutiesForColumn:
-            self.list.InsertColumn(i+1, str(i+1), width=30)
+            self.list.InsertColumn(i+1, str(i+1), width=40)
             i += 1
         if i != 0:
             self.list.InsertColumn(i+1, "Suma", width=60)
@@ -80,7 +80,16 @@ class ScheduleTab(wx.Panel):
             for duty in nurse.dailyDuties:
                 self.list.SetItem(index, duty, "D")
             for duty in nurse.nightlyDuties:
-                self.list.SetItem(index, duty, "N") 
+                self.list.SetItem(index, duty, "N")
+            for holiday in nurse.holidays:
+                hday = holiday.split(".")[0]
+                hmonth = holiday.split(".")[1]
+                if len(str(self.month)) == 1:
+                    currMonthString = "0" + str(self.month)
+                else:
+                    currMonthString = str(self.month)
+                if hmonth == currMonthString:
+                    self.list.SetItem(index, int(hday), "UW")
             self.list.SetItem(index, len(dutiesForColumn)+1, str(nurse.getPlannedHours()))
             idx += 1
             
@@ -124,8 +133,7 @@ class ScheduleTab(wx.Panel):
         self.logger.info("Saving schedule")
         htmlExporter = HTMLExporter(self.list)
         htmlExporter.save()
-        
-   
+          
     def OnCalculate(self, e):
         self.logger.info("ScheduleTab: OnCalculate")
         self.nurses = self.NIF("GET_NURSES")
@@ -154,8 +162,7 @@ class ScheduleTab(wx.Panel):
         self.root = tree.getroot()
         #add month in html somewhere
         self.createListCTRL(month, loaded=True) #to be implemented here
-        
-    
+            
     def validateNurse(self, nurse, duty, withDuties=True):
         if withDuties:
             if not nurse.checkDuties():
@@ -257,12 +264,7 @@ class ScheduleTab(wx.Panel):
                             if len(duty.nurses) != 3:
                                 self.logger.warning("For this day it was not possbile to assign nurse")
                                 break
-                            
-                    
-            
-            
-
-    
+                                
     def isAlreadyAssigned(self, nurse, duty):
         for aNurse in duty.nurses:
             if nurse.name == aNurse.name:
@@ -292,11 +294,12 @@ class ScheduleTab(wx.Panel):
         self.logger.info("ScheduleTab: calculateHours: calculated SUNDAYS: " + str(num_sun))
         self.logger.info("ScheduleTab: calculateHours: calculated SATURDAYS: " + str(num_sat))
         self.workingDays = self.numberOfDays - num_sat - num_sun - len(self.getBankHolidaysInMonth(str(self.month)))
+        
         self.logger.info("ScheduleTab: calculateHours: calculated WORKING DAYS: " + str(self.workingDays))
         for nurse in self.nurses:
             self.logger.info("Nurse timejob is " + str(nurse.timejob))
             if float(nurse.timejob) == 1.0 or float(nurse.timejob) == 0.5:
-                nurse.hours = round((float(self.workingDays) * float(nurse.timejob) * 7.5833333333), 2)
+                nurse.hours = round((float(self.workingDays) * float(nurse.timejob) * 7.5833333333 - (len(nurse.holidays)*7.5833333333)), 2)
                 self.logger.info("Nurse: " + nurse.name + " should work in this month for " + str(nurse.hours))
     
     def getBankHolidays(self):
