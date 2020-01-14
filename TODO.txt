@@ -2,9 +2,8 @@ TODO
 
 1. move holidays from nurse tab to schedule tab - done
 2. rest hours planning
-3. edit on fly
-    -> fixed
-    -> recalculate
+3. edit on fly - Done
+ 10. Toolbar
 5. button 'uloz grafik' - implementation
 6. Add nurse
 7. remove nurse
