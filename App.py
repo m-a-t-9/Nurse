@@ -47,10 +47,14 @@ class Example(wx.Frame):
         
         qmi = wx.MenuItem(fileMenu, wx.ID_EXIT, '&Wyjscie\tCtrl+W')
         fileMenu.Append(qmi)
+        
+        save = wx.MenuItem(fileMenu, wx.ID_ANY, 'Zapisz grafik do pliku')
+        fileMenu.Append(save)
 
         self.Bind(wx.EVT_MENU, self.OnQuit, qmi)
         self.Bind(wx.EVT_MENU, self.OnOpen, opn)
         self.Bind(wx.EVT_MENU, self.OnImport, imp)
+        self.Bind(wx.EVT_MENU, self.OnSave, save)
         
 
         menubar.Append(fileMenu, '&Plik')
@@ -87,7 +91,8 @@ class Example(wx.Frame):
         self.nb.ChangeSelection(self.scheduleTab.page)
        
     def OnOpen(self, e):
-        self.scheduleTab.OnOpen()
+        month = self.scheduleTab.OnOpen()
+        self.combo.SetValue(month)
         self.nb.ChangeSelection(self.scheduleTab.page)
        
     def OnQuit(self, e):
@@ -96,6 +101,9 @@ class Example(wx.Frame):
     def OnImport(self, e):
         self.nurseTab.OnOpen()
         self.nb.ChangeSelection(self.nurseTab.page)
+    
+    def OnSave(self, e):
+        self.scheduleTab.OnSave(e)
 
 def main():
 

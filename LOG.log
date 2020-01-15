@@ -1,83 +1,108 @@
-2020-01-15 10:06:59,956 - INFO - 35124 - NurseTab init
-2020-01-15 10:06:59,956 - INFO - 35124 - NurseTab: loadNurses
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: E_Holinka-Fabin timejob: 1
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: J_Vyshtaliuk timejob: 1
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: W_Naryjek timejob: 0
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: T_Wieclawek timejob: 0
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: E_Maslarz timejob: 0
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: D_Ben-Madej timejob: 0
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: V_Lodzinska timejob: 0
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: D_Szwaja timejob: 0
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: K_Banucha timejob: 1
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: E_Burdzicka timejob: 1
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: I_Hazubska timejob: 0.5
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: A_Olszowa timejob: 1
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: M_Kolodziej timejob: 0
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: D_Prokop timejob: 1
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: R_Ziomek timejob: 1
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: T_Rodacka timejob: 0
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: I_Bielinska timejob: 0
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: B_Buczkowska timejob: 0
-2020-01-15 10:06:59,957 - INFO - 35124 - Nurse: created: L_Osak timejob: 0
-2020-01-15 10:06:59,958 - INFO - 35124 - Nurse: created: D_Palica timejob: 0
-2020-01-15 10:06:59,958 - INFO - 35124 - NurseTab: loadNurses: created: 20 nurses
-2020-01-15 10:06:59,975 - INFO - 35124 - Duty date name: sobota
-2020-01-15 10:06:59,975 - INFO - 35124 - Duty date name: niedziela
-2020-01-15 10:06:59,975 - INFO - 35124 - Duty date name: poniedzia³ek
-2020-01-15 10:06:59,975 - INFO - 35124 - Duty date name: wtorek
-2020-01-15 10:06:59,975 - INFO - 35124 - Duty date name: œroda
-2020-01-15 10:06:59,975 - INFO - 35124 - Duty date name: czwartek
-2020-01-15 10:06:59,975 - INFO - 35124 - Duty date name: pi¹tek
-2020-01-15 10:06:59,975 - INFO - 35124 - Duty date name: sobota
-2020-01-15 10:06:59,975 - INFO - 35124 - Duty date name: niedziela
-2020-01-15 10:06:59,975 - INFO - 35124 - Duty date name: poniedzia³ek
-2020-01-15 10:06:59,976 - INFO - 35124 - Duty date name: wtorek
-2020-01-15 10:06:59,976 - INFO - 35124 - Duty date name: œroda
-2020-01-15 10:06:59,976 - INFO - 35124 - Duty date name: czwartek
-2020-01-15 10:06:59,976 - INFO - 35124 - Duty date name: pi¹tek
-2020-01-15 10:06:59,976 - INFO - 35124 - Duty date name: sobota
-2020-01-15 10:06:59,976 - INFO - 35124 - Duty date name: niedziela
-2020-01-15 10:06:59,976 - INFO - 35124 - Duty date name: poniedzia³ek
-2020-01-15 10:06:59,976 - INFO - 35124 - Duty date name: wtorek
-2020-01-15 10:06:59,976 - INFO - 35124 - Duty date name: œroda
-2020-01-15 10:06:59,976 - INFO - 35124 - Duty date name: czwartek
-2020-01-15 10:06:59,976 - INFO - 35124 - Duty date name: pi¹tek
-2020-01-15 10:06:59,976 - INFO - 35124 - Duty date name: sobota
-2020-01-15 10:06:59,977 - INFO - 35124 - Duty date name: niedziela
-2020-01-15 10:06:59,977 - INFO - 35124 - Duty date name: poniedzia³ek
-2020-01-15 10:06:59,977 - INFO - 35124 - Duty date name: wtorek
-2020-01-15 10:06:59,977 - INFO - 35124 - Duty date name: œroda
-2020-01-15 10:06:59,977 - INFO - 35124 - Duty date name: czwartek
-2020-01-15 10:06:59,977 - INFO - 35124 - Duty date name: pi¹tek
-2020-01-15 10:06:59,977 - INFO - 35124 - Duty date name: sobota
-2020-01-15 10:07:00,016 - INFO - 35124 - ScheduleTab: createListCTRL: create calendar for days: [<Duty.Duty object at 0x000002118D45CBC8>, <Duty.Duty object at 0x000002118D45CCC8>, <Duty.Duty object at 0x000002118F0C84C8>, <Duty.Duty object at 0x000002118F0C8A48>, <Duty.Duty object at 0x000002118F0C9248>, <Duty.Duty object at 0x000002118F0C9508>, <Duty.Duty object at 0x000002118F0C9548>, <Duty.Duty object at 0x000002118F0C9748>, <Duty.Duty object at 0x000002118F0C9648>, <Duty.Duty object at 0x000002118F0C9888>, <Duty.Duty object at 0x000002118F0C9988>, <Duty.Duty object at 0x000002118F0C9A48>, <Duty.Duty object at 0x000002118F0C9B08>, <Duty.Duty object at 0x000002118F0C9BC8>, <Duty.Duty object at 0x000002118F0C9C88>, <Duty.Duty object at 0x000002118F0C9D88>, <Duty.Duty object at 0x000002118F0C9F08>, <Duty.Duty object at 0x000002118F0CC108>, <Duty.Duty object at 0x000002118F0CC1C8>, <Duty.Duty object at 0x000002118F0CC308>, <Duty.Duty object at 0x000002118F0CC448>, <Duty.Duty object at 0x000002118F0CC588>, <Duty.Duty object at 0x000002118F0CC6C8>, <Duty.Duty object at 0x000002118F0CC848>, <Duty.Duty object at 0x000002118F0CC988>, <Duty.Duty object at 0x000002118F0CCAC8>, <Duty.Duty object at 0x000002118F0CCC08>, <Duty.Duty object at 0x000002118F0CCD48>, <Duty.Duty object at 0x000002118F0CCE88>]
-2020-01-15 10:07:03,443 - INFO - 35124 - Duty date name: sobota
-2020-01-15 10:07:03,443 - INFO - 35124 - Duty date name: niedziela
-2020-01-15 10:07:03,443 - INFO - 35124 - Duty date name: poniedzia³ek
-2020-01-15 10:07:03,443 - INFO - 35124 - Duty date name: wtorek
-2020-01-15 10:07:03,443 - INFO - 35124 - Duty date name: œroda
-2020-01-15 10:07:03,444 - INFO - 35124 - Duty date name: czwartek
-2020-01-15 10:07:03,444 - INFO - 35124 - Duty date name: pi¹tek
-2020-01-15 10:07:03,444 - INFO - 35124 - Duty date name: sobota
-2020-01-15 10:07:03,444 - INFO - 35124 - Duty date name: niedziela
-2020-01-15 10:07:03,444 - INFO - 35124 - Duty date name: poniedzia³ek
-2020-01-15 10:07:03,444 - INFO - 35124 - Duty date name: wtorek
-2020-01-15 10:07:03,444 - INFO - 35124 - Duty date name: œroda
-2020-01-15 10:07:03,444 - INFO - 35124 - Duty date name: czwartek
-2020-01-15 10:07:03,444 - INFO - 35124 - Duty date name: pi¹tek
-2020-01-15 10:07:03,445 - INFO - 35124 - Duty date name: sobota
-2020-01-15 10:07:03,445 - INFO - 35124 - Duty date name: niedziela
-2020-01-15 10:07:03,445 - INFO - 35124 - Duty date name: poniedzia³ek
-2020-01-15 10:07:03,445 - INFO - 35124 - Duty date name: wtorek
-2020-01-15 10:07:03,445 - INFO - 35124 - Duty date name: œroda
-2020-01-15 10:07:03,445 - INFO - 35124 - Duty date name: czwartek
-2020-01-15 10:07:03,445 - INFO - 35124 - Duty date name: pi¹tek
-2020-01-15 10:07:03,445 - INFO - 35124 - Duty date name: sobota
-2020-01-15 10:07:03,445 - INFO - 35124 - Duty date name: niedziela
-2020-01-15 10:07:03,445 - INFO - 35124 - Duty date name: poniedzia³ek
-2020-01-15 10:07:03,446 - INFO - 35124 - Duty date name: wtorek
-2020-01-15 10:07:03,446 - INFO - 35124 - Duty date name: œroda
-2020-01-15 10:07:03,446 - INFO - 35124 - Duty date name: czwartek
-2020-01-15 10:07:03,446 - INFO - 35124 - Duty date name: pi¹tek
-2020-01-15 10:07:03,446 - INFO - 35124 - Duty date name: sobota
-2020-01-15 10:07:03,451 - INFO - 35124 - ScheduleTab: createListCTRL: create calendar for days: [<Duty.Duty object at 0x000002118F0C0048>, <Duty.Duty object at 0x000002118D45CCC8>, <Duty.Duty object at 0x000002118F0C84C8>, <Duty.Duty object at 0x000002118F0C8A48>, <Duty.Duty object at 0x000002118F0C9148>, <Duty.Duty object at 0x000002118F0C9608>, <Duty.Duty object at 0x000002118F0C9108>, <Duty.Duty object at 0x000002118F0C97C8>, <Duty.Duty object at 0x000002118F0C9788>, <Duty.Duty object at 0x000002118F0C9908>, <Duty.Duty object at 0x000002118F0C9988>, <Duty.Duty object at 0x000002118F0C9AC8>, <Duty.Duty object at 0x000002118F0C9B08>, <Duty.Duty object at 0x000002118F0C9C48>, <Duty.Duty object at 0x000002118F0C9C88>, <Duty.Duty object at 0x000002118F0C9E48>, <Duty.Duty object at 0x000002118F0C9FC8>, <Duty.Duty object at 0x000002118F0CC208>, <Duty.Duty object at 0x000002118F0CC288>, <Duty.Duty object at 0x000002118F0CC308>, <Duty.Duty object at 0x000002118F0CC508>, <Duty.Duty object at 0x000002118F0CC588>, <Duty.Duty object at 0x000002118F0CC788>, <Duty.Duty object at 0x000002118F0CC908>, <Duty.Duty object at 0x000002118F0CC988>, <Duty.Duty object at 0x000002118F0CCB88>, <Duty.Duty object at 0x000002118F0CCC08>, <Duty.Duty object at 0x000002118F0CCE08>, <Duty.Duty object at 0x000002118F0D00C8>]
+2020-01-15 19:05:30,454 - INFO - 38144 - NurseTab init
+2020-01-15 19:05:30,455 - INFO - 38144 - NurseTab: loadNurses
+2020-01-15 19:05:30,456 - INFO - 38144 - Nurse: created: E_Holinka-Fabin timejob: 1
+2020-01-15 19:05:30,456 - INFO - 38144 - Nurse: created: J_Vyshtaliuk timejob: 1
+2020-01-15 19:05:30,456 - INFO - 38144 - Nurse: created: W_Naryjek timejob: 0
+2020-01-15 19:05:30,456 - INFO - 38144 - Nurse: created: T_Wieclawek timejob: 0
+2020-01-15 19:05:30,456 - INFO - 38144 - Nurse: created: E_Maslarz timejob: 0
+2020-01-15 19:05:30,456 - INFO - 38144 - Nurse: created: D_Ben-Madej timejob: 0
+2020-01-15 19:05:30,456 - INFO - 38144 - Nurse: created: V_Lodzinska timejob: 0
+2020-01-15 19:05:30,456 - INFO - 38144 - Nurse: created: D_Szwaja timejob: 0
+2020-01-15 19:05:30,456 - INFO - 38144 - Nurse: created: K_Banucha timejob: 1
+2020-01-15 19:05:30,456 - INFO - 38144 - Nurse: created: E_Burdzicka timejob: 1
+2020-01-15 19:05:30,457 - INFO - 38144 - Nurse: created: I_Hazubska timejob: 0.5
+2020-01-15 19:05:30,457 - INFO - 38144 - Nurse: created: A_Olszowa timejob: 1
+2020-01-15 19:05:30,457 - INFO - 38144 - Nurse: created: M_Kolodziej timejob: 0
+2020-01-15 19:05:30,457 - INFO - 38144 - Nurse: created: D_Prokop timejob: 1
+2020-01-15 19:05:30,457 - INFO - 38144 - Nurse: created: R_Ziomek timejob: 1
+2020-01-15 19:05:30,457 - INFO - 38144 - Nurse: created: T_Rodacka timejob: 0
+2020-01-15 19:05:30,457 - INFO - 38144 - Nurse: created: I_Bielinska timejob: 0
+2020-01-15 19:05:30,457 - INFO - 38144 - Nurse: created: B_Buczkowska timejob: 0
+2020-01-15 19:05:30,457 - INFO - 38144 - Nurse: created: L_Osak timejob: 0
+2020-01-15 19:05:30,457 - INFO - 38144 - Nurse: created: D_Palica timejob: 0
+2020-01-15 19:05:30,458 - INFO - 38144 - NurseTab: loadNurses: created: 20 nurses
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: sobota
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: niedziela
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: poniedzia³ek
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: wtorek
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: œroda
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: czwartek
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: pi¹tek
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: sobota
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: niedziela
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: poniedzia³ek
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: wtorek
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: œroda
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: czwartek
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: pi¹tek
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: sobota
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: niedziela
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: poniedzia³ek
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: wtorek
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: œroda
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: czwartek
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: pi¹tek
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: sobota
+2020-01-15 19:05:30,493 - INFO - 38144 - Duty date name: niedziela
+2020-01-15 19:05:30,497 - INFO - 38144 - Duty date name: poniedzia³ek
+2020-01-15 19:05:30,497 - INFO - 38144 - Duty date name: wtorek
+2020-01-15 19:05:30,497 - INFO - 38144 - Duty date name: œroda
+2020-01-15 19:05:30,497 - INFO - 38144 - Duty date name: czwartek
+2020-01-15 19:05:30,497 - INFO - 38144 - Duty date name: pi¹tek
+2020-01-15 19:05:30,497 - INFO - 38144 - Duty date name: sobota
+2020-01-15 19:05:30,512 - INFO - 38144 - ScheduleTab: createListCTRL: create calendar for days: [<Duty.Duty object at 0x000002CC2BC6CCC8>, <Duty.Duty object at 0x000002CC2BC70148>, <Duty.Duty object at 0x000002CC2BC791C8>, <Duty.Duty object at 0x000002CC2BC79BC8>, <Duty.Duty object at 0x000002CC2BC7C508>, <Duty.Duty object at 0x000002CC2BC7C8C8>, <Duty.Duty object at 0x000002CC2BC7C908>, <Duty.Duty object at 0x000002CC2BC7CB08>, <Duty.Duty object at 0x000002CC2BC7CA08>, <Duty.Duty object at 0x000002CC2BC7CC48>, <Duty.Duty object at 0x000002CC2BC7CD48>, <Duty.Duty object at 0x000002CC2BC7CE08>, <Duty.Duty object at 0x000002CC2BC7CEC8>, <Duty.Duty object at 0x000002CC2BC7CF88>, <Duty.Duty object at 0x000002CC2BC7F088>, <Duty.Duty object at 0x000002CC2BC7F188>, <Duty.Duty object at 0x000002CC2BC7F308>, <Duty.Duty object at 0x000002CC2BC7F448>, <Duty.Duty object at 0x000002CC2BC7F588>, <Duty.Duty object at 0x000002CC2BC7F6C8>, <Duty.Duty object at 0x000002CC2BC7F808>, <Duty.Duty object at 0x000002CC2BC7F948>, <Duty.Duty object at 0x000002CC2BC7FA88>, <Duty.Duty object at 0x000002CC2BC7FC08>, <Duty.Duty object at 0x000002CC2BC7FD48>, <Duty.Duty object at 0x000002CC2BC7FE88>, <Duty.Duty object at 0x000002CC2BC7FF08>, <Duty.Duty object at 0x000002CC2BC83148>, <Duty.Duty object at 0x000002CC2BC83288>]
+2020-01-15 19:05:30,530 - INFO - 38144 - ScheduleTab: setDataInGrid: holiday: 11.02 month whcih has been set 2
+2020-01-15 19:05:35,160 - INFO - 38144 - ScheduleTab: createListCTRL: create calendar for days: [<Duty.Duty object at 0x000002CC2BC6CCC8>, <Duty.Duty object at 0x000002CC2BC70148>, <Duty.Duty object at 0x000002CC2BC791C8>, <Duty.Duty object at 0x000002CC2BC79BC8>, <Duty.Duty object at 0x000002CC2BC7C508>, <Duty.Duty object at 0x000002CC2BC7C8C8>, <Duty.Duty object at 0x000002CC2BC7C908>, <Duty.Duty object at 0x000002CC2BC7CB08>, <Duty.Duty object at 0x000002CC2BC7CA08>, <Duty.Duty object at 0x000002CC2BC7CC48>, <Duty.Duty object at 0x000002CC2BC7CD48>, <Duty.Duty object at 0x000002CC2BC7CE08>, <Duty.Duty object at 0x000002CC2BC7CEC8>, <Duty.Duty object at 0x000002CC2BC7CF88>, <Duty.Duty object at 0x000002CC2BC7F088>, <Duty.Duty object at 0x000002CC2BC7F188>, <Duty.Duty object at 0x000002CC2BC7F308>, <Duty.Duty object at 0x000002CC2BC7F448>, <Duty.Duty object at 0x000002CC2BC7F588>, <Duty.Duty object at 0x000002CC2BC7F6C8>, <Duty.Duty object at 0x000002CC2BC7F808>, <Duty.Duty object at 0x000002CC2BC7F948>, <Duty.Duty object at 0x000002CC2BC7FA88>, <Duty.Duty object at 0x000002CC2BC7FC08>, <Duty.Duty object at 0x000002CC2BC7FD48>, <Duty.Duty object at 0x000002CC2BC7FE88>, <Duty.Duty object at 0x000002CC2BC7FF08>, <Duty.Duty object at 0x000002CC2BC83148>, <Duty.Duty object at 0x000002CC2BC83288>]
+2020-01-15 19:05:35,195 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,195 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,198 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,198 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,198 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,198 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,199 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,199 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,199 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,199 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,199 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,199 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,201 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,201 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,201 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,201 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,201 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,202 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,202 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,202 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,202 - INFO - 38144 - Found elements: 31
+2020-01-15 19:05:35,203 - INFO - 38144 - ScheduleTab: calculateHours: calculated SUNDAYS: 4
+2020-01-15 19:05:35,203 - INFO - 38144 - ScheduleTab: calculateHours: calculated SATURDAYS: 5
+2020-01-15 19:05:35,203 - INFO - 38144 - ScheduleTab: calculateHours: calculated WORKING DAYS: 20
+2020-01-15 19:05:35,203 - INFO - 38144 - Nurse timejob is 1
+2020-01-15 19:05:35,203 - INFO - 38144 - Nurse: E_Holinka-Fabin should work in this month for 151.67
+2020-01-15 19:05:35,203 - INFO - 38144 - Nurse timejob is 1
+2020-01-15 19:05:35,204 - INFO - 38144 - Nurse: J_Vyshtaliuk should work in this month for 151.67
+2020-01-15 19:05:35,204 - INFO - 38144 - Nurse timejob is 0
+2020-01-15 19:05:35,204 - INFO - 38144 - Nurse timejob is 0
+2020-01-15 19:05:35,204 - INFO - 38144 - Nurse timejob is 0
+2020-01-15 19:05:35,204 - INFO - 38144 - Nurse timejob is 0
+2020-01-15 19:05:35,204 - INFO - 38144 - Nurse timejob is 0
+2020-01-15 19:05:35,204 - INFO - 38144 - Nurse timejob is 0
+2020-01-15 19:05:35,204 - INFO - 38144 - Nurse timejob is 1
+2020-01-15 19:05:35,205 - INFO - 38144 - Nurse: K_Banucha should work in this month for 151.67
+2020-01-15 19:05:35,205 - INFO - 38144 - Nurse timejob is 1
+2020-01-15 19:05:35,205 - INFO - 38144 - Nurse: E_Burdzicka should work in this month for 151.67
+2020-01-15 19:05:35,205 - INFO - 38144 - Nurse timejob is 0.5
+2020-01-15 19:05:35,206 - INFO - 38144 - Nurse: I_Hazubska should work in this month for 75.83
+2020-01-15 19:05:35,206 - INFO - 38144 - Nurse timejob is 1
+2020-01-15 19:05:35,206 - INFO - 38144 - Nurse: A_Olszowa should work in this month for 144.08
+2020-01-15 19:05:35,206 - INFO - 38144 - Nurse timejob is 0
+2020-01-15 19:05:35,207 - INFO - 38144 - Nurse timejob is 1
+2020-01-15 19:05:35,207 - INFO - 38144 - Nurse: D_Prokop should work in this month for 151.67
+2020-01-15 19:05:35,208 - INFO - 38144 - Nurse timejob is 1
+2020-01-15 19:05:35,208 - INFO - 38144 - Nurse: R_Ziomek should work in this month for 151.67
+2020-01-15 19:05:35,208 - INFO - 38144 - Nurse timejob is 0
+2020-01-15 19:05:35,208 - INFO - 38144 - Nurse timejob is 0
+2020-01-15 19:05:35,208 - INFO - 38144 - Nurse timejob is 0
+2020-01-15 19:05:35,208 - INFO - 38144 - Nurse timejob is 0
+2020-01-15 19:05:35,208 - INFO - 38144 - Nurse timejob is 0
+2020-01-15 19:05:35,213 - INFO - 38144 - ScheduleTab: setDataInGrid: holiday: 06.02 month whcih has been set 2

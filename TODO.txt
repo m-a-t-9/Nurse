@@ -1,13 +1,21 @@
 TODO
 
-1. move holidays from nurse tab to schedule tab - done
+
 2. rest hours planning
-3. edit on fly - Done
-10. Toolbar - Done
 5. button 'uloz grafik' - implementation
 6. Add nurse
 7. remove nurse
 8. edit nurse
-9. load schedule from file - started
-11. Colors for sundays and saturdays - Done
 4. py to exe
+
+DONE:
+12. Save schedule to file 
+11. Colors for sundays and saturdays
+3. edit on fly 
+10. Toolbar
+1. move holidays from nurse tab to schedule tab 
+BUG On Open schedule dropdown list should be set to proper value -fixed
+9. load schedule from file - started
+
+Bugs:
+Save to html file does not contain colors

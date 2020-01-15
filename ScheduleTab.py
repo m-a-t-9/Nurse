@@ -7,6 +7,8 @@ import xml.etree.ElementTree as ET
 from Duty import *
 from HTMLExporter import *
 
+monthsDropdown = ["Wybierz miesiac", "Styczen", "Luty", "Marzec", "Kwiecien", "Maj", "Czerwiec", "Lipiec", "Sierpien", "Wrzesien", "Pazdziernik", "Listopad", "Grudzien"]
+
 class ScheduleTab(wx.Panel):
     
     def __init__(self, parent, logger, nurseIface):
@@ -79,18 +81,20 @@ class ScheduleTab(wx.Panel):
                 r.append(duty)
         return r
     
-    def createListCTRL(self, month=None):
-        dutiesForColumn = self.getOnlyDayDuties()
-        self.logger.info("ScheduleTab: createListCTRL: create calendar for days: " + str(dutiesForColumn))
+    def createListCTRL(self, month=None, dataFromFile=False):
+        if len(self.nurses) == 0:
+            self.nurses = self.NIF("GET_NURSES")
+        self.dutiesForColumn = self.getOnlyDayDuties()
+        self.logger.info("ScheduleTab: createListCTRL: create calendar for days: " + str(self.dutiesForColumn))
         
         self.grid = wx.grid.Grid(self)
         
-        self.grid.CreateGrid(len(self.nurses), len(dutiesForColumn) + 1)
+        self.grid.CreateGrid(len(self.nurses), len(self.dutiesForColumn) + 1)
         self.grid.SetSize(self.GetSize())
         self.grid.SetRowLabelSize(width=150)
         
-        for i in range(len(dutiesForColumn) + 1):
-            if i == (len(dutiesForColumn)):
+        for i in range(len(self.dutiesForColumn) + 1):
+            if i == (len(self.dutiesForColumn)):
                 self.grid.SetColLabelValue(i, "SUMA")
                 self.grid.SetColSize(i, 60)
             else:
@@ -102,14 +106,34 @@ class ScheduleTab(wx.Panel):
         for i in range(len(self.nurses)):
             self.grid.SetRowLabelValue(i, self.nurses[i].name)
         self.setColours()    
+        if dataFromFile:
+            self.setDataInGridFromFile()
+        else:
+            self.setDataInGrid()
+        self.grid.Bind(wx.grid.EVT_GRID_SELECT_CELL, self.onSingleSelect)
+            
+        
+        self.Layout()
+        self.Show()        
+    
+    def onSingleSelect(self, e):
+        r = e.GetRow()
+        c = e.GetCol()
+        if c == len(self.dutiesForColumn):
+            wx.MessageBox('Pielęgniarka ' + self.nurses[r].name + " ma niezaplanowane godziny (" + self.nurses[r].getUnplannedHoursString() + ")", 'Info',
+            wx.OK | wx.ICON_INFORMATION)
+    
+    def setDataInGrid(self):
         for i in range(len(self.nurses)):
         
             for duty in self.nurses[i].dailyDuties:
                 self.grid.SetCellValue(i, duty-1, "D")
-                
+                self.grid.SetCellAlignment(i, duty-1, wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
             for duty in self.nurses[i].nightlyDuties:
                 self.grid.SetCellValue(i, duty-1, "N")
+                self.grid.SetCellAlignment(i, duty-1, wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
             for holiday in self.nurses[i].holidays:
+                self.logger.info("ScheduleTab: setDataInGrid: holiday: " + str(holiday) + " month whcih has been set " + str(self.month))
                 hday = holiday.split(".")[0]
                 hmonth = holiday.split(".")[1]
                 if len(str(self.month)) == 1:
@@ -120,13 +144,62 @@ class ScheduleTab(wx.Panel):
                     self.grid.SetCellValue(i, int(hday)-1, "UW")
                     self.grid.SetCellBackgroundColour(i, int(hday)-1, wx.Colour(0,0,255))
                     self.grid.SetCellTextColour(i, int(hday)-1, wx.Colour(255,255,255))
-            self.grid.SetCellValue(i, len(dutiesForColumn), str(self.nurses[i].getPlannedHours()))
-            
-            
+                    self.grid.SetCellAlignment(i, int(hday)-1, wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
+            self.grid.SetCellValue(i, len(self.dutiesForColumn), str(self.nurses[i].getPlannedHours()))
+            if self.nurses[i].getUnplannedHours() != 0:
+                self.grid.SetCellBackgroundColour(i, len(self.dutiesForColumn),wx.Colour(255, 0, 0))
+            self.grid.SetCellAlignment(i, len(self.dutiesForColumn), wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
+    
+    def setDataInGridFromFile(self):
+        rows = self.root.findall("./body/table/tr")
+        for nurse in rows:
+            '''to be implemented methods'''
+            n = self.findNurseByName(nurse[0].text)
+            dailyDuties = self.findDuties(nurse, "D")
+            nightlyDuties = self.findDuties(nurse, "N")
+            holidays = self.findHolidays(nurse)
+            if n != None:
+                n.dailyDuties = dailyDuties
+                n.nightlyDuties = nightlyDuties
+                n.holidays = holidays
+        self.calculateHours()
+        self.setDataInGrid()
+    
+    def findNurseByName(self, name):
+        for nurse in self.nurses:
+            if nurse.name == name:
+                return nurse
+                
+    def findDuties(self, nurseRow, dN):
+        i = 0
+        duties = []
+        for child in nurseRow:
+            if child.text == dN:
+                duties.append(i)
+            i+=1
+        return duties
         
-        self.Layout()
-        self.Show()        
-        
+    def findHolidays(self, nurseRow):
+        m = ""
+        if len(str(self.month)) == 1:
+            m = "0" + str(self.month)
+        else:
+            m = str(self.month)
+        i = 0
+        duties = []
+        self.logger.info("Found elements: " + str(len(nurseRow)))
+        for child in nurseRow:
+            if child.text != None:
+                if child.text.find("U") != -1:
+                    d = ""
+                    if len(str(i)) == 1:
+                        d = "0" + str(i)
+                    else:
+                        d = str(i)
+                    duties.append(d + "." + m)
+                i+=1
+        return duties
+    
     def setColours(self):
         for i in range(self.grid.GetNumberCols()):
             if self.isNotWorkingDay(i) and self.grid.GetColLabelValue(i) != "SUMA":
@@ -155,8 +228,11 @@ class ScheduleTab(wx.Panel):
    
     def OnSave(self, e):
         self.logger.info("Saving schedule")
-        htmlExporter = HTMLExporter(self.list)
+        htmlExporter = HTMLExporter(self.grid, self.month)
         htmlExporter.save()
+        wx.MessageBox('Zapisano pomyślnie', 'Info',
+            wx.OK | wx.ICON_INFORMATION)
+
           
     def OnCalculate(self, e):
         self.logger.info("ScheduleTab: OnCalculate")
@@ -177,15 +253,18 @@ class ScheduleTab(wx.Panel):
             # Proceed loading the file chosen by the user
             pathname = fileDialog.GetPath()
             try:
-                self.loadSchedule(pathname)
+                return self.loadSchedule(pathname)
             except IOError:
                 wx.LogError("Cannot open file '%s'." % newfile)
     
     def loadSchedule(self, pathname):
         self.tree = ET.parse(pathname)
-        self.root = tree.getroot()
-        #add month in html somewhere
-        self.createListCTRL(month, loaded=True) #to be implemented here
+        self.root = self.tree.getroot()
+       
+        monthName = self.root.find('./head/title').text.split(":")[1]
+        monthNo = monthsDropdown.index(monthName)
+        self.createListCTRL(monthNo, dataFromFile=True)
+        return monthName
             
     def validateNurse(self, nurse, duty, withDuties=True):
         if withDuties:

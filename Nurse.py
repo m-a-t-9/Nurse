@@ -1,4 +1,4 @@
-
+import math
 
 class Nurse:
 
@@ -61,10 +61,24 @@ class Nurse:
 		self.logger.info(self.availabilities)
 
 	def getUnplannedHours(self):
-		return self.hours - self.getPlannedHours()
+		if self.timejob == "0":
+			return 0.0
+		else:
+			return round(self.hours - self.getPlannedHours(),2)
+
+	def getUnplannedHoursString(self):
+		frac, whole = math.modf(self.getUnplannedHours())
+		hours = str(int(whole))
+		mins = ":"
+		if int(frac*60) < 10:
+			mins += "0" + str(int(frac*60))
+		else:
+			mins += str(int(frac*60))
+		return hours + mins
+
 
 	def getPlannedHours(self):
-		return (float(len(self.dailyDuties) + len(self.nightlyDuties)) * 12)
+		return round((float(len(self.dailyDuties) + len(self.nightlyDuties)) * 12), 2)
 
 	def checkHoliday(self, duty):
 		if str(duty.day) + "." + self.monthFix(duty.month) in self.holidays:
