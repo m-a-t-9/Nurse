@@ -3,10 +3,11 @@ TODO
 1. move holidays from nurse tab to schedule tab - done
 2. rest hours planning
 3. edit on fly - Done
- 10. Toolbar
+10. Toolbar - Done
 5. button 'uloz grafik' - implementation
 6. Add nurse
 7. remove nurse
 8. edit nurse
 9. load schedule from file - started
+11. Colors for sundays and saturdays - Done
 4. py to exe

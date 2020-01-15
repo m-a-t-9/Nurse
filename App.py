@@ -6,6 +6,7 @@ from NurseTab import *
 from ScheduleTab import *
 
 data = [("Styczen",31), ("Luty", 28), ("Marzec",31), ("Kwiecien",30), ("Maj",31), ("Czerwiec",30), ("Lipiec",31), ("Sierpien",31), ("Wrzesien", 30), ("Pazdziernik", 31), ("Listopad",30), ("Grudzien",31)]
+monthsDropdown = ["Wybierz miesiac", "Styczen", "Luty", "Marzec", "Kwiecien", "Maj", "Czerwiec", "Lipiec", "Sierpien", "Wrzesien", "Pazdziernik", "Listopad", "Grudzien"]
 
 class Example(wx.Frame):
 
@@ -54,6 +55,10 @@ class Example(wx.Frame):
 
         menubar.Append(fileMenu, '&Plik')
         self.SetMenuBar(menubar)
+        self.toolbar = self.CreateToolBar()
+        self.combo = wx.ComboBox(self.toolbar, 555, value = monthsDropdown[0], choices = monthsDropdown)
+        self.toolbar.Realize()
+
         
         self.hbox = wx.BoxSizer(wx.VERTICAL)
         
@@ -63,9 +68,19 @@ class Example(wx.Frame):
         
         self.nb.AddPage(self.nurseTab, "Zaloga")
         self.nb.AddPage(self.scheduleTab, "Grafik")
+        self.Bind(wx.EVT_NOTEBOOK_PAGE_CHANGED, self.OnTabChange)
+        
         self.hbox.Add(self.nb, 1, wx.EXPAND)
         self.SetSizer(self.hbox)
         self.Layout()
+
+    def OnTabChange(self, e):
+        print(self.nb.GetSelection())
+        if self.nb.GetSelection() == 1:
+            self.scheduleTab.setMonthAndRefresh(self.combo.GetSelection())
+            self.calculateButton = self.toolbar.AddTool(wx.ID_ANY, 'Calculate', wx.Bitmap('calculator-icon.jpg'))
+            #self.toolbar.Realize()
+    
 
     def OnNew(self, e):
         self.scheduleTab.OnNew(e.GetId()+1)

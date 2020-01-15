@@ -7,18 +7,6 @@ import xml.etree.ElementTree as ET
 from Duty import *
 from HTMLExporter import *
 
-class EditableListCtrl(wx.ListCtrl, listmix.TextEditMixin):
-    ''' TextEditMixin allows any column to be edited. '''
- 
-    #----------------------------------------------------------------------
-    def __init__(self, parent, ID=wx.ID_ANY, pos=wx.DefaultPosition,
-                 size=wx.DefaultSize, style=0):
-        """Constructor"""
-        wx.ListCtrl.__init__(self, parent, ID, pos, size, style)
-        listmix.TextEditMixin.__init__(self)
-
-    
-
 class ScheduleTab(wx.Panel):
     
     def __init__(self, parent, logger, nurseIface):
@@ -32,7 +20,16 @@ class ScheduleTab(wx.Panel):
         self.getBankHolidays()
         self.nurses = []
         self.duties = []
-        #self.createMonth()
+        self.notWorkingDays = []
+        self.createMonth()
+        self.getNotWorkingDays()
+        self.createListCTRL()
+        
+    
+    def setMonthAndRefresh(self, month):
+        self.createMonth(month)
+        self.nurses = self.NIF("GET_NURSES")
+        self.getNotWorkingDays()
         self.createListCTRL()
     
     def createMonth(self, month=None):
@@ -46,6 +43,8 @@ class ScheduleTab(wx.Panel):
         else:
             self.month = month
             self.numberOfDays = calendar.monthrange(self.year, self.month)[1]
+        if len(self.duties) != 0:
+            self.duties = []
         for i in range(self.numberOfDays):
             self.duties.append(Duty(i+1, self.month, self.year, "D"))
             self.duties.append(Duty(i+1, self.month, self.year, "N"))
@@ -55,7 +54,24 @@ class ScheduleTab(wx.Panel):
     def calculateSundaysInMonth(self):
         matrix = calendar.monthcalendar(self.year,self.month)
         self.numberOfSundays= sum(1 for x in matrix if x[calendar.SUNDAY] != 0)
-            
+        
+    
+    def getNotWorkingDays(self):
+        if len(self.notWorkingDays) != 0:
+            self.notWorkingDays = []
+        matrix = calendar.monthcalendar(self.year, self.month)
+        for i in range(len(matrix)):
+            if matrix[i][5] != 0:
+                self.notWorkingDays.append(matrix[i][5])
+            if matrix[i][6] != 0:
+                self.notWorkingDays.append(matrix[i][6])
+        print(self.notWorkingDays)
+    
+    def isNotWorkingDay(self, day):
+        if day in self.notWorkingDays:
+            return True
+        return False
+    
     def getOnlyDayDuties(self):
         r = []
         for duty in self.duties:
@@ -64,7 +80,6 @@ class ScheduleTab(wx.Panel):
         return r
     
     def createListCTRL(self, month=None):
-        #self.hbox = wx.BoxSizer(wx.VERTICAL)
         dutiesForColumn = self.getOnlyDayDuties()
         self.logger.info("ScheduleTab: createListCTRL: create calendar for days: " + str(dutiesForColumn))
         
@@ -73,20 +88,25 @@ class ScheduleTab(wx.Panel):
         self.grid.CreateGrid(len(self.nurses), len(dutiesForColumn) + 1)
         self.grid.SetSize(self.GetSize())
         self.grid.SetRowLabelSize(width=150)
+        
         for i in range(len(dutiesForColumn) + 1):
             if i == (len(dutiesForColumn)):
                 self.grid.SetColLabelValue(i, "SUMA")
                 self.grid.SetColSize(i, 60)
             else:
+                
                 self.grid.SetColLabelValue(i, str(i+1))
                 self.grid.SetColSize(i, 40)
+                
+                
         for i in range(len(self.nurses)):
             self.grid.SetRowLabelValue(i, self.nurses[i].name)
-            
+        self.setColours()    
         for i in range(len(self.nurses)):
         
             for duty in self.nurses[i].dailyDuties:
                 self.grid.SetCellValue(i, duty-1, "D")
+                
             for duty in self.nurses[i].nightlyDuties:
                 self.grid.SetCellValue(i, duty-1, "N")
             for holiday in self.nurses[i].holidays:
@@ -104,65 +124,16 @@ class ScheduleTab(wx.Panel):
             
             
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        '''
-        self.list = EditableListCtrl(self, style=wx.LC_REPORT|wx.LC_SINGLE_SEL|wx.LC_VRULES)
-        
-        self.list.InsertColumn(0, "Imie i Nazwisko", width=150)
-        i = 0
-        
-        for duty in dutiesForColumn:
-            self.list.InsertColumn(i+1, str(i+1), width=40)
-            i += 1
-        if i != 0:
-            self.list.InsertColumn(i+1, "Suma", width=60)
-        idx = 0
-        for nurse in self.nurses:
-            index = self.list.InsertItem(idx, nurse.name)
-            for duty in nurse.dailyDuties:
-                self.list.SetItem(index, duty, "D")
-            for duty in nurse.nightlyDuties:
-                self.list.SetItem(index, duty, "N")
-            for holiday in nurse.holidays:
-                hday = holiday.split(".")[0]
-                hmonth = holiday.split(".")[1]
-                if len(str(self.month)) == 1:
-                    currMonthString = "0" + str(self.month)
-                else:
-                    currMonthString = str(self.month)
-                if hmonth == currMonthString:
-                    self.list.SetItem(index, int(hday), "UW")
-            self.list.SetItem(index, len(dutiesForColumn)+1, str(nurse.getPlannedHours()))
-            idx += 1
-            
-        self.applyChangesBtn = wx.Button(self, label='Zastosuj zmiany', size=(80, 20))
-        self.calculateBtn = wx.Button(self, label='Uloz grafik', size=(80, 30))
-        
-        self.exportBtn = wx.Button(self, label="Zapisz do pliku", size=(80, 30))
-        
-        self.Bind(wx.EVT_BUTTON, self.OnApply, self.applyChangesBtn)
-        self.Bind(wx.EVT_BUTTON, self.OnCalculate, self.calculateBtn)
-        self.Bind(wx.EVT_BUTTON, self.OnSave, self.exportBtn)
-        '''
-        #self.hbox.Add(self.grid, proportion=1, flag=wx.EXPAND)
-        
-        #if self.list.GetItemCount() != 0:
-        #    self.hbox.Add(self.applyChangesBtn)
-        #self.hbox.Add(self.calculateBtn)
-        #self.hbox.Add(self.exportBtn)
-        #self.SetSizer(self.hbox)
         self.Layout()
         self.Show()        
         
+    def setColours(self):
+        for i in range(self.grid.GetNumberCols()):
+            if self.isNotWorkingDay(i) and self.grid.GetColLabelValue(i) != "SUMA":
+                for j in range(len(self.nurses)):
+                    self.grid.SetCellBackgroundColour(j, i, wx.Colour(211, 211, 211))
+    
+    
     def OnApply(self, e):
         count = self.list.GetItemCount()
         cols = self.list.GetColumnCount()
