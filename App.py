@@ -84,6 +84,8 @@ class Example(wx.Frame):
             self.scheduleTab.setMonthAndRefresh(self.combo.GetSelection())
             self.calculateButton = self.toolbar.AddTool(wx.ID_ANY, 'Calculate', wx.Bitmap('calculator-icon.jpg'))
             #self.toolbar.Realize()
+        elif self.nb.GetSelection() == 0:
+            self.nurseTab.setNurseAndRefresh()
     
 
     def OnNew(self, e):

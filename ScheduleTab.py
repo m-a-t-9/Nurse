@@ -91,6 +91,7 @@ class ScheduleTab(wx.Panel):
         
         self.grid.CreateGrid(len(self.nurses), len(self.dutiesForColumn) + 1)
         self.grid.SetSize(self.GetSize())
+        #self.grid.Fit()
         self.grid.SetRowLabelSize(width=150)
         
         for i in range(len(self.dutiesForColumn) + 1):
@@ -111,17 +112,51 @@ class ScheduleTab(wx.Panel):
         else:
             self.setDataInGrid()
         self.grid.Bind(wx.grid.EVT_GRID_SELECT_CELL, self.onSingleSelect)
-            
+        self.grid.Bind(wx.grid.EVT_GRID_CELL_CHANGED, self.OnChange)
         
         self.Layout()
         self.Show()        
+    
+    def OnChange(self, e):
+        self.logger.info("OnChange: cell value has been changed")
+        row = e.GetRow()
+        col = e.GetCol()
+        self.logger.debug("Changed in duty: " + str(self.dutiesForColumn[col].day))
+        self.logger.debug("Changed for nurse: " + str(self.nurses[row].name))
+        newValue =self.grid.GetCellValue(row, col)
+        dutyIndex = 0
+        if newValue == "N" or newValue == "D":
+            duty = Duty(self.dutiesForColumn[col].day, self.month, self.year, newValue)
+            self.nurses[row].addDuty(duty.day, duty.type, duty.dayName)
+            self.grid.SetCellValue(row, len(self.dutiesForColumn), str(self.nurses[row].getPlannedHours()))
+            self.setColorOfPlannedHours(row)
+        elif newValue.find("U") != -1:
+            self.nurses[row].holidays.append(self.nurses[row].monthFix(self.dutiesForColumn[col].day) + "." + self.nurses[row].monthFix(self.month))
+        elif newValue == "" or newValue == " ":
+            self.nurses[row].removeDuty(self.dutiesForColumn[col].day)
+            self.grid.SetCellValue(row, len(self.dutiesForColumn), str(self.nurses[row].getPlannedHours()))
+            self.setColorOfPlannedHours(row)
+        elif newValue == "DX":
+            duty = Duty(self.dutiesForColumn[col].day, self.month, self.year, newValue)
+            self.nurses[row].addDuty(duty.day, duty.type, duty.dayName)
+            self.grid.SetCellValue(row, len(self.dutiesForColumn), str(self.nurses[row].getPlannedHours()))
+            self.setColorOfPlannedHours(row)
+        
+            
+        
     
     def onSingleSelect(self, e):
         r = e.GetRow()
         c = e.GetCol()
         if c == len(self.dutiesForColumn):
-            wx.MessageBox('Pielęgniarka ' + self.nurses[r].name + " ma niezaplanowane godziny (" + self.nurses[r].getUnplannedHoursString() + ")", 'Info',
-            wx.OK | wx.ICON_INFORMATION)
+            text = ""
+            if self.nurses[r].getUnplannedHours() < 8 and self.nurses[r].getUnplannedHours() > 0:
+                text = 'Pielęgniarka ' + self.nurses[r].name + " ma niezaplanowany krótki dyżór (" + self.nurses[r].getUnplannedHoursString() + ")"
+            elif self.nurses[r].getUnplannedHours() < 0:
+                text = 'Pielęgniarka ' + self.nurses[r].name + " przekracza etat (" + self.nurses[r].getUnplannedHoursString() + ")"
+            else:
+                text = 'Pielęgniarka ' + self.nurses[r].name + " ma niezaplanowane godziny (" + self.nurses[r].getUnplannedHoursString() + ")"
+            wx.MessageBox(text, 'Info', wx.OK | wx.ICON_INFORMATION)
     
     def setDataInGrid(self):
         for i in range(len(self.nurses)):
@@ -146,9 +181,17 @@ class ScheduleTab(wx.Panel):
                     self.grid.SetCellTextColour(i, int(hday)-1, wx.Colour(255,255,255))
                     self.grid.SetCellAlignment(i, int(hday)-1, wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
             self.grid.SetCellValue(i, len(self.dutiesForColumn), str(self.nurses[i].getPlannedHours()))
-            if self.nurses[i].getUnplannedHours() != 0:
-                self.grid.SetCellBackgroundColour(i, len(self.dutiesForColumn),wx.Colour(255, 0, 0))
+            self.setColorOfPlannedHours(i)
             self.grid.SetCellAlignment(i, len(self.dutiesForColumn), wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
+    
+    def setColorOfPlannedHours(self, index):
+        self.logger.info("Set color of planned hours for unplanned: " + str(self.nurses[index].getUnplannedHours()))
+        if self.nurses[index].getUnplannedHours() < 8 and  self.nurses[index].getUnplannedHours() > 0:
+            self.grid.SetCellBackgroundColour(index, len(self.dutiesForColumn),wx.Colour(255, 255, 0))
+        elif self.nurses[index].getUnplannedHours() >= 8 or self.nurses[index].getUnplannedHours() < 0:
+            self.grid.SetCellBackgroundColour(index, len(self.dutiesForColumn),wx.Colour(255, 0, 0))
+        elif self.nurses[index].getUnplannedHours() == 0:
+            self.grid.SetCellBackgroundColour(index, len(self.dutiesForColumn),wx.Colour(0, 255, 0))
     
     def setDataInGridFromFile(self):
         rows = self.root.findall("./body/table/tr")

@@ -3,43 +3,74 @@ import os
 
 from Nurse import *
 
+class MyPopupMenu(wx.Menu):
+
+    def __init__(self, parent):
+        super(MyPopupMenu, self).__init__()
+
+        self.parent = parent
+
+        add = wx.MenuItem(self, wx.NewId(), 'Dodaj pielegniarke')
+        self.Append(add)
+        self.Bind(wx.EVT_MENU, self.OnAdd, add)
+
+    def OnAdd(self, e):
+        self.logger.info("Adding new nurse into list") 
+
+
 class NurseTab(wx.Panel):
 
     def __init__(self, parent, logger):
         wx.Panel.__init__(self, parent)
         self.page = 0
+        self.parent = parent
+        self.SetSize(parent.GetSize())
         self.logger = logger
         self.logger.info("NurseTab init")
         self.nurses = []
         if self.checkSavedFiles():
             self.loadNurses("nurses.nur")
-        self.createListCTRL()
+        self.createGridCTRL()
+        self.Bind(wx.EVT_RIGHT_DOWN, self.OnRightDown)
         
+    def OnRightDown(self, e):
+        self.PopupMenu(MyPopupMenu(self), e.GetPosition())
+    
+    def setNurseAndRefresh(self):
+        self.loadNurses()
+        self.createGridCTRL()
+    
     def createButtons(self):
         self.addNurseBtn = wx.Button(self, label='Dodaj Pielegniarke', size=(120, 30))
         self.removeNurse = wx.Button(self, label='Usun Pielegniarke', size=(120, 30))
         self.hbox.Add(self.addNurseBtn)
         self.hbox.Add(self.removeNurse)
         
-    def createListCTRL(self):
-        self.hbox = wx.BoxSizer(wx.VERTICAL)
-        self.list = wx.ListCtrl(self, wx.ID_ANY, style=wx.LC_REPORT)
-        self.list.InsertColumn(0, 'Pielegniarka', width=400)
-        self.list.InsertColumn(1, 'Etat', width=100)
-        self.list.InsertColumn(2, 'Urlopy', width=600)
-        self.list.InsertColumn(3, 'Dostepnosc', width=600)
-        idx = 0
-        for i in self.nurses:
-            index = self.list.InsertItem(idx, i.name)
-            self.list.SetItem(index, 1, i.timejob)
-            self.list.SetItem(index, 2, i.getHolidaysString())
-            self.list.SetItem(index, 3, i.getAvailabilitiesString())
-            idx += 1
+    def createGridCTRL(self):
+        self.grid = wx.grid.Grid(self)
         
-        self.hbox.Add(self.list, proportion=1, flag=wx.EXPAND)
-        self.createButtons()
-        self.SetSizer(self.hbox)
-        self.Layout() 
+        self.grid.CreateGrid(len(self.nurses), 4)
+        
+        self.grid.SetRowLabelSize(width=30)
+        
+        self.grid.SetColLabelValue(0, "Imie i nazwisko")
+        self.grid.SetColSize(0, 400)
+        self.grid.SetColLabelValue(1, "Etat")
+        self.grid.SetColSize(1, 100)
+        self.grid.SetColLabelValue(2, "Urlopy")
+        self.grid.SetColSize(2, 600)
+        self.grid.SetColLabelValue(3, "Dostepnosc")
+        self.grid.SetColSize(3, 600)
+        
+        
+        for i in range(len(self.nurses)):
+            self.grid.SetCellValue(i, 0, self.nurses[i].name)
+            self.grid.SetCellValue(i, 1, self.nurses[i].timejob)
+            self.grid.SetCellValue(i, 2, self.nurses[i].getHolidaysString())
+            self.grid.SetCellValue(i, 3, self.nurses[i].getAvailabilitiesString())
+        self.grid.Fit()
+        self.Layout()
+        self.Show()
     
     def checkSavedFiles(self):
         if os.path.isfile("nurses.nur"):
@@ -54,7 +85,7 @@ class NurseTab(wx.Panel):
             pathname = fileDialog.GetPath()
             try:
                 self.loadNurses(pathname)
-                self.createListCTRL()
+                self.createGridCTRL()
             except IOError:
                 wx.LogError("Cannot open file '%s'." % newfile)
                 

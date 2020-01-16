@@ -70,15 +70,22 @@ class Nurse:
 		frac, whole = math.modf(self.getUnplannedHours())
 		hours = str(int(whole))
 		mins = ":"
-		if int(frac*60) < 10:
+		if int(frac*60) < 10 and int(frac*60) > 0:
 			mins += "0" + str(int(frac*60))
+		elif int(frac*10) < 0 and int(frac*60) > -10:
+			mins += "0" + str(int(frac*60*-1))
+		elif int(frac*10) < -10:
+			mins =  str(int(frac*60)*-1)
 		else:
 			mins += str(int(frac*60))
 		return hours + mins
 
 
 	def getPlannedHours(self):
-		return round((float(len(self.dailyDuties) + len(self.nightlyDuties)) * 12), 2)
+		plannedHours = round((float(len(self.dailyDuties) + len(self.nightlyDuties)) * 12), 2)
+		for duty in self.shortDuties:
+			plannedHours += duty[1]
+		return plannedHours
 
 	def checkHoliday(self, duty):
 		if str(duty.day) + "." + self.monthFix(duty.month) in self.holidays:
@@ -154,6 +161,25 @@ class Nurse:
 		self.logger.info("Nurse is not available")
 		return False
 
+	def removeDuty(self, dutyDay):
+		toRemove = None
+		for duty in self.dailyDuties:
+			if duty == dutyDay:
+				toRemove = duty
+				break
+		if toRemove != None:
+			self.logger.info("Nurse: Daily duty to be removed at " + str(toRemove))
+			self.dailyDuties.remove(toRemove)
+		nToRemove = None
+		for duty in self.nightlyDuties:
+			if duty == dutyDay:
+				nToRemove = duty
+				break
+		if nToRemove != None:
+			self.logger.info("Nurse: Nightly duty to be removed at " + str(nToRemove))
+			self.nightlyDuties.remove(nToRemove)
+		
+
 	def checkDuties(self):
 		self.logger.info(self.name + " planned hours: " + str((float(len(self.dailyDuties) + len(self.nightlyDuties))) * 12))
 		if (float(len(self.dailyDuties) + len(self.nightlyDuties)) + 1.0) * 12 < self.hours:
@@ -183,7 +209,10 @@ class Nurse:
 	def addDuty(self, day, type, dayName):
 		if type == "D":
 			self.dailyDuties.append(day)
-		else:
+		elif type == "N":
 			self.nightlyDuties.append(day)
+		elif type == "DX":
+			self.shortDuties.append([day, self.getUnplannedHours()])
+			self.hours
 		if dayName == "niedziela":
 			self.sundays += 1

@@ -1,11 +1,12 @@
 TODO
 
 
-2. rest hours planning
+2. rest hours planning - automatycally
 5. button 'uloz grafik' - implementation
-6. Add nurse
-7. remove nurse
-8. edit nurse
+6. Context Menu:
+    6.1 Add nurse
+    6.2 remove nurse
+    6.3 edit nurse
 4. py to exe
 
 DONE:
@@ -16,6 +17,9 @@ DONE:
 1. move holidays from nurse tab to schedule tab 
 BUG On Open schedule dropdown list should be set to proper value -fixed
 9. load schedule from file - started
+2. rest hours planning - manually
+
 
 Bugs:
 Save to html file does not contain colors
+When DX is being removed, frist D enter and X enter, data for nurse and total hours are not updated
