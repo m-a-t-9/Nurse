@@ -5,18 +5,25 @@ from Nurse import *
 
 class MyPopupMenu(wx.Menu):
 
-    def __init__(self, parent):
+    def __init__(self, parent, grid, context, row=0):
         super(MyPopupMenu, self).__init__()
-
+        self.row = row
         self.parent = parent
-
+        self.grid = grid
         add = wx.MenuItem(self, wx.NewId(), 'Dodaj pielegniarke')
         self.Append(add)
         self.Bind(wx.EVT_MENU, self.OnAdd, add)
+        if context == "grid":
+            rem = wx.MenuItem(self, wx.NewId(), 'Usuń pielegniarke')
+            self.Append(rem)
+            self.Bind(wx.EVT_MENU, self.OnRemove, rem)
 
     def OnAdd(self, e):
-        self.logger.info("Adding new nurse into list") 
-
+        self.grid.InsertRows(pos=-1)
+        self.grid.Fit()
+        
+    def OnRemove(self, e):
+        self.parent.remove(self.row)
 
 class NurseTab(wx.Panel):
 
@@ -28,13 +35,14 @@ class NurseTab(wx.Panel):
         self.logger = logger
         self.logger.info("NurseTab init")
         self.nurses = []
+        self.lastAdded = None
         if self.checkSavedFiles():
             self.loadNurses("nurses.nur")
         self.createGridCTRL()
         self.Bind(wx.EVT_RIGHT_DOWN, self.OnRightDown)
         
     def OnRightDown(self, e):
-        self.PopupMenu(MyPopupMenu(self), e.GetPosition())
+        self.PopupMenu(MyPopupMenu(self, self.grid, "panel"), e.GetPosition())
     
     def setNurseAndRefresh(self):
         self.loadNurses()
@@ -54,13 +62,13 @@ class NurseTab(wx.Panel):
         self.grid.SetRowLabelSize(width=30)
         
         self.grid.SetColLabelValue(0, "Imie i nazwisko")
-        self.grid.SetColSize(0, 400)
+        self.grid.SetColMinimalWidth(0, 400)
         self.grid.SetColLabelValue(1, "Etat")
-        self.grid.SetColSize(1, 100)
+        self.grid.SetColMinimalWidth(1, 100)
         self.grid.SetColLabelValue(2, "Urlopy")
-        self.grid.SetColSize(2, 600)
+        self.grid.SetColMinimalWidth(2, 600)
         self.grid.SetColLabelValue(3, "Dostepnosc")
-        self.grid.SetColSize(3, 600)
+        self.grid.SetColMinimalWidth(3, 600)
         
         
         for i in range(len(self.nurses)):
@@ -68,9 +76,36 @@ class NurseTab(wx.Panel):
             self.grid.SetCellValue(i, 1, self.nurses[i].timejob)
             self.grid.SetCellValue(i, 2, self.nurses[i].getHolidaysString())
             self.grid.SetCellValue(i, 3, self.nurses[i].getAvailabilitiesString())
+        self.grid.Bind(wx.grid.EVT_GRID_CELL_CHANGED, self.OnChange)
+        self.Bind(wx.grid.EVT_GRID_CELL_RIGHT_CLICK , self.OnRowRightClick, self.grid)    
+
         self.grid.Fit()
         self.Layout()
         self.Show()
+    
+    def OnRowRightClick(self, e):
+       row = e.GetRow()
+       column = e.GetCol()
+       self.logger.info("NurseTab: right click on row " + str(row)) 
+       self.grid.SelectRow(row)
+       self.PopupMenu(MyPopupMenu(self, self.grid, "grid", row=row), e.GetPosition())
+       
+    
+    def OnChange(self, e):
+        self.logger.info("NurseTab: OnChange: cell value has been changed")
+        row = e.GetRow()
+        col = e.GetCol()
+        newValue =self.grid.GetCellValue(row, col)
+        if col == 0:
+            self.nurses.append(Nurse(newValue +",,,", self.logger))
+        elif col == 1:
+            self.nurses[row].setTimejob(newValue)
+            
+        elif col == 2:
+            data = newValue.split(",")
+            self.nurses[row].addHolidays(data)
+            #self.grid.Fit()
+            
     
     def checkSavedFiles(self):
         if os.path.isfile("nurses.nur"):
@@ -105,4 +140,11 @@ class NurseTab(wx.Panel):
         
         if operation == "GET_NURSES":
             return self.nurses
+            
+    def remove(self, id):
+        self.logger.info("NurseTab: nurse " + self.nurses[id].name + " has been remove" )
+        toRemove = self.nurses[id]
+        self.nurses.remove(toRemove)
+        self.grid.DeleteRows(pos=id)
+        self.grid.Fit()
         

@@ -27,9 +27,22 @@ class Nurse:
 				self.availabilities.append(day.rstrip())
 
 	def setHolidays(self, data):
-		if len(data) != 0:
-			for day in data.split(";"):
+		splitted = data.split(";")
+		self.logger.debug("Nurse: setHolidays: " + str(len(splitted)))
+		if len(self.holidays) != 0:
+			self.holidays = []
+		if len(splitted) > 1:
+			for day in splitted:
+				self.logger.debug("Nurse: setHolidays: " + day.rstrip())
 				self.holidays.append(day.rstrip())
+			self.logger.info("Nurse: " + self.name + " setHolidays to " + "; ".join(self.holidays))
+		elif len(splitted) == 1:
+			self.holidays.append(splitted[0])
+			self.logger.info("Nurse: " + self.name + " setHolidays to " + "; ".join(self.holidays))
+		
+	def setTimejob(self, timejob):
+		self.timejob = int(timejob)
+		self.logger.info("Nurse: " + self.name + " setTimejob to " + str(self.timejob))
 
 	def getHolidaysString(self):
 		if len(self.holidays) == 0:
@@ -216,3 +229,16 @@ class Nurse:
 			self.hours
 		if dayName == "niedziela":
 			self.sundays += 1
+			
+	def addHolidays(self, data):
+		#01.01["", NZ, UZ]
+		#01.01-09.01
+		#22.01-07.02
+		for date in data:
+			if date.find("-") != -1:
+				#TO BE IMPLEMENTED
+				self.logger.debug("Nurse: addHolidays: range date syntax found")
+			else:
+				if date.find("NZ") == -1 and date.find("UZ") == -1:
+					self.logger.info("Nurse: addHolidays: simple holiday")
+					self.setHolidays(date)

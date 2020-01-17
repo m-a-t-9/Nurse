@@ -18,6 +18,7 @@ class ScheduleTab(wx.Panel):
         self.SetBackgroundColour("BLACK")
         self.page = 1
         self.logger = logger
+        self.nursesCalculated = False
         self.NIF = nurseIface
         self.getBankHolidays()
         self.nurses = []
@@ -26,6 +27,7 @@ class ScheduleTab(wx.Panel):
         self.createMonth()
         self.getNotWorkingDays()
         self.createListCTRL()
+        
         
     
     def setMonthAndRefresh(self, month):
@@ -86,7 +88,7 @@ class ScheduleTab(wx.Panel):
             self.nurses = self.NIF("GET_NURSES")
         self.dutiesForColumn = self.getOnlyDayDuties()
         self.logger.info("ScheduleTab: createListCTRL: create calendar for days: " + str(self.dutiesForColumn))
-        
+        self.calculateHours()
         self.grid = wx.grid.Grid(self)
         
         self.grid.CreateGrid(len(self.nurses), len(self.dutiesForColumn) + 1)
@@ -127,15 +129,21 @@ class ScheduleTab(wx.Panel):
         dutyIndex = 0
         if newValue == "N" or newValue == "D":
             duty = Duty(self.dutiesForColumn[col].day, self.month, self.year, newValue)
+            result = self.validateNurse(self.nurses[row], duty)
+            if not result[0]:
+                self.grid.SetCellBackgroundColour(row, col,wx.Colour(255, 0, 0))
+                wx.MessageBox(result[1], 'Info', wx.OK | wx.ICON_INFORMATION)
             self.nurses[row].addDuty(duty.day, duty.type, duty.dayName)
             self.grid.SetCellValue(row, len(self.dutiesForColumn), str(self.nurses[row].getPlannedHours()))
             self.setColorOfPlannedHours(row)
+            
         elif newValue.find("U") != -1:
             self.nurses[row].holidays.append(self.nurses[row].monthFix(self.dutiesForColumn[col].day) + "." + self.nurses[row].monthFix(self.month))
         elif newValue == "" or newValue == " ":
             self.nurses[row].removeDuty(self.dutiesForColumn[col].day)
             self.grid.SetCellValue(row, len(self.dutiesForColumn), str(self.nurses[row].getPlannedHours()))
             self.setColorOfPlannedHours(row)
+            self.grid.SetCellBackgroundColour(row, col,wx.Colour(255, 255, 255))
         elif newValue == "DX":
             duty = Duty(self.dutiesForColumn[col].day, self.month, self.year, newValue)
             self.nurses[row].addDuty(duty.day, duty.type, duty.dayName)
@@ -313,23 +321,23 @@ class ScheduleTab(wx.Panel):
         if withDuties:
             if not nurse.checkDuties():
                 self.logger.info("NURSE " + nurse.name + " has already overloaded")
-                return False
+                return [False, "Pielegniarka ma przypisane wszystkie możliwe dyżury"]
         if nurse.checkHoliday(duty):
             self.logger.info("NURSE " + nurse.name + " has planned holiday")
-            return False
+            return [False, "Pielegniarka ma zaplanowany urlop w tym dniu"]
         if not nurse.checkAvailability(duty.day):
             self.logger.info("NURSE " + nurse.name + " is not available at this day")
-            return False
+            return [False, "Pielegniarka jest nie dostępna w tym dniu"]
         if nurse.checkPreviousDay([duty.type, duty.day]):
-            return False
+            return [False, "Pielęgniarka ma inny dyzur dzień wcześniej. Zaplanowano całodobowy dyżur."]
         if self.isAlreadyAssigned(nurse, duty):
-            return False
+            return [False, "Pielegniarka ma inny dyżur w tym dniu"]
         if nurse.checkWeek(self.getWeekRange(duty.day)):
-            return False
+            return [False, "Pielegniarka przekracza maksymalna liczbę godzin w tygodniu"]
         if self.checkSundays(nurse, duty.dayName):
             self.logger.info("Nurse must have one free Sunday")
-            return False
-        return True
+            return [False, "Pielegniarka musi mieć przynajmniej jedną niedziele wolna w miesiącu"]
+        return [True, ""]
             
     def getWeekRange(self, day):
         self.logger.debug("Get week range for day " + str(day))
@@ -355,7 +363,7 @@ class ScheduleTab(wx.Panel):
             times = 0
             while len(self.duties[i].nurses) < 3 and times < 3:
                 if j < len(self.nurses):
-                    if self.validateNurse(self.nurses[j], self.duties[i]):
+                    if self.validateNurse(self.nurses[j], self.duties[i])[0]:                              #HERE MUST BE [0]
                         self.nurses[j].addDuty(self.duties[i].day, self.duties[i].type, self.duties[i].dayName)
                         self.duties[i].nurses.append(self.nurses[j])
                         self.logger.info(self.nurses[j].name + " assigned to duty in " + str(self.duties[i].day) + " " + self.duties[i].type)
@@ -375,7 +383,7 @@ class ScheduleTab(wx.Panel):
             self.logger.error("There are not secured duties")
             for duty in notFinished:
                 self.logger.error("Duty: " + str(duty.day) + " " + duty.type)
-            self.planRestNursesHours(notFinished)
+           # self.planRestNursesHours(notFinished)
             self.setContractors(notFinished)
             
     def planRestNursesHours(self, notPlannedDuties):
@@ -447,7 +455,7 @@ class ScheduleTab(wx.Panel):
             if float(nurse.timejob) == 1.0 or float(nurse.timejob) == 0.5:
                 nurse.hours = round((float(self.workingDays) * float(nurse.timejob) * 7.5833333333 - (len(nurse.holidays)*7.5833333333)), 2)
                 self.logger.info("Nurse: " + nurse.name + " should work in this month for " + str(nurse.hours))
-    
+        self.nursesCalculated = True
     def getBankHolidays(self):
         f = open("DniWolne.txt", "r")
         self.bankHolidays = f.readlines()

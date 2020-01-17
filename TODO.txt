@@ -2,11 +2,12 @@ TODO
 
 
 2. rest hours planning - automatycally
+
 5. button 'uloz grafik' - implementation
 6. Context Menu:
-    6.1 Add nurse
-    6.2 remove nurse
     6.3 edit nurse
+        6.3.1 edit availabilities
+        6.3.2 edit holidays -range syntax
 4. py to exe
 
 DONE:
@@ -18,8 +19,13 @@ DONE:
 BUG On Open schedule dropdown list should be set to proper value -fixed
 9. load schedule from file - started
 2. rest hours planning - manually
+3. validation of manual entries with colour settings
 
+6.1 Add nurse
+6.2 remove nurse
 
 Bugs:
 Save to html file does not contain colors
 When DX is being removed, frist D enter and X enter, data for nurse and total hours are not updated
+Po usunieciu dyzuru kolor nie zmienia sie
+
