@@ -1,4 +1,7 @@
-Test name                           Status
-1. Start Application with files     Done
-2. Start Application Clear data     Done
-3. Calculate schedule for month
+Test name                           Status      ExecutedOn
+1. Start Application with files     Done        grid.58cf80a
+2. Start Application Clear data     Done        grid.58cf80a
+3. Add new nurse to staff
+4: Update holidays for nurse
+5: Update availabilities for nurse
+x. Calculate schedule for month
