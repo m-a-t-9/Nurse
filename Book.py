@@ -18,7 +18,6 @@ class Book:
         self.nb.AddPage(self.nurseTab, "Zaloga")
         self.nb.ChangeSelection(self.nurseTab.page)
         
-        
     def createSchedulePage(self, month):
         self.logger.info("Book: createSchedulePage " + str(month))
         self.schedulePages.append(ScheduleTab(self.nb, self.logger, self.nurseTab.iface, self.pageCounter, month))
@@ -27,10 +26,4 @@ class Book:
         self.pageCounter += 1
     
     def OnTabChange(self, e):
-        print(self.nb.GetSelection())
-        if self.nb.GetSelection() == 1:
-            self.scheduleTab.setMonthAndRefresh(self.combo.GetSelection())
-            self.calculateButton = self.toolbar.AddTool(wx.ID_ANY, 'Calculate', wx.Bitmap('calculator-icon.jpg'))
-            #self.toolbar.Realize()
-        elif self.nb.GetSelection() == 0:
-            self.nurseTab.setNurseAndRefresh()
+        self.logger.info("Book: OntabChange: " + str(self.nb.GetSelection()))

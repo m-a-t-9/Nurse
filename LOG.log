@@ -1,0 +1,202 @@
+2020-01-18 22:10:09,146 - INFO - 29832 - App: InitUI
+2020-01-18 22:10:09,147 - INFO - 29832 - App: createMenu
+2020-01-18 22:10:12,797 - INFO - 29832 - Book: createNursePage
+2020-01-18 22:10:12,800 - INFO - 29832 - NurseTab init
+2020-01-18 22:10:14,758 - INFO - 29832 - NurseTab: loadNurses
+2020-01-18 22:10:14,759 - INFO - 29832 - Nurse: created: E_Holinka-Fabin timejob: 1
+2020-01-18 22:10:14,760 - INFO - 29832 - Nurse: created: J_Vyshtaliuk timejob: 1
+2020-01-18 22:10:14,760 - INFO - 29832 - Nurse: created: W_Naryjek timejob: 0
+2020-01-18 22:10:14,760 - INFO - 29832 - Nurse: created: T_Wieclawek timejob: 0
+2020-01-18 22:10:14,760 - INFO - 29832 - Nurse: created: E_Maslarz timejob: 0
+2020-01-18 22:10:14,760 - INFO - 29832 - Nurse: created: D_Ben-Madej timejob: 0
+2020-01-18 22:10:14,760 - INFO - 29832 - Nurse: created: V_Lodzinska timejob: 0
+2020-01-18 22:10:14,760 - INFO - 29832 - Nurse: created: D_Szwaja timejob: 0
+2020-01-18 22:10:14,760 - INFO - 29832 - Nurse: created: K_Banucha timejob: 1
+2020-01-18 22:10:14,760 - INFO - 29832 - Nurse: created: E_Burdzicka timejob: 1
+2020-01-18 22:10:14,761 - INFO - 29832 - Nurse: created: I_Hazubska timejob: 0.5
+2020-01-18 22:10:14,761 - DEBUG - 29832 - Nurse: setHolidays: 1
+2020-01-18 22:10:14,761 - INFO - 29832 - Nurse: A_Olszowa setHolidays to 11.02
+
+2020-01-18 22:10:14,761 - INFO - 29832 - Nurse: created: A_Olszowa timejob: 1
+2020-01-18 22:10:14,761 - INFO - 29832 - Nurse: created: M_Kolodziej timejob: 0
+2020-01-18 22:10:14,761 - INFO - 29832 - Nurse: created: D_Prokop timejob: 1
+2020-01-18 22:10:14,761 - INFO - 29832 - Nurse: created: R_Ziomek timejob: 1
+2020-01-18 22:10:14,761 - INFO - 29832 - Nurse: created: T_Rodacka timejob: 0
+2020-01-18 22:10:14,761 - INFO - 29832 - Nurse: created: I_Bielinska timejob: 0
+2020-01-18 22:10:14,761 - INFO - 29832 - Nurse: created: B_Buczkowska timejob: 0
+2020-01-18 22:10:14,762 - INFO - 29832 - Nurse: created: L_Osak timejob: 0
+2020-01-18 22:10:14,762 - INFO - 29832 - Nurse: created: D_Palica timejob: 0
+2020-01-18 22:10:14,762 - INFO - 29832 - NurseTab: loadNurses: created: 20 nurses
+2020-01-18 22:10:17,840 - INFO - 29832 - App: OnNew 0
+2020-01-18 22:10:17,840 - INFO - 29832 - Book: createSchedulePage Styczen
+2020-01-18 22:10:17,860 - INFO - 29832 - Duty date name: sobota
+2020-01-18 22:10:17,860 - INFO - 29832 - Duty date name: niedziela
+2020-01-18 22:10:17,860 - INFO - 29832 - Duty date name: poniedzia³ek
+2020-01-18 22:10:17,860 - INFO - 29832 - Duty date name: wtorek
+2020-01-18 22:10:17,861 - INFO - 29832 - Duty date name: œroda
+2020-01-18 22:10:17,861 - INFO - 29832 - Duty date name: czwartek
+2020-01-18 22:10:17,861 - INFO - 29832 - Duty date name: pi¹tek
+2020-01-18 22:10:17,861 - INFO - 29832 - Duty date name: sobota
+2020-01-18 22:10:17,861 - INFO - 29832 - Duty date name: niedziela
+2020-01-18 22:10:17,862 - INFO - 29832 - Duty date name: poniedzia³ek
+2020-01-18 22:10:17,862 - INFO - 29832 - Duty date name: wtorek
+2020-01-18 22:10:17,862 - INFO - 29832 - Duty date name: œroda
+2020-01-18 22:10:17,863 - INFO - 29832 - Duty date name: czwartek
+2020-01-18 22:10:17,863 - INFO - 29832 - Duty date name: pi¹tek
+2020-01-18 22:10:17,863 - INFO - 29832 - Duty date name: sobota
+2020-01-18 22:10:17,863 - INFO - 29832 - Duty date name: niedziela
+2020-01-18 22:10:17,864 - INFO - 29832 - Duty date name: poniedzia³ek
+2020-01-18 22:10:17,864 - INFO - 29832 - Duty date name: wtorek
+2020-01-18 22:10:17,865 - INFO - 29832 - Duty date name: œroda
+2020-01-18 22:10:17,865 - INFO - 29832 - Duty date name: czwartek
+2020-01-18 22:10:17,867 - INFO - 29832 - Duty date name: pi¹tek
+2020-01-18 22:10:17,868 - INFO - 29832 - Duty date name: sobota
+2020-01-18 22:10:17,869 - INFO - 29832 - Duty date name: niedziela
+2020-01-18 22:10:17,869 - INFO - 29832 - Duty date name: poniedzia³ek
+2020-01-18 22:10:17,869 - INFO - 29832 - Duty date name: wtorek
+2020-01-18 22:10:17,869 - INFO - 29832 - Duty date name: œroda
+2020-01-18 22:10:17,871 - INFO - 29832 - Duty date name: czwartek
+2020-01-18 22:10:17,871 - INFO - 29832 - Duty date name: pi¹tek
+2020-01-18 22:10:17,871 - INFO - 29832 - Duty date name: sobota
+2020-01-18 22:10:17,876 - INFO - 29832 - ScheduleTab: createListCTRL: create calendar for days: [<Duty.Duty object at 0x0000014A8FAB0488>, <Duty.Duty object at 0x0000014A8FAB5788>, <Duty.Duty object at 0x0000014A8FAC5308>, <Duty.Duty object at 0x0000014A8FAC5E88>, <Duty.Duty object at 0x0000014A8FAC57C8>, <Duty.Duty object at 0x0000014A8FAC5C88>, <Duty.Duty object at 0x0000014A8FAC6288>, <Duty.Duty object at 0x0000014A8FAC64C8>, <Duty.Duty object at 0x0000014A8FAC63C8>, <Duty.Duty object at 0x0000014A8FAC6608>, <Duty.Duty object at 0x0000014A8FAC6708>, <Duty.Duty object at 0x0000014A8FAC67C8>, <Duty.Duty object at 0x0000014A8FAC6888>, <Duty.Duty object at 0x0000014A8FAC6948>, <Duty.Duty object at 0x0000014A8FAC6A08>, <Duty.Duty object at 0x0000014A8FAC6B08>, <Duty.Duty object at 0x0000014A8FAC6C88>, <Duty.Duty object at 0x0000014A8FAC6DC8>, <Duty.Duty object at 0x0000014A8FAC6F08>, <Duty.Duty object at 0x0000014A8FACA108>, <Duty.Duty object at 0x0000014A8FACA1C8>, <Duty.Duty object at 0x0000014A8FACA308>, <Duty.Duty object at 0x0000014A8FACA448>, <Duty.Duty object at 0x0000014A8FACA5C8>, <Duty.Duty object at 0x0000014A8FACA708>, <Duty.Duty object at 0x0000014A8FACA848>, <Duty.Duty object at 0x0000014A8FACA988>, <Duty.Duty object at 0x0000014A8FACAAC8>, <Duty.Duty object at 0x0000014A8FACAC08>]
+2020-01-18 22:10:17,876 - INFO - 29832 - ScheduleTab: calculateHours: calculated SUNDAYS: 4
+2020-01-18 22:10:17,876 - INFO - 29832 - ScheduleTab: calculateHours: calculated SATURDAYS: 5
+2020-01-18 22:10:17,876 - INFO - 29832 - ScheduleTab: calculateHours: calculated WORKING DAYS: 20
+2020-01-18 22:10:17,876 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:17,876 - INFO - 29832 - Nurse: E_Holinka-Fabin should work in this month for 151.67
+2020-01-18 22:10:17,876 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:17,876 - INFO - 29832 - Nurse: J_Vyshtaliuk should work in this month for 151.67
+2020-01-18 22:10:17,876 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:17,881 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:17,881 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:17,881 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:17,881 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:17,881 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:17,881 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:17,881 - INFO - 29832 - Nurse: K_Banucha should work in this month for 151.67
+2020-01-18 22:10:17,882 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:17,882 - INFO - 29832 - Nurse: E_Burdzicka should work in this month for 151.67
+2020-01-18 22:10:17,882 - INFO - 29832 - Nurse timejob is 0.5
+2020-01-18 22:10:17,882 - INFO - 29832 - Nurse: I_Hazubska should work in this month for 75.83
+2020-01-18 22:10:17,882 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:17,882 - INFO - 29832 - Nurse: A_Olszowa should work in this month for 144.08
+2020-01-18 22:10:17,882 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:17,883 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:17,883 - INFO - 29832 - Nurse: D_Prokop should work in this month for 151.67
+2020-01-18 22:10:17,883 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:17,884 - INFO - 29832 - Nurse: R_Ziomek should work in this month for 151.67
+2020-01-18 22:10:17,884 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:17,884 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:17,884 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:17,884 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:17,884 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:17,942 - INFO - 29832 - Set color of planned hours for unplanned: 151.67
+2020-01-18 22:10:17,942 - INFO - 29832 - Set color of planned hours for unplanned: 151.67
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 151.67
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 151.67
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 75.83
+2020-01-18 22:10:17,943 - INFO - 29832 - ScheduleTab: setDataInGrid: holiday: 11.02
+ month whcih has been set 2
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 144.08
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 151.67
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 151.67
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:17,943 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:23,432 - INFO - 29832 - App: OnNew 1
+2020-01-18 22:10:23,432 - INFO - 29832 - Book: createSchedulePage Luty
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: sobota
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: niedziela
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: poniedzia³ek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: wtorek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: œroda
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: czwartek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: pi¹tek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: sobota
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: niedziela
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: poniedzia³ek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: wtorek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: œroda
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: czwartek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: pi¹tek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: sobota
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: niedziela
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: poniedzia³ek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: wtorek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: œroda
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: czwartek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: pi¹tek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: sobota
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: niedziela
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: poniedzia³ek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: wtorek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: œroda
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: czwartek
+2020-01-18 22:10:23,440 - INFO - 29832 - Duty date name: pi¹tek
+2020-01-18 22:10:23,444 - INFO - 29832 - Duty date name: sobota
+2020-01-18 22:10:23,471 - INFO - 29832 - ScheduleTab: createListCTRL: create calendar for days: [<Duty.Duty object at 0x0000014A8FACE148>, <Duty.Duty object at 0x0000014A8FAD2308>, <Duty.Duty object at 0x0000014A8FAD23C8>, <Duty.Duty object at 0x0000014A8FAD24C8>, <Duty.Duty object at 0x0000014A8FAD2588>, <Duty.Duty object at 0x0000014A8FAD2748>, <Duty.Duty object at 0x0000014A8FAD26C8>, <Duty.Duty object at 0x0000014A8FAD2948>, <Duty.Duty object at 0x0000014A8FAD29C8>, <Duty.Duty object at 0x0000014A8FAD2B88>, <Duty.Duty object at 0x0000014A8FAD2D08>, <Duty.Duty object at 0x0000014A8FAD2E48>, <Duty.Duty object at 0x0000014A8FAD2EC8>, <Duty.Duty object at 0x0000014A8FADA108>, <Duty.Duty object at 0x0000014A8FADA248>, <Duty.Duty object at 0x0000014A8FADA388>, <Duty.Duty object at 0x0000014A8FADA508>, <Duty.Duty object at 0x0000014A8FADA648>, <Duty.Duty object at 0x0000014A8FADA788>, <Duty.Duty object at 0x0000014A8FADA8C8>, <Duty.Duty object at 0x0000014A8FADAA08>, <Duty.Duty object at 0x0000014A8FADAB48>, <Duty.Duty object at 0x0000014A8FADAC88>, <Duty.Duty object at 0x0000014A8FADAE08>, <Duty.Duty object at 0x0000014A8FADAF48>, <Duty.Duty object at 0x0000014A8FADD0C8>, <Duty.Duty object at 0x0000014A8FADD208>, <Duty.Duty object at 0x0000014A8FADD348>, <Duty.Duty object at 0x0000014A8FADD488>]
+2020-01-18 22:10:23,471 - INFO - 29832 - ScheduleTab: calculateHours: calculated SUNDAYS: 4
+2020-01-18 22:10:23,471 - INFO - 29832 - ScheduleTab: calculateHours: calculated SATURDAYS: 5
+2020-01-18 22:10:23,471 - INFO - 29832 - ScheduleTab: calculateHours: calculated WORKING DAYS: 20
+2020-01-18 22:10:23,471 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:23,471 - INFO - 29832 - Nurse: E_Holinka-Fabin should work in this month for 151.67
+2020-01-18 22:10:23,471 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:23,471 - INFO - 29832 - Nurse: J_Vyshtaliuk should work in this month for 151.67
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse: K_Banucha should work in this month for 151.67
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse: E_Burdzicka should work in this month for 151.67
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse timejob is 0.5
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse: I_Hazubska should work in this month for 75.83
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse: A_Olszowa should work in this month for 144.08
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:23,472 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:23,473 - INFO - 29832 - Nurse: D_Prokop should work in this month for 151.67
+2020-01-18 22:10:23,473 - INFO - 29832 - Nurse timejob is 1
+2020-01-18 22:10:23,473 - INFO - 29832 - Nurse: R_Ziomek should work in this month for 151.67
+2020-01-18 22:10:23,473 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:23,473 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:23,473 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:23,473 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:23,473 - INFO - 29832 - Nurse timejob is 0
+2020-01-18 22:10:23,529 - INFO - 29832 - Set color of planned hours for unplanned: 151.67
+2020-01-18 22:10:23,529 - INFO - 29832 - Set color of planned hours for unplanned: 151.67
+2020-01-18 22:10:23,529 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:23,530 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:23,530 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:23,530 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:23,530 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:23,531 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:23,531 - INFO - 29832 - Set color of planned hours for unplanned: 151.67
+2020-01-18 22:10:23,532 - INFO - 29832 - Set color of planned hours for unplanned: 151.67
+2020-01-18 22:10:23,533 - INFO - 29832 - Set color of planned hours for unplanned: 75.83
+2020-01-18 22:10:23,533 - INFO - 29832 - ScheduleTab: setDataInGrid: holiday: 11.02
+ month whcih has been set 2
+2020-01-18 22:10:23,533 - INFO - 29832 - Set color of planned hours for unplanned: 144.08
+2020-01-18 22:10:23,533 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:23,533 - INFO - 29832 - Set color of planned hours for unplanned: 151.67
+2020-01-18 22:10:23,533 - INFO - 29832 - Set color of planned hours for unplanned: 151.67
+2020-01-18 22:10:23,533 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:23,533 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:23,533 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:23,533 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:23,533 - INFO - 29832 - Set color of planned hours for unplanned: 0.0
+2020-01-18 22:10:26,421 - INFO - 29832 - Book: OntabChange: 1
+2020-01-18 22:10:27,297 - INFO - 29832 - Book: OntabChange: 2
+2020-01-18 22:10:28,840 - INFO - 29832 - Book: OntabChange: 0

@@ -6,12 +6,7 @@ import logging
 from Book import *
 from Global import *
 
-
-monthsDropdown = [ "Styczen", "Luty", "Marzec", "Kwiecien", "Maj", "Czerwiec", "Lipiec", "Sierpien", "Wrzesien", "Pazdziernik", "Listopad", "Grudzien"]
-
 class Example(wx.Frame):
-
-    
 
     def __init__(self, parent, title):
         super(Example, self).__init__(parent, title=title)
@@ -22,24 +17,17 @@ class Example(wx.Frame):
         self.InitUI()
         
     def InitUI(self):
-
+        self.logger.info("App: InitUI")
         self.createMenu()
                 
         self.hbox = wx.BoxSizer(wx.VERTICAL)
         self.book = Book(self, self.logger)
-        #self.nb = wx.Notebook(self)
-        #self.nurseTab = NurseTab(self.nb, self.logger)
-        #self.scheduleTab = ScheduleTab(self.nb, self.logger, self.nurseTab.iface)
-        
-        #self.nb.AddPage(self.nurseTab, "Zaloga")
-        #self.nb.AddPage(self.scheduleTab, "Grafik")
-        
-        
         self.hbox.Add(self.book.nb, 1, wx.EXPAND)
         self.SetSizer(self.hbox)
         self.Layout()
 
     def createMenu(self):
+        self.logger.info("App: createMenu")
         self.menubar = wx.MenuBar()
         self.fileMenu = wx.Menu()
         self.calculateMenu = wx.Menu()
@@ -105,9 +93,10 @@ class Example(wx.Frame):
     def OnImport(self, e):
         self.book.createNursePage()
         
-    
     def OnSave(self, e):
         self.scheduleTab.OnSave(e)
+        wx.MessageBox('Zapisano pomyślnie', 'Info',
+            wx.OK | wx.ICON_INFORMATION)
         
     def OnNurseSave(self, e):
         self.logger.info("App: OnNurseSave")
@@ -118,7 +107,6 @@ def main():
     ex = Example(None, "Schedule")
     ex.Show()
     app.MainLoop()
-
 
 if __name__ == '__main__':
     main()
