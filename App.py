@@ -2,95 +2,97 @@ import wx
 import wx.lib.mixins.listctrl  as  listmix
 import logging
 
-from NurseTab import *
-from ScheduleTab import *
 
-data = [("Styczen",31), ("Luty", 28), ("Marzec",31), ("Kwiecien",30), ("Maj",31), ("Czerwiec",30), ("Lipiec",31), ("Sierpien",31), ("Wrzesien", 30), ("Pazdziernik", 31), ("Listopad",30), ("Grudzien",31)]
-monthsDropdown = ["Wybierz miesiac", "Styczen", "Luty", "Marzec", "Kwiecien", "Maj", "Czerwiec", "Lipiec", "Sierpien", "Wrzesien", "Pazdziernik", "Listopad", "Grudzien"]
+from Book import *
+from Global import *
+
+
+monthsDropdown = [ "Styczen", "Luty", "Marzec", "Kwiecien", "Maj", "Czerwiec", "Lipiec", "Sierpien", "Wrzesien", "Pazdziernik", "Listopad", "Grudzien"]
 
 class Example(wx.Frame):
 
-    monthsMenuItems = []
+    
 
     def __init__(self, parent, title):
         super(Example, self).__init__(parent, title=title)
         logging.basicConfig(filename='LOG.log', level=logging.DEBUG, filemode='w', format='%(asctime)s - %(levelname)s - %(process)d - %(message)s')
         self.logger = logging.getLogger('LOG')
+        self.monthsMenuItems = []
         self.Maximize(True)
         self.InitUI()
         
     def InitUI(self):
 
-        menubar = wx.MenuBar()
-
-        fileMenu = wx.Menu()
-        #fileMenu.Append(wx.ID_OPEN, '&Zaladuj grafik')
-        #fileMenu.Append(wx.ID_SAVE, '&Zapisz grafik')
-        #fileMenu.AppendSeparator()
-
-        new = wx.Menu()       
-        i=0
-        for monthName in data:
-            self.monthsMenuItems.append(wx.MenuItem(new, i, monthName[0]))
-            self.monthsMenuItems[-1].SetItemLabel(monthName[0])
-            new.Append(self.monthsMenuItems[-1])
-            self.Bind(wx.EVT_MENU, self.OnNew, self.monthsMenuItems[-1])
-            i+=1
-            
-        fileMenu.AppendSubMenu(new, 'Nowy grafik')
-
-        imp = wx.MenuItem(fileMenu, wx.ID_ANY, 'Importuj liste pielegniarek')
-        fileMenu.Append(imp)
-        
-        opn = wx.MenuItem(fileMenu, wx.ID_ANY, 'Zaladuj istniejacy grafik z pliku')
-        fileMenu.Append(opn)
-        
-        qmi = wx.MenuItem(fileMenu, wx.ID_EXIT, '&Wyjscie\tCtrl+W')
-        fileMenu.Append(qmi)
-        
-        save = wx.MenuItem(fileMenu, wx.ID_ANY, 'Zapisz grafik do pliku')
-        fileMenu.Append(save)
-
-        self.Bind(wx.EVT_MENU, self.OnQuit, qmi)
-        self.Bind(wx.EVT_MENU, self.OnOpen, opn)
-        self.Bind(wx.EVT_MENU, self.OnImport, imp)
-        self.Bind(wx.EVT_MENU, self.OnSave, save)
-        
-
-        menubar.Append(fileMenu, '&Plik')
-        self.SetMenuBar(menubar)
-        self.toolbar = self.CreateToolBar()
-        self.combo = wx.ComboBox(self.toolbar, 555, value = monthsDropdown[0], choices = monthsDropdown)
-        self.toolbar.Realize()
-
-        
+        self.createMenu()
+                
         self.hbox = wx.BoxSizer(wx.VERTICAL)
+        self.book = Book(self, self.logger)
+        #self.nb = wx.Notebook(self)
+        #self.nurseTab = NurseTab(self.nb, self.logger)
+        #self.scheduleTab = ScheduleTab(self.nb, self.logger, self.nurseTab.iface)
         
-        self.nb = wx.Notebook(self)
-        self.nurseTab = NurseTab(self.nb, self.logger)
-        self.scheduleTab = ScheduleTab(self.nb, self.logger, self.nurseTab.iface)
+        #self.nb.AddPage(self.nurseTab, "Zaloga")
+        #self.nb.AddPage(self.scheduleTab, "Grafik")
         
-        self.nb.AddPage(self.nurseTab, "Zaloga")
-        self.nb.AddPage(self.scheduleTab, "Grafik")
-        self.Bind(wx.EVT_NOTEBOOK_PAGE_CHANGED, self.OnTabChange)
         
-        self.hbox.Add(self.nb, 1, wx.EXPAND)
+        self.hbox.Add(self.book.nb, 1, wx.EXPAND)
         self.SetSizer(self.hbox)
         self.Layout()
 
-    def OnTabChange(self, e):
-        print(self.nb.GetSelection())
-        if self.nb.GetSelection() == 1:
-            self.scheduleTab.setMonthAndRefresh(self.combo.GetSelection())
-            self.calculateButton = self.toolbar.AddTool(wx.ID_ANY, 'Calculate', wx.Bitmap('calculator-icon.jpg'))
-            #self.toolbar.Realize()
-        elif self.nb.GetSelection() == 0:
-            self.nurseTab.setNurseAndRefresh()
-    
+    def createMenu(self):
+        self.menubar = wx.MenuBar()
+        self.fileMenu = wx.Menu()
+        self.calculateMenu = wx.Menu()
+        self.createNewMenuItem()
+        self.createOpenMenuItems()
+        self.createSaveMenuItems()
+        self.createExitMenuItem()       
+
+        self.menubar.Append(self.fileMenu, '&Plik')
+        self.menubar.Append(self.calculateMenu, '&Oblicz grafik')
+        self.SetMenuBar(self.menubar)
+
+    def createNewMenuItem(self):
+        self.new = wx.Menu()       
+        i=0
+        for monthName in MONTHS_DETAILED:
+            self.monthsMenuItems.append(wx.MenuItem(self.new, i, monthName[0]))
+            self.monthsMenuItems[-1].SetItemLabel(monthName[0])
+            self.new.Append(self.monthsMenuItems[-1])
+            self.Bind(wx.EVT_MENU, self.OnNew, self.monthsMenuItems[-1])
+            if i == 11:
+                self.new.AppendSeparator()
+            i+=1
+        self.monthsMenuItems[-1].Enable(False)
+        self.fileMenu.AppendSubMenu(self.new, 'Nowy pusty grafik')
+        self.fileMenu.AppendSeparator()
+
+    def createOpenMenuItems(self):
+        self.opn = wx.MenuItem(self.fileMenu, wx.ID_ANY, '&Otwórz grafik\tCtrl+O')
+        self.fileMenu.Append(self.opn)
+        self.Bind(wx.EVT_MENU, self.OnOpen, self.opn)
+        self.imp = wx.MenuItem(self.fileMenu, wx.ID_ANY, '&Otwórz listę pielegniarek\tCtrl+Alt+O')
+        self.fileMenu.Append(self.imp)
+        self.fileMenu.AppendSeparator()
+        self.Bind(wx.EVT_MENU, self.OnImport, self.imp)
+        
+    def createSaveMenuItems(self):
+        self.saveSchedule = wx.MenuItem(self.fileMenu, wx.ID_ANY, '&Zapisz grafik do pliku\tCtrl+S')
+        self.fileMenu.Append(self.saveSchedule)
+        self.Bind(wx.EVT_MENU, self.OnSave, self.saveSchedule)
+        self.saveNurse = wx.MenuItem(self.fileMenu, wx.ID_ANY, '&Zapisz załogę do pliku\tCtrl+Alt+S')
+        self.fileMenu.Append(self.saveNurse)
+        self.fileMenu.AppendSeparator()
+        self.Bind(wx.EVT_MENU, self.OnNurseSave, self.saveNurse)
+        
+    def createExitMenuItem(self):
+        self.qmi = wx.MenuItem(self.fileMenu, wx.ID_EXIT, '&Wyjście\tCtrl+W')
+        self.fileMenu.Append(self.qmi)
+        self.Bind(wx.EVT_MENU, self.OnQuit, self.qmi)
 
     def OnNew(self, e):
-        self.scheduleTab.OnNew(e.GetId()+1)
-        self.nb.ChangeSelection(self.scheduleTab.page)
+        self.logger.info("App: OnNew " + str(e.GetId()))
+        self.book.createSchedulePage(MONTHS[e.GetId()])
        
     def OnOpen(self, e):
         month = self.scheduleTab.OnOpen()
@@ -101,11 +103,14 @@ class Example(wx.Frame):
         self.Close()
 
     def OnImport(self, e):
-        self.nurseTab.OnOpen()
-        self.nb.ChangeSelection(self.nurseTab.page)
+        self.book.createNursePage()
+        
     
     def OnSave(self, e):
         self.scheduleTab.OnSave(e)
+        
+    def OnNurseSave(self, e):
+        self.logger.info("App: OnNurseSave")
 
 def main():
 

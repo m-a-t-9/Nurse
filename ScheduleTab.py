@@ -7,16 +7,17 @@ import xml.etree.ElementTree as ET
 from Duty import *
 from HTMLExporter import *
 
-monthsDropdown = ["Wybierz miesiac", "Styczen", "Luty", "Marzec", "Kwiecien", "Maj", "Czerwiec", "Lipiec", "Sierpien", "Wrzesien", "Pazdziernik", "Listopad", "Grudzien"]
+monthsDropdown = [ "Styczen", "Luty", "Marzec", "Kwiecien", "Maj", "Czerwiec", "Lipiec", "Sierpien", "Wrzesien", "Pazdziernik", "Listopad", "Grudzien"]
 
 class ScheduleTab(wx.Panel):
     
-    def __init__(self, parent, logger, nurseIface):
+    def __init__(self, parent, logger, nurseIface, page, month):
         wx.Panel.__init__(self, parent)
         self.parent = parent
         self.SetSize(parent.GetSize())
         self.SetBackgroundColour("BLACK")
-        self.page = 1
+        self.page = page
+        self.monthName = month
         self.logger = logger
         self.nursesCalculated = False
         self.NIF = nurseIface
