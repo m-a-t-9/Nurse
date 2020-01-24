@@ -34,7 +34,8 @@ class Example(wx.Frame):
         self.createNewMenuItem()
         self.createOpenMenuItems()
         self.createSaveMenuItems()
-        self.createExitMenuItem()       
+        self.createExitMenuItem()  
+        self.createCalculateSubMenu()        
 
         self.menubar.Append(self.fileMenu, '&Plik')
         self.menubar.Append(self.calculateMenu, '&Oblicz grafik')
@@ -78,6 +79,11 @@ class Example(wx.Frame):
         self.fileMenu.Append(self.qmi)
         self.Bind(wx.EVT_MENU, self.OnQuit, self.qmi)
 
+    def createCalculateSubMenu(self):
+        self.autoCalc = wx.MenuItem(self.fileMenu, wx.ID_ANY, 'Automatycznie')
+        self.calculateMenu.Append(self.autoCalc)
+        self.Bind(wx.EVT_MENU, self.OnCalculate, self.autoCalc)
+
     def OnNew(self, e):
         self.logger.info("App: OnNew " + str(e.GetId()))
         self.book.createSchedulePage(MONTHS[e.GetId()])
@@ -100,6 +106,11 @@ class Example(wx.Frame):
         
     def OnNurseSave(self, e):
         self.logger.info("App: OnNurseSave")
+
+    def OnCalculate(self, e):
+        selectedSchedule = self.book.getCurrentSchedule()
+        #self.logger.debug("App: OnCalculate: selectedPage " + str(selectedSchedule))
+        selectedSchedule.OnCalculate()
 
 def main():
 

@@ -28,4 +28,5 @@ Bugs:
 Save to html file does not contain colors
 When DX is being removed, frist D enter and X enter, data for nurse and total hours are not updated
 Po usunieciu dyzuru kolor nie zmienia sie
+Jak policzymy jeden miesiac to nie da sie utworzyc nowego, bo dane istnieja i probuje wypelnic tabelke 
 
