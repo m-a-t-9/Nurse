@@ -76,7 +76,7 @@ class Schedule:
         self.logger.info("Schedule: removeDutyForNurse: " + str(nurseId) + " in day " + str(day))
         self.nif("GET_NURSES")[nurseId].removeDuty(day)
         
-    def checkSundays(self, nurse, day): #-> move to schedule
+    def checkSundays(self, nurse, day):
         if day != 'niedziela':
             return False
         self.logger.debug("checkSundays" + str(len(self.sundays)) + " nurse Sundays " + str(nurse.sundays))
@@ -98,7 +98,7 @@ class Schedule:
         self.nursesCalculated = True
         
           
-    def getBankHolidays(self): #->move to schedule
+    def getBankHolidays(self): 
         f = open("DniWolne.txt", "r")
         self.bankHolidays = f.readlines()
         f.close()
@@ -112,7 +112,7 @@ class Schedule:
                 self.sundays.append(matrix[i][6])
         
     
-    def getBankHolidaysInMonth(self): #->move to schedule
+    def getBankHolidaysInMonth(self):
         holidays= []
         monthIdStr = ""
         if self.monthId < 10:
@@ -129,7 +129,7 @@ class Schedule:
             return True
         return False
     
-    def setContractors(self, dutiesToBePlanned): #->move to schedule
+    def setContractors(self, dutiesToBePlanned):
         j = 0
         for duty in dutiesToBePlanned:
             self.logger.info("\nSchedulling day " + str(duty.day) + " " + duty.type)
@@ -150,12 +150,12 @@ class Schedule:
                         if len(duty.nurses) != 3:
                             self.logger.error("For this day it was not possbile to assign nurse")
                         
-    def getDuty(self, day, type): #->move to schedule
+    def getDuty(self, day, type): 
         for duty in self.duties:
             if int(duty.day) == int(day) and str(duty.type) == str(type):
                 return duty
                 
-    def getWeekRange(self, day): #-> move to schedule
+    def getWeekRange(self, day):
         self.logger.debug("Get week range for day " + str(day))
         if day > 1 and day < 8:
             return (1, 7)
@@ -168,7 +168,7 @@ class Schedule:
         else:
             return (29, self.duties[-1].day)
         
-    def schedule(self): #-> move to schedule and refactor
+    def schedule(self):
         self.calculateHours()
         #self.setContractors()
         j = 0
@@ -200,11 +200,19 @@ class Schedule:
             for duty in notFinished:
                 self.logger.error("Duty: " + str(duty.day) + " " + duty.type)
            # self.planRestNursesHours(notFinished)
+        self.planRestNursesHours()
         self.setContractors(notFinished)
             
-    def planRestNursesHours(self, notPlannedDuties): #-> move to schedule 
-        pass
-        
-        
+    def planRestNursesHours(self): 
+        for nurse in self.nurses:
+            if nurse.getUnplannedHours() != 0:
+                duty = self.helper.findFirstDailyDutyWithThreeNursesAssigned(nurse, self.duties)
+                self.logger.info("Schedule: planRestNursesHours: duty which was found: " + str(duty.day))
+                nurse.addDuty(duty.day, "DX", duty.dayName)
+                duty.partialNurses.append(nurse)
+                
+    
+    
+       
         
     

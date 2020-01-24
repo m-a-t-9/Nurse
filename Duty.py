@@ -8,6 +8,7 @@ class Duty:
         self.year = year
         self.type = type
         self.nurses = []
+        self.partialNurses = []
         self.createDate()
         self.setDayName()
         self.hours = {}
@@ -21,3 +22,6 @@ class Duty:
 
     def getDayName(self):
         return self.dayName
+        
+    def printDuty(self):
+        return str(self.day) + "." + str(self.month) + "." + str(self.year) + " " + self.dayName

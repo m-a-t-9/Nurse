@@ -1,9 +1,5 @@
 TODO
 
-
-2. rest hours planning - automatycally
-
-5. button 'uloz grafik' - implementation
 6. Context Menu:
     6.3 edit nurse
         6.3.1 edit availabilities
@@ -20,9 +16,11 @@ BUG On Open schedule dropdown list should be set to proper value -fixed
 9. load schedule from file - started
 2. rest hours planning - manually
 3. validation of manual entries with colour settings
-
+2. rest hours planning - automatycally
 6.1 Add nurse
 6.2 remove nurse
+5. button 'uloz grafik' - implementation
+
 
 Bugs:
 Save to html file does not contain colors

@@ -39,7 +39,7 @@ class ScheduleHelper:
                 i+=1
         return duties
     
-    def isAlreadyAssigned(self, nurse, duty): #->move to helper
+    def isAlreadyAssigned(self, nurse, duty): 
         for aNurse in duty.nurses:
             if nurse.name == aNurse.name:
                 self.logger.info("Nurse already assigned to duty")
@@ -51,4 +51,10 @@ class ScheduleHelper:
         self.logger.debug("NURSES: ")
         for nurse in duty.nurses:
             self.logger.debug(nurse.name)
+            
+    def findFirstDailyDutyWithThreeNursesAssigned(self, nurse, duties):
+        for duty in duties:
+            self.logger.debug("ScheduleHelper: findFirstDailyDutyWithThreeNursesAssigned " + duty.printDuty())
+            if duty.type == "D" and len(duty.nurses) == 3 and len(duty.partialNurses) == 0 and not self.isAlreadyAssigned(nurse, duty) and duty.dayName != 'sobota':
+                return duty
     
