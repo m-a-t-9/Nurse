@@ -62,8 +62,8 @@ class Schedule:
         if not nurse.checkAvailability(duty.day):
             self.logger.info("Schedule: validate nurse:  " + nurse.name + " is not available at this day")
             return [False, "Pielegniarka jest nie dostępna w tym dniu"]
-        if nurse.checkPreviousDay([duty.type, duty.day]):
-            return [False, "Pielęgniarka ma inny dyzur dzień wcześniej. Zaplanowano całodobowy dyżur."]
+        if nurse.checkPreviousDay([duty.type, duty.day]) == 1:
+            return [False, "Pielęgniarka ma inny dyzur dzień wcześniej. Zaplanowano całodobowy dyżur lub dwa dyżury pod rząd tego samego typu"]
         if self.isAlreadyAssigned(nurse, duty):
             return [False, "Pielegniarka ma inny dyżur w tym dniu"]
         if nurse.checkWeek(self.getWeekRange(duty.day)):

@@ -27,13 +27,12 @@ TESTS:
         2.2.3. Create new page after schedule                - failed (1c1721b) BUG-2
         2.2.4. Create 12 pages - perf testing                - passed (613a4a5)
     2.2. Open schedule from file
-        2.2.1. Open schedule when page is already created    - blocked by BUG-3
+        2.2.1. Open schedule when page is already created    - blocked by 2.2.2.
         2.2.2. Open as a single page                         - not implemented
     2.3. Save schedule to file
-        2.3.1. Save single page                              - not implemented
-        2.3.2. Save particular page                          - not implemented
-        2.3.3. Save all pages separately                     - not implemented
-        2.3.4. Save all pages together                       - not implemented
+        2.3.1. Save particular page                          - passed (0c34b3e)
+        2.3.2. Save all pages separately                     - not implemented
+        2.3.3. Save all pages together                       - not implemented
 3. ScheduleTab
     3.1. Manual schedule creation                            - passed (1c1721b)
     3.2. Automated schedule calculation

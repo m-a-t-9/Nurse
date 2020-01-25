@@ -21,14 +21,14 @@ BUG On Open schedule dropdown list should be set to proper value -fixed
 6.2 remove nurse
 5. button 'uloz grafik' - implementation
 BUG-1: Marzec i Czerwiec ma jakis problem z zazznaczaniem niedzieli fixed in: 613a4a5
-
+BUG-4: dwie dniowki pod noc a mowi, ze dyzur calodobowy lub nocka po nocce 
 Bugs:
 Save to html file does not contain colors
 When DX is being removed, frist D enter and X enter, data for nurse and total hours are not updated
 Po usunieciu dyzuru kolor nie zmienia sie
 
 BUG-2: Jak policzymy jeden miesiac to nie da sie utworzyc nowego, bo dane istnieja i probuje wypelnic tabelke 
-BUG-4: dwie dniowki pod noc a mowi, ze dyzur calodobowy lub nocka po nocce
+
 BUG-5: po usunieciu dyzuru, nie zmienia się liczba planned hours
 BUG-6: 4 niedziele nie sa problemem
 BUG-7: kolo zrmienia sie na bialy zamiast szarego
