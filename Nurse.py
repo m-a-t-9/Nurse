@@ -39,10 +39,11 @@ class Nurse:
         elif len(splitted) == 1:
             self.holidays.append(splitted[0])
             self.logger.info("Nurse: " + self.name + " setHolidays to " + "; ".join(self.holidays))
+        self.logger.debug("Nurse: setHolidays: number of holidays raised: " + str(len(self.holidays)))
         
     def setTimejob(self, timejob):
-        self.timejob = int(timejob)
-        self.logger.info("Nurse: " + self.name + " setTimejob to " + str(self.timejob))
+        self.timejob = str(timejob)
+        self.logger.info("Nurse: " + self.name + " setTimejob to " + self.timejob)
 
     def getHolidaysString(self):
         if len(self.holidays) == 0:

@@ -98,12 +98,13 @@ class NurseTab(wx.Panel):
         oldValue = e.GetString()
         newValue =self.grid.GetCellValue(row, col)
         if col == 0:
-            if oldValue == ""
+            if oldValue == "":
                 self.nurses.append(Nurse(newValue +",,,", self.logger))
             else:
                 for nurse in self.nurses:
                     if nurse.name == oldValue:
                         self.logger.info("NurseTab: OnChange: name of nurse " + oldValue + " has been changed to " + newValue)
+                        self.logger.debug("NurseTab: OnChange: number of nurses: " + str(len(self.nurses)))
                         nurse.name = newValue
                         break
         elif col == 1:

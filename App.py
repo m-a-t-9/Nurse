@@ -106,6 +106,7 @@ class Example(wx.Frame):
         
     def OnNurseSave(self, e):
         self.logger.info("App: OnNurseSave")
+        
 
     def OnCalculate(self, e):
         selectedSchedule = self.book.getCurrentSchedule()

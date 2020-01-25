@@ -17,8 +17,8 @@ class Duty:
         yield copy.deepcopy(self)
 
     def createDate(self):
-        date_time_str = str(self.year) + "-" + str(self.month) + "-" + str(self.day)
-        self.date = datetime.datetime.strptime(date_time_str, '%Y-%m-%d')
+        date_time_str = str(self.day) + "-" + str(self.month) + "-" + str(self.year)
+        self.date = datetime.datetime.strptime(date_time_str, '%d-%m-%Y')
 
     def setDayName(self):
         self.dayName = self.date.strftime("%A")
