@@ -117,6 +117,9 @@ class NurseTab(wx.Panel):
             data = newValue.split(",")
             self.nurses[row].addHolidays(data)
             #self.grid.Fit()
+        elif col == 3:
+            data = newValue.split(",")
+            self.nurses[row].addUnavailability(data)
             
     
     def checkSavedFiles(self):

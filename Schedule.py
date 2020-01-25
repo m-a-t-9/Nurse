@@ -59,7 +59,7 @@ class Schedule:
         if nurse.checkHoliday(duty):
             self.logger.info("Schedule: validate nurse:  " + nurse.name + " has planned holiday")
             return [False, "Pielegniarka ma zaplanowany urlop w tym dniu"]
-        if not nurse.checkAvailability(duty.day):
+        if nurse.checkAvailability(duty.day):
             self.logger.info("Schedule: validate nurse:  " + nurse.name + " is not available at this day")
             return [False, "Pielegniarka jest nie dostępna w tym dniu"]
         if nurse.checkPreviousDay([duty.type, duty.day]) == 1:
@@ -222,10 +222,13 @@ class Schedule:
         for nurse in self.nurses:
             if nurse.getUnplannedHours() != 0:
                 duty = self.helper.findFirstDailyDutyWithThreeNursesAssigned(nurse, self.duties)
-                self.logger.info("Schedule: planRestNursesHours: duty which was found: " + str(duty.day))
-                nurse.addDuty(duty.day, "DX", duty.dayName)
-                duty.partialNurses.append(nurse)
-                
+                if duty != None:
+                    self.logger.info("Schedule: planRestNursesHours: duty which was found: " + str(duty.day))
+                    nurse.addDuty(duty.day, "DX", duty.dayName)
+                    duty.partialNurses.append(nurse)
+                else:
+                    self.logger.error("Schedule: planRestNursesHours: cannot assign all nurses")
+                   
     
     
        

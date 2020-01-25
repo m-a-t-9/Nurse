@@ -22,9 +22,19 @@ class Nurse:
         self.logger.info("Nurse: created: " + self.name + " timejob: " + str(self.timejob))
 
     def setAvailabilities(self, data):
-        if len(data) != 0:
-            for day in data.split(";"):
+        splitted = data.split(";")
+        self.logger.debug("Nurse: setAvailabilities: " + str(len(splitted)))
+        if len(self.holidays) != 0:
+            self.availabilities = []
+        if len(splitted) > 1:
+            for day in splitted:
+                self.logger.debug("Nurse: setAvailabilities: " + day.rstrip())
                 self.availabilities.append(day.rstrip())
+            self.logger.info("Nurse: " + self.name + " setAvailabilities to " + "; ".join(self.availabilities))
+        elif len(splitted) == 1:
+            self.availabilities.append(splitted[0])
+            self.logger.info("Nurse: " + self.name + " setUnavailability to " + "; ".join(self.availabilities))
+        self.logger.debug("Nurse: setUnavailability: number of holidays raised: " + str(len(self.availabilities)))
 
     def setHolidays(self, data):
         splitted = data.split(";")
@@ -169,7 +179,7 @@ class Nurse:
 
     def checkAvailability(self, day):
         if len(self.availabilities) == 0:
-            return True
+            return False
         if day in self.availabilities:
             return True
         self.logger.info("Nurse is not available")
@@ -245,3 +255,12 @@ class Nurse:
                 if date.find("NZ") == -1 and date.find("UZ") == -1:
                     self.logger.info("Nurse: addHolidays: simple holiday")
                     self.setHolidays(date)
+                    
+    def addUnavailability(self, data):
+        for date in data:
+            if date.find("-") != -1:
+                #TO BE IMPLEMENTED
+                self.logger.debug("Nurse: addUnavailability: range date syntax found")
+            else:
+                self.logger.info("Nurse: addUnavailability: simple holiday")
+                self.setAvailabilities(date)

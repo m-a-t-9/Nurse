@@ -40,16 +40,16 @@ TESTS:
         3.2.2. Automated calculation for particular page     - not implemented
     3.3. Updating schedule and validation
         3.3.1. Put invalid value in field                    - passed (1c1721b)
-        3.3.2. Put daily duty after daily duty               - passed (5be53f6) BUG-4
+        3.3.2. Put daily duty after daily duty               - passed (5be53f6)
         3.3.3. Put daily duty after nightly duty             - passed (1c1721b)
-        3.3.4. Put 3 nightly duty in series                  - failed (1c1721b) BUG-4
-        3.3.5. Remove proper nightly duty                    - failed (1c1721b) BUG-5
-        3.3.6. Remove proper daily duty                      - failed (1c1721b) BUG-5
-        3.3.7. Remove wrong nightly duty                     - failed (1c1721b) BUG-5
-        3.3.8. Remove wrong daily duty                       - failed (1c1721b) BUG-5
+        3.3.4. Put 3 nightly duty in series                  - OoS
+        3.3.5. Remove proper nightly duty                    - passed (6626d31)
+        3.3.6. Remove proper daily duty                      - passed (6626d31)
+        3.3.7. Remove wrong nightly duty                     - passed (6626d31)
+        3.3.8. Remove wrong daily duty                       - passed (6626d31)
         3.3.9. Change duty type from nightly to daily        - passed (1c1721b)
         3.3.10. Change duty type from daily to nightly       - passed (1c1721b)
-        3.3.11. Put duties for four sundays                  - failed (1c1721b) BUG-6, BUG-7
+        3.3.11. Put duties for four sundays                  - passed (6626d31)
         3.3.12. Put duty for unavailable date                - failed (1c1721b) BUG-8
         3.3.13. Put DX                                       - not implemented
         3.3.14. Remove DX                                    - not implemented
