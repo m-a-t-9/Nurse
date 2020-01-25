@@ -176,6 +176,7 @@ class Nurse:
         return False
 
     def removeDuty(self, dutyDay):
+        self.logger.info("Nurse: removeDuty: " + str(dutyDay))
         toRemove = None
         for duty in self.dailyDuties:
             if duty == dutyDay:

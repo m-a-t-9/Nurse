@@ -40,7 +40,7 @@ TESTS:
         3.2.2. Automated calculation for particular page     - not implemented
     3.3. Updating schedule and validation
         3.3.1. Put invalid value in field                    - passed (1c1721b)
-        3.3.2. Put daily duty after daily duty               - failed (1c1721b) BUG-4
+        3.3.2. Put daily duty after daily duty               - passed (5be53f6) BUG-4
         3.3.3. Put daily duty after nightly duty             - passed (1c1721b)
         3.3.4. Put 3 nightly duty in series                  - failed (1c1721b) BUG-4
         3.3.5. Remove proper nightly duty                    - failed (1c1721b) BUG-5

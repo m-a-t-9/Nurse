@@ -101,7 +101,7 @@ class ScheduleTab(wx.Panel):
         elif newValue.find("U") != -1:
             self.schedule.addHolidayForNurse(row, col)
         elif newValue == "" or newValue == " ":
-            #removeDutyForNurse(row, col)
+            self.schedule.removeDutyForNurse(row, col+1)
             self.grid.SetCellValue(row, MONTHS_DETAILED[self.month][1], str(self.schedule.nif("GET_NURSES")[row].getPlannedHours()))
             self.setColorOfPlannedHours(row)
             self.grid.SetCellBackgroundColour(row, col,wx.Colour(255, 255, 255))
