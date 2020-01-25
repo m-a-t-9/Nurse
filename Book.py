@@ -18,9 +18,7 @@ class Book:
  
     def createNursePage(self):
         self.logger.info("Book: createNursePage")
-        self.nurseTab = NurseTab(self.nb, self.logger)
         self.nurseTab.OnOpen()
-        self.nb.AddPage(self.nurseTab, "Zaloga")
         self.nb.ChangeSelection(self.nurseTab.page)
     
     def getIface(self):

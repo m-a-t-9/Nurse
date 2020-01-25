@@ -69,9 +69,12 @@ class NurseTab(wx.Panel):
         self.grid.SetColMinimalWidth(2, 600)
         self.grid.SetColLabelValue(3, "Dostepnosc")
         self.grid.SetColMinimalWidth(3, 600)
+        self.putDataInGrid()
         
-        
+    def putDataInGrid(self):  
+        self.grid.InsertRows(numRows=len(self.nurses))
         for i in range(len(self.nurses)):
+            self.logger.debug(str(i))
             self.grid.SetCellValue(i, 0, self.nurses[i].name)
             self.grid.SetCellValue(i, 1, self.nurses[i].timejob)
             self.grid.SetCellValue(i, 2, self.nurses[i].getHolidaysString())
@@ -129,7 +132,7 @@ class NurseTab(wx.Panel):
             pathname = fileDialog.GetPath()
             try:
                 self.loadNurses(pathname)
-                self.createGridCTRL()
+                self.putDataInGrid()
             except IOError:
                 wx.LogError("Cannot open file '%s'." % newfile)
                 
