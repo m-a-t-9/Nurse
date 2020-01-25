@@ -200,25 +200,7 @@ class ScheduleTab(wx.Panel):
         self.schedule()
         self.createListCTRL()
     
-    def OnOpen(self): #->MUST BE
-        with wx.FileDialog(self, "Open schedule file", wildcard="HTML files (*.html)|*.html",style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST) as fileDialog:
-            if fileDialog.ShowModal() == wx.ID_CANCEL:
-                return     # the user changed their mind
-            # Proceed loading the file chosen by the user
-            pathname = fileDialog.GetPath()
-            try:
-                return self.loadSchedule(pathname)
-            except IOError:
-                wx.LogError("Cannot open file '%s'." % newfile)
     
-    def loadSchedule(self, pathname): #->MUST BE
-        self.tree = ET.parse(pathname)
-        self.root = self.tree.getroot()
-       
-        monthName = self.root.find('./head/title').text.split(":")[1]
-        monthNo = MONTHS.index(monthName)
-        self.createListCTRL(monthNo, dataFromFile=True)
-        return monthName
     
 
     

@@ -89,9 +89,8 @@ class Example(wx.Frame):
         self.book.createSchedulePage(MONTHS[e.GetId()])
        
     def OnOpen(self, e):
-        month = self.scheduleTab.OnOpen()
-        self.combo.SetValue(month)
-        self.nb.ChangeSelection(self.scheduleTab.page)
+        page = self.book.OnScheduleOpen()
+        self.book.nb.ChangeSelection(page)
        
     def OnQuit(self, e):
         self.Close()
@@ -100,9 +99,7 @@ class Example(wx.Frame):
         self.book.createNursePage()
         
     def OnSave(self, e):
-        self.scheduleTab.OnSave(e)
-        wx.MessageBox('Zapisano pomyślnie', 'Info',
-            wx.OK | wx.ICON_INFORMATION)
+        self.book.OnScheduleSave()
         
     def OnNurseSave(self, e):
         self.logger.info("App: OnNurseSave")

@@ -25,12 +25,12 @@ TESTS:
         2.1.1. Create one single page                        - passed(1c1721b)
         2.2.2. Create few clear pages                        - passed(1c1721b)
         2.2.3. Create new page after schedule                - failed (1c1721b) BUG-2
-        2.2.4. Create 12 pages - perf testing                - failed (1c1721b) BUG-1
+        2.2.4. Create 12 pages - perf testing                - failed (1c1721b) BUG-1                               -fixed in (613a4a5)
     2.2. Open schedule from file
         2.2.1. Open schedule when page is already created    - blocked by BUG-3
-        2.2.2. Open as a single page                         - failed (1c1721b) BUG-3
+        2.2.2. Open as a single page                         - not implemented
     2.3. Save schedule to file
-        2.3.1. Save single page                              - failed (1c1721b) BUG-3
+        2.3.1. Save single page                              - not implemented
         2.3.2. Save particular page                          - not implemented
         2.3.3. Save all pages separately                     - not implemented
         2.3.4. Save all pages together                       - not implemented

@@ -45,3 +45,35 @@ class Book:
         if os.path.isfile("nurses.nur"):
             return True
         return False
+        
+    def OnScheduleOpen(self):
+        with wx.FileDialog(self.parent, "Open schedule file", wildcard="HTML files (*.html)|*.html",style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST) as fileDialog:
+            if fileDialog.ShowModal() == wx.ID_CANCEL:
+                return     # the user changed their mind
+            # Proceed loading the file chosen by the user
+            pathname = fileDialog.GetPath()
+            try:
+                return self.loadSchedule(pathname)
+            except IOError:
+                wx.LogError("Cannot open file '%s'." % newfile)
+    
+    def loadSchedule(self, pathname): #->MUST BE
+        self.tree = ET.parse(pathname)
+        self.root = self.tree.getroot()
+        monthName = self.root.find('./head/title').text.split(":")[1]
+        self.schedulePages.append(ScheduleTab(self.nb, self.logger, self.getIface(), self.pageCounter, monthName))
+        #TO BE IMPLEMENTED
+        self.nb.AddPage(self.schedulePages[-1], self.schedulePages[-1].monthName)
+        return self.pageCounter
+        
+    def OnScheduleSave(self):
+        with wx.FileDialog(self.parent, "Open schedule file", wildcard="HTML files (*.html)|*.html",style=wx.FD_SAVE) as fileDialog:
+            if fileDialog.ShowModal() == wx.ID_CANCEL:
+                return     # the user changed their mind
+            # Proceed loading the file chosen by the user
+            pathname = fileDialog.GetPath()
+            try:
+                return self.loadSchedule(pathname)
+            except IOError:
+                wx.LogError("Cannot open file '%s'." % newfile)
+        
