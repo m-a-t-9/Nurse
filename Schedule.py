@@ -123,6 +123,8 @@ class Schedule:
                 self.saturdays.append(matrix[i][5])
             if matrix[i][6] != 0:
                 self.sundays.append(matrix[i][6])
+        print(self.saturdays)
+        print(self.sundays)
         
     
     def getBankHolidaysInMonth(self):

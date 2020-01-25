@@ -179,7 +179,7 @@ class ScheduleTab(wx.Panel):
 
     def setColours(self): #->MUST BE
         for i in range(self.grid.GetNumberCols()):
-            if self.schedule.isNotWorkingDay(i) and self.grid.GetColLabelValue(i) != "SUMA":
+            if self.schedule.isNotWorkingDay(i+1) and self.grid.GetColLabelValue(i) != "SUMA":
                 for j in range(len(self.nurses)):
                     self.grid.SetCellBackgroundColour(j, i, wx.Colour(211, 211, 211))
     
