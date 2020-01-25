@@ -32,12 +32,23 @@ class Schedule:
             self.duties.append(Duty(i+1, self.monthId, self.year, "N"))
             self.logger.info("Duty date name: " + str(self.duties[-1].getDayName()))
     
-    def tryToCreateDuty(self, day, nurseId, month, value):
+    def tryToCreateDuty(self, day, nurseId, month, value, oldValue):
         duty = Duty(day, month, self.year, value)
-        result = self.validateNurse(self.nif("GET_NURSES")[nurseId], duty)
+        nurse = self.nif("GET_NURSES")[nurseId]
+        if oldValue == "N" or oldValue == "D":
+            nurse.removeDuty(duty.day)
+        result = self.validateNurse(nurse, duty)
+        nurse.addDuty(duty.day, duty.type, duty.dayName)
+        
+        
         if result[0]:
             self.logger.info("Schedule: tryToCreateDuty: validation done successfully")
-            self.nif("GET_NURSES")[nurseId].addDuty(duty.day, duty.type, duty.dayName)
+            
+                
+        #modyfiedDuty = self.helper.getDutyByDay(day, self.duties)
+        #cloned = modyfiedDuty.clone()
+        #cloned.signOffNurse(nurse)
+        #result = self.validateDuty(cloned)
         return result
         
     def validateNurse(self, nurse, duty, withDuties=True):
@@ -61,6 +72,8 @@ class Schedule:
             self.logger.info("Schedule: validate nurse:  must have one free Sunday")
             return [False, "Pielegniarka musi mieć przynajmniej jedną niedziele wolna w miesiącu"]
         return [True, ""]
+    
+   
     
     def isAlreadyAssigned(self, nurse, duty):
         for nur in duty.nurses:

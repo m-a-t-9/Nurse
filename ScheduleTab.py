@@ -29,9 +29,6 @@ class ScheduleTab(wx.Panel):
         self.nursesCalculated = False
         self.nurses = []
         self.duties = []
-        
-        
-        
         self.createListCTRL()
     
     def setMonthAndRefresh(self, month):
@@ -69,29 +66,37 @@ class ScheduleTab(wx.Panel):
             self.setDataInGrid()
         #self.grid.Bind(wx.grid.EVT_GRID_SELECT_CELL, self.OnSingleSelect)
         self.grid.Bind(wx.grid.EVT_GRID_CELL_CHANGING, self.OnChange)
+        self.grid.Bind(wx.grid.EVT_GRID_EDITOR_SHOWN, self.OnSelectToEdit)
         
         self.Layout()
         self.Show()        
+    
+    def OnSelectToEdit(self, e):
+        row = e.GetRow()
+        col = e.GetCol()
+        self.oldValue = self.grid.GetCellValue(row, col)
+        self.logger.debug("ScheduleTab: OnSelectToEdit: old value: " + self.oldValue)
     
     def OnChange(self, e):
         
         row = e.GetRow()
         col = e.GetCol()
-        self.logger.debug("Changed in duty: " + str(col))
+        self.logger.debug("ScheduleTab: OnChange Changed in duty: " + str(col+1))
         self.logger.debug("Changed for nurse: " + str(self.nurses[row].name))
         newValue = e.GetString()
         self.logger.info("OnChange: cell value has been changed to: " + newValue)
         dutyIndex = 0
         if newValue == "N" or newValue == "D":
-            result = self.schedule.tryToCreateDuty(col+1, row, self.month,  newValue)
+            result = self.schedule.tryToCreateDuty(col+1, row, self.month+1,  newValue, self.oldValue)
             if not result[0]:
                 #self.grid.SetCellValue(row, col, newValue)
                 self.grid.SetCellBackgroundColour(row, col,wx.Colour(255, 0, 0))
                 wx.MessageBox(result[1], 'Info', wx.OK | wx.ICON_INFORMATION)
             else:
                 self.logger.debug("ScheduleTab: new duty created. Changing SUMA value and background color")
-                self.grid.SetCellValue(row, MONTHS_DETAILED[self.month][1], str(self.schedule.nif("GET_NURSES")[row].getPlannedHours()))
-                self.setColorOfPlannedHours(row)
+                self.grid.SetCellBackgroundColour(row, col,wx.Colour(255, 255, 255))
+            self.grid.SetCellValue(row, MONTHS_DETAILED[self.month][1], str(self.schedule.nif("GET_NURSES")[row].getPlannedHours()))
+            self.setColorOfPlannedHours(row)
             
         elif newValue.find("U") != -1:
             self.schedule.addHolidayForNurse(row, col)
@@ -187,7 +192,7 @@ class ScheduleTab(wx.Panel):
         self.logger.info("ScheduleTab: OnCalculate")
         self.nurses = self.NIF("GET_NURSES")
         self.schedule.schedule()
-        self.createListCTRL()
+        self.setDataInGrid()
         
     def OnNew(self, month): #-> is it possible
         self.createMonth(month=month)

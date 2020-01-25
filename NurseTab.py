@@ -95,9 +95,17 @@ class NurseTab(wx.Panel):
         self.logger.info("NurseTab: OnChange: cell value has been changed")
         row = e.GetRow()
         col = e.GetCol()
+        oldValue = e.GetString()
         newValue =self.grid.GetCellValue(row, col)
         if col == 0:
-            self.nurses.append(Nurse(newValue +",,,", self.logger))
+            if oldValue == ""
+                self.nurses.append(Nurse(newValue +",,,", self.logger))
+            else:
+                for nurse in self.nurses:
+                    if nurse.name == oldValue:
+                        self.logger.info("NurseTab: OnChange: name of nurse " + oldValue + " has been changed to " + newValue)
+                        nurse.name = newValue
+                        break
         elif col == 1:
             self.nurses[row].setTimejob(newValue)
             

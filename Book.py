@@ -12,7 +12,10 @@ class Book:
         self.pageCounter = 1
         self.nb= wx.Notebook(self.parent)
         self.parent.Bind(wx.EVT_NOTEBOOK_PAGE_CHANGED, self.OnTabChange)
-        
+        self.nurseTab = NurseTab(self.nb, self.logger)
+        self.nb.AddPage(self.nurseTab, "Zaloga")
+        self.nb.ChangeSelection(self.nurseTab.page)
+ 
     def createNursePage(self):
         self.logger.info("Book: createNursePage")
         self.nurseTab = NurseTab(self.nb, self.logger)
@@ -39,3 +42,8 @@ class Book:
         
     def getCurrentSchedule(self):
         return self.schedulePages[self.nb.GetSelection()-1]
+        
+    def checkSavedFiles(self):
+        if os.path.isfile("nurses.nur"):
+            return True
+        return False

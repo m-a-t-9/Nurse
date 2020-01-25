@@ -57,4 +57,9 @@ class ScheduleHelper:
             self.logger.debug("ScheduleHelper: findFirstDailyDutyWithThreeNursesAssigned " + duty.printDuty())
             if duty.type == "D" and len(duty.nurses) == 3 and len(duty.partialNurses) == 0 and not self.isAlreadyAssigned(nurse, duty) and duty.dayName != 'sobota':
                 return duty
+                
+    def getDutyByDay(self, day, duties):
+        for duty in duties:
+            if duty.day == day:
+                return duty
     
