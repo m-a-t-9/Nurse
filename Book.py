@@ -67,13 +67,13 @@ class Book:
         return self.pageCounter
         
     def OnScheduleSave(self):
-        with wx.FileDialog(self.parent, "Open schedule file", wildcard="HTML files (*.html)|*.html",style=wx.FD_SAVE) as fileDialog:
+        with wx.FileDialog(self.parent, "Save schedule file", wildcard="HTML files (*.html)|*.html",style=wx.FD_SAVE) as fileDialog:
             if fileDialog.ShowModal() == wx.ID_CANCEL:
                 return     # the user changed their mind
             # Proceed loading the file chosen by the user
             pathname = fileDialog.GetPath()
             try:
-                return self.loadSchedule(pathname)
+                self.getCurrentSchedule().OnSave(pathname)
             except IOError:
                 wx.LogError("Cannot open file '%s'." % newfile)
         

@@ -5,9 +5,10 @@ monthsDropdown = ["Wybierz miesiac", "Styczen", "Luty", "Marzec", "Kwiecien", "M
 
 class HTMLExporter:
 
-    def __init__(self, list, month):
+    def __init__(self, list, month, filepath):
         self.list = list
         self.month = month
+        self.filepath = filepath
         self.columns = []
         self.rows = []
         self.loadData()
@@ -34,7 +35,7 @@ class HTMLExporter:
         self.createHTMLFile()
     
     def createHTMLFile(self):
-        self.f = open("Grafik.html", "w")
+        self.f = open(self.filepath, "w")
         self.createHeaderOfDoc()
         self.createTableHeader()
         self.createTableContent()

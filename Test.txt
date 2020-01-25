@@ -13,19 +13,19 @@ TESTS:
             1.4.2.4. Edit range of holidays                  - not implemented
             1.4.2.5. Remove day off                          - passed(1c1721b)
             1.4.2.6. Remove range of holidays                - not implemented
-        1.4.3. Edit timejob                                  - failed (1c1721b) crash during float                  -fixed in(51a3441)
+        1.4.3. Edit timejob                                  - passed (51a3441)
         1.4.4. Edit unavailabilities                         - not implemented
             1.4.4.1. Add new unavailability                  - not implemented
             1.4.4.2. Update unavailability                   - not implemented
             1.4.4.3. Remove unavailability                   - not implemented
     1.5. Save nurse staff to file                            - not implemented
-    1.6. Open staff from file                                - failed (1c1721b) Something wrong with tab creation   -fixed in (e88cb42)
+    1.6. Open staff from file                                - passed (e88cb42)
 2. Book
     2.1. Create new schedule page
         2.1.1. Create one single page                        - passed(1c1721b)
         2.2.2. Create few clear pages                        - passed(1c1721b)
         2.2.3. Create new page after schedule                - failed (1c1721b) BUG-2
-        2.2.4. Create 12 pages - perf testing                - failed (1c1721b) BUG-1                               -fixed in (613a4a5)
+        2.2.4. Create 12 pages - perf testing                - passed (613a4a5)
     2.2. Open schedule from file
         2.2.1. Open schedule when page is already created    - blocked by BUG-3
         2.2.2. Open as a single page                         - not implemented

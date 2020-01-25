@@ -183,9 +183,9 @@ class ScheduleTab(wx.Panel):
                 for j in range(len(self.nurses)):
                     self.grid.SetCellBackgroundColour(j, i, wx.Colour(211, 211, 211))
     
-    def OnSave(self, e): #->MUST BE
+    def OnSave(self, filepath): #->MUST BE
         self.logger.info("Saving schedule")
-        htmlExporter = HTMLExporter(self.grid, self.month)
+        htmlExporter = HTMLExporter(self.grid, self.month, filepath)
         htmlExporter.save()
         
     def OnCalculate(self): #->MUST BE
