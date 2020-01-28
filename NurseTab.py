@@ -57,7 +57,7 @@ class NurseTab(wx.Panel):
         
     def createGridCTRL(self):
         self.grid = wx.grid.Grid(self)
-        
+        self.logger.debug("NurseTab: createGridCTRL: " + str(len(self.nurses)))
         self.grid.CreateGrid(len(self.nurses), 4)
         
         self.grid.SetRowLabelSize(width=30)
@@ -72,8 +72,9 @@ class NurseTab(wx.Panel):
         self.grid.SetColMinimalWidth(3, 600)
         self.putDataInGrid()
         
-    def putDataInGrid(self):  
-        self.grid.InsertRows(numRows=len(self.nurses))
+    def putDataInGrid(self): 
+        if self.grid.GetNumberRows() != len(self.nurses):
+            self.grid.InsertRows(numRows=len(self.nurses))
         for i in range(len(self.nurses)):
             self.logger.debug(str(i))
             self.grid.SetCellValue(i, 0, self.nurses[i].name)
