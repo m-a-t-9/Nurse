@@ -14,8 +14,8 @@ TESTS:
             1.4.2.5. Remove day off                          - passed(1c1721b)
             1.4.2.6. Remove range of holidays                - not implemented
         1.4.3. Edit timejob                                  - passed (51a3441)
-        1.4.4. Edit unavailabilities                         - not implemented
-            1.4.4.1. Add new unavailability                  - not implemented
+        1.4.4. Edit unavailabilities                        
+            1.4.4.1. Add new unavailability                  - passed (fe48d36)
             1.4.4.2. Update unavailability                   - not implemented
             1.4.4.3. Remove unavailability                   - not implemented
     1.5. Save nurse staff to file                            - not implemented

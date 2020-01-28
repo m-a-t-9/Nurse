@@ -90,6 +90,7 @@ class Example(wx.Frame):
        
     def OnOpen(self, e):
         page = self.book.OnScheduleOpen()
+        #loading nurses should be addeds
         self.book.nb.ChangeSelection(page)
        
     def OnQuit(self, e):
@@ -103,6 +104,7 @@ class Example(wx.Frame):
         
     def OnNurseSave(self, e):
         self.logger.info("App: OnNurseSave")
+        self.book.OnStaffSave()
         
 
     def OnCalculate(self, e):

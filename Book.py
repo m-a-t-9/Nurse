@@ -76,4 +76,16 @@ class Book:
                 self.getCurrentSchedule().OnSave(pathname)
             except IOError:
                 wx.LogError("Cannot open file '%s'." % newfile)
+                
+    def OnStaffSave(self):
+        with wx.FileDialog(self.parent, "Save staff file", wildcard="NUR files (*.nur)|*.nur",style=wx.FD_SAVE) as fileDialog:
+            if fileDialog.ShowModal() == wx.ID_CANCEL:
+                return     # the user changed their mind
+            # Proceed loading the file chosen by the user
+            pathname = fileDialog.GetPath()
+            try:
+                self.nurseTab.OnSave(pathname)
+            except IOError:
+                wx.LogError("Cannot open file '%s'." % newfile)
+        
         

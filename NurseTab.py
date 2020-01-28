@@ -2,6 +2,7 @@ import wx
 import os
 
 from Nurse import *
+from NursesDataExporter import * 
 
 class MyPopupMenu(wx.Menu):
 
@@ -162,4 +163,8 @@ class NurseTab(wx.Panel):
         self.nurses.remove(toRemove)
         self.grid.DeleteRows(pos=id)
         self.grid.Fit()
+        
+    def OnSave(self, pathname):
+        self.nde = NursesDataExporter(self.grid, pathname, self.logger)
+        self.nde.save()
         
