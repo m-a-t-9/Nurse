@@ -1,4 +1,4 @@
-
+import math
 class ScheduleHelper:
 
     def __init__(self, logger):
@@ -62,4 +62,19 @@ class ScheduleHelper:
         for duty in duties:
             if duty.day == day:
                 return duty
+                
+    def partToMins(self, hrs):
+        frac, whole = math.modf(hrs)
+        hours = str(int(whole))
+        mins = ":"
+        if int(frac*60) < 10 and int(frac*60) > 0:
+            mins += "0" + str(int(frac*60))
+        elif int(frac*10) < 0 and int(frac*60) > -10:
+            mins += "0" + str(int(frac*60*-1))
+        elif int(frac*10) < -10:
+            mins =  str(int(frac*60)*-1)
+        else:
+            mins += str(int(frac*60))
+        return hours + mins
+        
     

@@ -150,7 +150,7 @@ class ScheduleTab(wx.Panel):
                     self.grid.SetCellTextColour(i, int(hday)-1, wx.Colour(255,255,255))
                     self.grid.SetCellAlignment(i, int(hday)-1, wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
             for duty in self.schedule.nif("GET_NURSES")[i].shortDuties:
-                self.grid.SetCellValue(i, duty[0]-1, "DX\n" + str(duty[1]))
+                self.grid.SetCellValue(i, duty[0]-1, "DX\n" + str(self.helper.partToMins(duty[1])))
                 self.grid.SetCellAlignment(i, duty[0]-1, wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
             self.grid.SetCellValue(i, MONTHS_DETAILED[self.month][1], str(self.schedule.nif("GET_NURSES")[i].getPlannedHours()))
             self.setColorOfPlannedHours(i)
