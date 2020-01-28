@@ -44,7 +44,7 @@ class Nurse:
         if len(splitted) > 1:
             for day in splitted:
                 self.logger.debug("Nurse: setHolidays: " + day.rstrip())
-                self.holidays.append(day.rstrip())
+                self.holidays.append(day.replace('\n', "").replace(" ", ""))
             self.logger.info("Nurse: " + self.name + " setHolidays to " + "; ".join(self.holidays))
         elif len(splitted) == 1:
             self.holidays.append(splitted[0])
@@ -112,9 +112,12 @@ class Nurse:
         return plannedHours
 
     def checkHoliday(self, duty):
-        if str(duty.day) + "." + self.monthFix(duty.month) in self.holidays:
-            self.logger.info("Nurse " + self.name + " is on a holiday at day " + str(duty.day) + "." + self.monthFix(duty.month))
-            return True
+        self.logger.debug("Nurse " + self.name + " checkHoliday for " + str(duty.day) + "." + self.monthFix(duty.month))
+        for h in self.holidays:
+            self.logger.debug("Planned Holidays: " + str(h))
+            if h.find(str(duty.day) + "." + self.monthFix(duty.month)) != -1:
+                self.logger.info("Nurse " + self.name + " is on a holiday at day " + str(duty.day) + "." + self.monthFix(duty.month))
+                return True
         if duty.type == "N":
             if str(duty.day + 1) in self.holidays:
                 self.logger.info("Nurse " + self.name + " is on a holiday next day. Nightly duty cannot be assigned at " + str(duty.day))

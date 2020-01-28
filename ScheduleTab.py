@@ -125,28 +125,32 @@ class ScheduleTab(wx.Panel):
     
     def setDataInGrid(self):
         for i in range(len(self.schedule.nif("GET_NURSES"))):
-        
+            self.grid.SetRowSize(i, 40)
             for duty in self.schedule.nif("GET_NURSES")[i].dailyDuties:
-                self.grid.SetCellValue(i, duty-1, "D")
+                self.grid.SetCellValue(i, duty-1, "D\n12:00")
+                
                 self.grid.SetCellAlignment(i, duty-1, wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
             for duty in self.schedule.nif("GET_NURSES")[i].nightlyDuties:
-                self.grid.SetCellValue(i, duty-1, "N")
+                self.grid.SetCellValue(i, duty-1, "N\n12:00")
                 self.grid.SetCellAlignment(i, duty-1, wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
             for holiday in self.schedule.nif("GET_NURSES")[i].holidays:
-                self.logger.info("ScheduleTab: setDataInGrid: holiday: " + str(holiday) + " month whcih has been set " + str(self.month))
+                month = self.month+1
+                self.logger.info("ScheduleTab: setDataInGrid: holiday: " + str(holiday) + " month whcih has been set " + str(month))
                 hday = holiday.split(".")[0]
                 hmonth = holiday.split(".")[1]
-                if len(str(self.month)) == 1:
-                    currMonthString = "0" + str(self.month)
+                if len(str(month)) == 1:
+                    currMonthString = "0" + str(month)
                 else:
-                    currMonthString = str(self.month)
-                if hmonth == currMonthString:
+                    currMonthString = str(month)
+                self.logger.debug("ScheduleTab: setDataInGrid: " + hmonth + " considered month " + currMonthString)
+                if hmonth.find(currMonthString) != -1:
+                    self.logger.debug("UW putting")
                     self.grid.SetCellValue(i, int(hday)-1, "UW")
                     self.grid.SetCellBackgroundColour(i, int(hday)-1, wx.Colour(0,0,255))
                     self.grid.SetCellTextColour(i, int(hday)-1, wx.Colour(255,255,255))
                     self.grid.SetCellAlignment(i, int(hday)-1, wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
             for duty in self.schedule.nif("GET_NURSES")[i].shortDuties:
-                self.grid.SetCellValue(i, duty[0]-1, "DX")
+                self.grid.SetCellValue(i, duty[0]-1, "DX\n" + str(duty[1]))
                 self.grid.SetCellAlignment(i, duty[0]-1, wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
             self.grid.SetCellValue(i, MONTHS_DETAILED[self.month][1], str(self.schedule.nif("GET_NURSES")[i].getPlannedHours()))
             self.setColorOfPlannedHours(i)
