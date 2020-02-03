@@ -20,6 +20,7 @@ class MyPopupMenu(wx.Menu):
             self.Bind(wx.EVT_MENU, self.OnRemove, rem)
 
     def OnAdd(self, e):
+        
         self.grid.InsertRows(pos=-1)
         self.grid.Fit()
         
@@ -31,6 +32,7 @@ class NurseTab(wx.Panel):
     def __init__(self, parent, logger):
         wx.Panel.__init__(self, parent)
         self.page = 0
+        self.changed = False
         self.parent = parent
         self.SetSize(parent.GetSize())
         self.logger = logger
@@ -43,6 +45,7 @@ class NurseTab(wx.Panel):
         self.Bind(wx.EVT_RIGHT_DOWN, self.OnRightDown)
         
     def OnRightDown(self, e):
+        self.logger.info("NurseTab: OnRightDown")
         self.PopupMenu(MyPopupMenu(self, self.grid, "panel"), e.GetPosition())
     
     def setNurseAndRefresh(self):
@@ -73,14 +76,19 @@ class NurseTab(wx.Panel):
         self.putDataInGrid()
         
     def putDataInGrid(self): 
-        if self.grid.GetNumberRows() != len(self.nurses):
-            self.grid.InsertRows(numRows=len(self.nurses))
-        for i in range(len(self.nurses)):
-            self.logger.debug(str(i))
-            self.grid.SetCellValue(i, 0, self.nurses[i].name)
-            self.grid.SetCellValue(i, 1, self.nurses[i].timejob)
-            self.grid.SetCellValue(i, 2, self.nurses[i].getHolidaysString())
-            self.grid.SetCellValue(i, 3, self.nurses[i].getAvailabilitiesString())
+        self.logger.info("NurseTab: putDataInGrid:")
+        if len(self.nurses) != 0:
+            self.logger.debug("NurseTab: putDataInGrid: nurses are more than 0")
+           
+            if self.grid.GetNumberRows() != len(self.nurses):
+                self.logger.debug("NurseTab: putDataInGrid: inserting rows")
+                self.grid.InsertRows(numRows=len(self.nurses))
+            for i in range(len(self.nurses)):
+                self.logger.debug(str(i))
+                self.grid.SetCellValue(i, 0, self.nurses[i].name)
+                self.grid.SetCellValue(i, 1, self.nurses[i].timejob)
+                self.grid.SetCellValue(i, 2, self.nurses[i].getHolidaysString())
+                self.grid.SetCellValue(i, 3, self.nurses[i].getAvailabilitiesString())
         self.grid.Bind(wx.grid.EVT_GRID_CELL_CHANGED, self.OnChange)
         self.Bind(wx.grid.EVT_GRID_CELL_RIGHT_CLICK , self.OnRowRightClick, self.grid)    
 
@@ -97,12 +105,14 @@ class NurseTab(wx.Panel):
        
     
     def OnChange(self, e):
+        self.changed = True
         self.logger.info("NurseTab: OnChange: cell value has been changed")
         row = e.GetRow()
         col = e.GetCol()
         oldValue = e.GetString()
         newValue =self.grid.GetCellValue(row, col)
         if col == 0:
+            self.logger.info("NurseTab: OnChange in col 0")
             if oldValue == "":
                 self.nurses.append(Nurse(newValue +",,,", self.logger))
             else:
@@ -113,13 +123,16 @@ class NurseTab(wx.Panel):
                         nurse.name = newValue
                         break
         elif col == 1:
+            self.logger.info("NurseTab: OnChange in col 1")
             self.nurses[row].setTimejob(newValue)
             
         elif col == 2:
+            self.logger.info("NurseTab: OnChange in col 2")
             data = newValue.split(",")
             self.nurses[row].addHolidays(data)
             #self.grid.Fit()
         elif col == 3:
+            self.logger.info("NurseTab: OnChange in col 3")
             data = newValue.split(",")
             self.nurses[row].addUnavailability(data)
             
@@ -134,16 +147,16 @@ class NurseTab(wx.Panel):
             if fileDialog.ShowModal() == wx.ID_CANCEL:
                 return     # the user changed their mind
             # Proceed loading the file chosen by the user
-            pathname = fileDialog.GetPath()
+            self.pathname = fileDialog.GetPath()
             try:
-                self.loadNurses(pathname)
+                self.loadNurses()
                 self.putDataInGrid()
             except IOError:
                 wx.LogError("Cannot open file '%s'." % newfile)
                 
-    def loadNurses(self, filename):
+    def loadNurses(self):
         self.logger.info("NurseTab: loadNurses")
-        f = open(filename, "r")
+        f = open(self.pathname, "r")
         c = f.readlines()
         f.close()
         if len(self.nurses) != 0:
@@ -153,10 +166,22 @@ class NurseTab(wx.Panel):
                 self.nurses.append(Nurse(c[i], self.logger))
         self.logger.info("NurseTab: loadNurses: created: " + str(len(self.nurses)) + " nurses")
         
+    def createNewStaff(self):
+        staff = []
+        f = open(self.pathname, "r")
+        c = f.readlines()
+        f.close()
+        for i in range(len(c)):
+            if i != 0:
+                staff.append(Nurse(c[i], self.logger))
+        return staff
+        
     def iface(self, operation, add=""):
         
         if operation == "GET_NURSES":
             return self.nurses
+        elif operation == "NEW_STAFF":
+            return self.createNewStaff()
             
     def remove(self, id):
         self.logger.info("NurseTab: nurse " + self.nurses[id].name + " has been remove" )

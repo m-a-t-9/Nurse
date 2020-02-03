@@ -35,9 +35,12 @@ class NursesDataExporter:
             for i in range(1, len(row)):
                 if i == len(row)-1:
                     if len(row[i]) != 0:
+                       self.logger.debug("NursesDataExporter: save: " + str(i) + " "  + self.createRow(row[i]))
                        self.f.write(self.createRow(row[i]))
                 else:
-                    self.f.write(row[i].strip() + ",")
+                    if len(row[i]) != 0:
+                        self.logger.debug("NursesDataExporter: save: "  + str(i) + " "  + row[i].strip() + ",")
+                        self.f.write(row[i].strip() + ",")
                 
             self.f.write("\n")
         self.f.close()

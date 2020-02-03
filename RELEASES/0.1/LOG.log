@@ -1,0 +1,139 @@
+2020-01-31 11:38:02,083 - INFO - 22248 - App: InitUI
+2020-01-31 11:38:02,083 - INFO - 22248 - App: createMenu
+2020-01-31 11:38:02,102 - INFO - 22248 - NurseTab init
+2020-01-31 11:38:02,110 - DEBUG - 22248 - NurseTab: createGridCTRL: 0
+2020-01-31 11:38:09,032 - INFO - 22248 - NurseTab: OnChange: cell value has been changed
+2020-01-31 11:38:09,032 - DEBUG - 22248 - Nurse: setAvailabilities: 1
+2020-01-31 11:38:09,032 - INFO - 22248 - Nurse: olszowa setUnavailability to 
+2020-01-31 11:38:09,032 - DEBUG - 22248 - Nurse: setUnavailability: number of holidays raised: 1
+2020-01-31 11:38:09,032 - DEBUG - 22248 - Nurse: setHolidays: 1
+2020-01-31 11:38:09,032 - INFO - 22248 - Nurse: olszowa setHolidays to 
+2020-01-31 11:38:09,032 - DEBUG - 22248 - Nurse: setHolidays: number of holidays raised: 1
+2020-01-31 11:38:09,033 - INFO - 22248 - Nurse: created: olszowa timejob: 
+2020-01-31 11:38:09,845 - INFO - 22248 - NurseTab: OnChange: cell value has been changed
+2020-01-31 11:38:09,845 - INFO - 22248 - Nurse: olszowa setTimejob to 1
+2020-01-31 11:38:17,207 - INFO - 22248 - NurseTab: OnChange: cell value has been changed
+2020-01-31 11:38:17,207 - DEBUG - 22248 - Nurse: setAvailabilities: 1
+2020-01-31 11:38:17,207 - INFO - 22248 - Nurse: szwaja setUnavailability to 
+2020-01-31 11:38:17,208 - DEBUG - 22248 - Nurse: setUnavailability: number of holidays raised: 1
+2020-01-31 11:38:17,208 - DEBUG - 22248 - Nurse: setHolidays: 1
+2020-01-31 11:38:17,208 - INFO - 22248 - Nurse: szwaja setHolidays to 
+2020-01-31 11:38:17,208 - DEBUG - 22248 - Nurse: setHolidays: number of holidays raised: 1
+2020-01-31 11:38:17,208 - INFO - 22248 - Nurse: created: szwaja timejob: 
+2020-01-31 11:38:17,723 - INFO - 22248 - NurseTab: OnChange: cell value has been changed
+2020-01-31 11:38:17,724 - INFO - 22248 - Nurse: szwaja setTimejob to 1
+2020-01-31 11:38:24,221 - INFO - 22248 - NurseTab: OnChange: cell value has been changed
+2020-01-31 11:38:24,221 - DEBUG - 22248 - Nurse: setAvailabilities: 1
+2020-01-31 11:38:24,221 - INFO - 22248 - Nurse: wybrnksi setUnavailability to 
+2020-01-31 11:38:24,221 - DEBUG - 22248 - Nurse: setUnavailability: number of holidays raised: 1
+2020-01-31 11:38:24,221 - DEBUG - 22248 - Nurse: setHolidays: 1
+2020-01-31 11:38:24,221 - INFO - 22248 - Nurse: wybrnksi setHolidays to 
+2020-01-31 11:38:24,221 - DEBUG - 22248 - Nurse: setHolidays: number of holidays raised: 1
+2020-01-31 11:38:24,221 - INFO - 22248 - Nurse: created: wybrnksi timejob: 
+2020-01-31 11:38:24,983 - INFO - 22248 - NurseTab: OnChange: cell value has been changed
+2020-01-31 11:38:24,983 - INFO - 22248 - Nurse: wybrnksi setTimejob to 1
+2020-01-31 11:38:31,826 - INFO - 22248 - NurseTab: OnChange: cell value has been changed
+2020-01-31 11:38:31,826 - DEBUG - 22248 - Nurse: setAvailabilities: 1
+2020-01-31 11:38:31,826 - INFO - 22248 - Nurse: md setUnavailability to 
+2020-01-31 11:38:31,826 - DEBUG - 22248 - Nurse: setUnavailability: number of holidays raised: 1
+2020-01-31 11:38:31,826 - DEBUG - 22248 - Nurse: setHolidays: 1
+2020-01-31 11:38:31,826 - INFO - 22248 - Nurse: md setHolidays to 
+2020-01-31 11:38:31,826 - DEBUG - 22248 - Nurse: setHolidays: number of holidays raised: 1
+2020-01-31 11:38:31,827 - INFO - 22248 - Nurse: created: md timejob: 
+2020-01-31 11:38:32,510 - INFO - 22248 - NurseTab: OnChange: cell value has been changed
+2020-01-31 11:38:32,510 - INFO - 22248 - Nurse: md setTimejob to 1
+2020-01-31 11:38:37,121 - INFO - 22248 - NurseTab: OnChange: cell value has been changed
+2020-01-31 11:38:37,122 - DEBUG - 22248 - Nurse: setAvailabilities: 1
+2020-01-31 11:38:37,122 - INFO - 22248 - Nurse: edmw setUnavailability to 
+2020-01-31 11:38:37,122 - DEBUG - 22248 - Nurse: setUnavailability: number of holidays raised: 1
+2020-01-31 11:38:37,122 - DEBUG - 22248 - Nurse: setHolidays: 1
+2020-01-31 11:38:37,122 - INFO - 22248 - Nurse: edmw setHolidays to 
+2020-01-31 11:38:37,123 - DEBUG - 22248 - Nurse: setHolidays: number of holidays raised: 1
+2020-01-31 11:38:37,123 - INFO - 22248 - Nurse: created: edmw timejob: 
+2020-01-31 11:38:38,019 - INFO - 22248 - NurseTab: OnChange: cell value has been changed
+2020-01-31 11:38:38,019 - INFO - 22248 - Nurse: edmw setTimejob to 1
+2020-01-31 11:38:41,716 - INFO - 22248 - App: OnNew 0
+2020-01-31 11:38:41,716 - INFO - 22248 - Book: createSchedulePage Styczen
+2020-01-31 11:38:41,726 - INFO - 22248 - Schedule: createDutyTemplates: for days: 31
+2020-01-31 11:38:41,729 - DEBUG - 22248 - Schedule: createDutyTemplates: 0
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: œroda
+2020-01-31 11:38:41,730 - DEBUG - 22248 - Schedule: createDutyTemplates: 1
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: czwartek
+2020-01-31 11:38:41,730 - DEBUG - 22248 - Schedule: createDutyTemplates: 2
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: pi¹tek
+2020-01-31 11:38:41,730 - DEBUG - 22248 - Schedule: createDutyTemplates: 3
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: sobota
+2020-01-31 11:38:41,730 - DEBUG - 22248 - Schedule: createDutyTemplates: 4
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: niedziela
+2020-01-31 11:38:41,730 - DEBUG - 22248 - Schedule: createDutyTemplates: 5
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: poniedzia³ek
+2020-01-31 11:38:41,730 - DEBUG - 22248 - Schedule: createDutyTemplates: 6
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: wtorek
+2020-01-31 11:38:41,730 - DEBUG - 22248 - Schedule: createDutyTemplates: 7
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: œroda
+2020-01-31 11:38:41,730 - DEBUG - 22248 - Schedule: createDutyTemplates: 8
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: czwartek
+2020-01-31 11:38:41,730 - DEBUG - 22248 - Schedule: createDutyTemplates: 9
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: pi¹tek
+2020-01-31 11:38:41,730 - DEBUG - 22248 - Schedule: createDutyTemplates: 10
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: sobota
+2020-01-31 11:38:41,730 - DEBUG - 22248 - Schedule: createDutyTemplates: 11
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: niedziela
+2020-01-31 11:38:41,730 - DEBUG - 22248 - Schedule: createDutyTemplates: 12
+2020-01-31 11:38:41,730 - INFO - 22248 - Duty date name: poniedzia³ek
+2020-01-31 11:38:41,735 - DEBUG - 22248 - Schedule: createDutyTemplates: 13
+2020-01-31 11:38:41,735 - INFO - 22248 - Duty date name: wtorek
+2020-01-31 11:38:41,735 - DEBUG - 22248 - Schedule: createDutyTemplates: 14
+2020-01-31 11:38:41,735 - INFO - 22248 - Duty date name: œroda
+2020-01-31 11:38:41,735 - DEBUG - 22248 - Schedule: createDutyTemplates: 15
+2020-01-31 11:38:41,735 - INFO - 22248 - Duty date name: czwartek
+2020-01-31 11:38:41,735 - DEBUG - 22248 - Schedule: createDutyTemplates: 16
+2020-01-31 11:38:41,735 - INFO - 22248 - Duty date name: pi¹tek
+2020-01-31 11:38:41,736 - DEBUG - 22248 - Schedule: createDutyTemplates: 17
+2020-01-31 11:38:41,736 - INFO - 22248 - Duty date name: sobota
+2020-01-31 11:38:41,736 - DEBUG - 22248 - Schedule: createDutyTemplates: 18
+2020-01-31 11:38:41,736 - INFO - 22248 - Duty date name: niedziela
+2020-01-31 11:38:41,736 - DEBUG - 22248 - Schedule: createDutyTemplates: 19
+2020-01-31 11:38:41,737 - INFO - 22248 - Duty date name: poniedzia³ek
+2020-01-31 11:38:41,737 - DEBUG - 22248 - Schedule: createDutyTemplates: 20
+2020-01-31 11:38:41,738 - INFO - 22248 - Duty date name: wtorek
+2020-01-31 11:38:41,739 - DEBUG - 22248 - Schedule: createDutyTemplates: 21
+2020-01-31 11:38:41,739 - INFO - 22248 - Duty date name: œroda
+2020-01-31 11:38:41,740 - DEBUG - 22248 - Schedule: createDutyTemplates: 22
+2020-01-31 11:38:41,740 - INFO - 22248 - Duty date name: czwartek
+2020-01-31 11:38:41,740 - DEBUG - 22248 - Schedule: createDutyTemplates: 23
+2020-01-31 11:38:41,740 - INFO - 22248 - Duty date name: pi¹tek
+2020-01-31 11:38:41,740 - DEBUG - 22248 - Schedule: createDutyTemplates: 24
+2020-01-31 11:38:41,740 - INFO - 22248 - Duty date name: sobota
+2020-01-31 11:38:41,740 - DEBUG - 22248 - Schedule: createDutyTemplates: 25
+2020-01-31 11:38:41,740 - INFO - 22248 - Duty date name: niedziela
+2020-01-31 11:38:41,740 - DEBUG - 22248 - Schedule: createDutyTemplates: 26
+2020-01-31 11:38:41,740 - INFO - 22248 - Duty date name: poniedzia³ek
+2020-01-31 11:38:41,740 - DEBUG - 22248 - Schedule: createDutyTemplates: 27
+2020-01-31 11:38:41,740 - INFO - 22248 - Duty date name: wtorek
+2020-01-31 11:38:41,740 - DEBUG - 22248 - Schedule: createDutyTemplates: 28
+2020-01-31 11:38:41,740 - INFO - 22248 - Duty date name: œroda
+2020-01-31 11:38:41,740 - DEBUG - 22248 - Schedule: createDutyTemplates: 29
+2020-01-31 11:38:41,740 - INFO - 22248 - Duty date name: czwartek
+2020-01-31 11:38:41,740 - DEBUG - 22248 - Schedule: createDutyTemplates: 30
+2020-01-31 11:38:41,740 - INFO - 22248 - Duty date name: pi¹tek
+2020-01-31 11:38:41,744 - INFO - 22248 - ScheduleTab: createListCTRL: create calendar for days: 31
+2020-01-31 11:38:41,744 - INFO - 22248 - ScheduleTab: calculateHours: calculated SUNDAYS: 4
+2020-01-31 11:38:41,744 - INFO - 22248 - ScheduleTab: calculateHours: calculated SATURDAYS: 4
+2020-01-31 11:38:41,744 - DEBUG - 22248 - Holiday in 01: 01.01.2020
+
+2020-01-31 11:38:41,744 - DEBUG - 22248 - Holiday in 01: 06.01.2020
+
+2020-01-31 11:38:41,744 - INFO - 22248 - ScheduleTab: calculateHours: calculated WORKING DAYS: 21
+2020-01-31 11:38:41,744 - INFO - 22248 - Nurse timejob is 1
+2020-01-31 11:38:41,745 - INFO - 22248 - Nurse: olszowa should work in this month for 151.67
+2020-01-31 11:38:41,745 - INFO - 22248 - Nurse timejob is 1
+2020-01-31 11:38:41,745 - INFO - 22248 - Nurse: szwaja should work in this month for 151.67
+2020-01-31 11:38:41,745 - INFO - 22248 - Nurse timejob is 1
+2020-01-31 11:38:41,745 - INFO - 22248 - Nurse: wybrnksi should work in this month for 151.67
+2020-01-31 11:38:41,745 - INFO - 22248 - Nurse timejob is 1
+2020-01-31 11:38:41,745 - INFO - 22248 - Nurse: md should work in this month for 151.67
+2020-01-31 11:38:41,745 - INFO - 22248 - Nurse timejob is 1
+2020-01-31 11:38:41,745 - INFO - 22248 - Nurse: edmw should work in this month for 151.67
+2020-01-31 11:38:41,842 - DEBUG - 22248 - ScheduleTab: createListCTRL: SUMA column found 31
+2020-01-31 11:38:41,844 - INFO - 22248 - ScheduleTab: setDataInGrid: holiday:  month whcih has been set 1

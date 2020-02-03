@@ -1,0 +1,2 @@
+BUG-1 Otwieranie listy pielegniarek gdy juz jakies sa otwarte (pieleganirki sa clearowane, ale nie row in grid)
+BUG-2 Zawiesza sie gdy nie potrafi policzyc kalendarza

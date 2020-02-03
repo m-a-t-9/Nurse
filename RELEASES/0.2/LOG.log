@@ -1,0 +1,101 @@
+2020-01-31 12:45:01,062 - INFO - 8144 - App: InitUI
+2020-01-31 12:45:01,062 - INFO - 8144 - App: createMenu
+2020-01-31 12:45:01,077 - INFO - 8144 - NurseTab init
+2020-01-31 12:45:01,086 - DEBUG - 8144 - NurseTab: createGridCTRL: 0
+2020-01-31 12:45:01,090 - INFO - 8144 - NurseTab: putDataInGrid:
+2020-01-31 12:45:15,963 - INFO - 8144 - NurseTab: OnRightDown
+2020-01-31 12:45:20,991 - INFO - 8144 - NurseTab: OnChange: cell value has been changed
+2020-01-31 12:45:20,991 - INFO - 8144 - NurseTab: OnChange in col 0
+2020-01-31 12:45:20,991 - INFO - 8144 - Nurse: created: Anna Olszowa timejob: 
+2020-01-31 12:45:22,667 - INFO - 8144 - NurseTab: OnChange: cell value has been changed
+2020-01-31 12:45:22,667 - INFO - 8144 - NurseTab: OnChange in col 1
+2020-01-31 12:45:22,675 - INFO - 8144 - Nurse: Anna Olszowa setTimejob to 1
+2020-01-31 12:45:26,452 - INFO - 8144 - NurseTab: OnChange: cell value has been changed
+2020-01-31 12:45:26,452 - INFO - 8144 - NurseTab: OnChange in col 2
+2020-01-31 12:45:26,452 - INFO - 8144 - Nurse: addHolidays: 01.01
+2020-01-31 12:45:26,453 - INFO - 8144 - Nurse: addHolidays: simple holiday
+2020-01-31 12:45:26,453 - DEBUG - 8144 - Nurse: setHolidays: 1
+2020-01-31 12:45:26,453 - INFO - 8144 - Nurse: Anna Olszowa setHolidays to 01.01
+2020-01-31 12:45:26,453 - DEBUG - 8144 - Nurse: setHolidays: number of holidays raised: 1
+2020-01-31 12:45:42,744 - INFO - 8144 - Book: createNursePage
+2020-01-31 12:45:45,091 - INFO - 8144 - NurseTab: loadNurses
+2020-01-31 12:45:45,092 - INFO - 8144 - Nurse: created: E_Holinka-Fabin timejob: 1
+2020-01-31 12:45:45,092 - INFO - 8144 - Nurse: created: J_Vyshtaliuk timejob: 1
+2020-01-31 12:45:45,093 - DEBUG - 8144 - Nurse: setAvailabilities: 13
+2020-01-31 12:45:45,093 - DEBUG - 8144 - Nurse: setAvailabilities: 3_N
+2020-01-31 12:45:45,093 - DEBUG - 8144 - Nurse: setAvailabilities: 5_D
+2020-01-31 12:45:45,093 - DEBUG - 8144 - Nurse: setAvailabilities: 6_D
+2020-01-31 12:45:45,093 - DEBUG - 8144 - Nurse: setAvailabilities: 9_N
+2020-01-31 12:45:45,093 - DEBUG - 8144 - Nurse: setAvailabilities: 10_D
+2020-01-31 12:45:45,093 - DEBUG - 8144 - Nurse: setAvailabilities: 14_D
+2020-01-31 12:45:45,093 - DEBUG - 8144 - Nurse: setAvailabilities: 17_N
+2020-01-31 12:45:45,094 - DEBUG - 8144 - Nurse: setAvailabilities: 18_D
+2020-01-31 12:45:45,094 - DEBUG - 8144 - Nurse: setAvailabilities: 21_N
+2020-01-31 12:45:45,094 - DEBUG - 8144 - Nurse: setAvailabilities: 22_D
+2020-01-31 12:45:45,094 - DEBUG - 8144 - Nurse: setAvailabilities: 25_N
+2020-01-31 12:45:45,094 - DEBUG - 8144 - Nurse: setAvailabilities: 26_D
+2020-01-31 12:45:45,094 - DEBUG - 8144 - Nurse: setAvailabilities: 29_N
+2020-01-31 12:45:45,094 - INFO - 8144 - Nurse: W_Naryjek setAvailabilities to 3_N; 5_D; 6_D; 9_N; 10_D; 14_D; 17_N; 18_D; 21_N; 22_D; 25_N; 26_D; 29_N
+2020-01-31 12:45:45,094 - DEBUG - 8144 - Nurse: setUnavailability: number of holidays raised: 13
+2020-01-31 12:45:45,095 - INFO - 8144 - Nurse: created: W_Naryjek timejob: 0
+2020-01-31 12:45:45,095 - DEBUG - 8144 - Nurse: setAvailabilities: 5
+2020-01-31 12:45:45,095 - DEBUG - 8144 - Nurse: setAvailabilities: 4_D
+2020-01-31 12:45:45,095 - DEBUG - 8144 - Nurse: setAvailabilities: 6_D
+2020-01-31 12:45:45,095 - DEBUG - 8144 - Nurse: setAvailabilities: 10_D
+2020-01-31 12:45:45,095 - DEBUG - 8144 - Nurse: setAvailabilities: 16_D
+2020-01-31 12:45:45,095 - DEBUG - 8144 - Nurse: setAvailabilities: 28_D
+2020-01-31 12:45:45,095 - INFO - 8144 - Nurse: T_Wieclawek setAvailabilities to 4_D; 6_D; 10_D; 16_D; 28_D
+2020-01-31 12:45:45,096 - DEBUG - 8144 - Nurse: setUnavailability: number of holidays raised: 5
+2020-01-31 12:45:45,096 - INFO - 8144 - Nurse: created: T_Wieclawek timejob: 0
+2020-01-31 12:45:45,096 - DEBUG - 8144 - Nurse: setAvailabilities: 4
+2020-01-31 12:45:45,096 - DEBUG - 8144 - Nurse: setAvailabilities: 7_D
+2020-01-31 12:45:45,096 - DEBUG - 8144 - Nurse: setAvailabilities: 20_D
+2020-01-31 12:45:45,096 - DEBUG - 8144 - Nurse: setAvailabilities: 24_N
+2020-01-31 12:45:45,096 - DEBUG - 8144 - Nurse: setAvailabilities: 30_N
+2020-01-31 12:45:45,096 - INFO - 8144 - Nurse: E_Maslarz setAvailabilities to 7_D; 20_D; 24_N; 30_N
+2020-01-31 12:45:45,097 - DEBUG - 8144 - Nurse: setUnavailability: number of holidays raised: 4
+2020-01-31 12:45:45,097 - INFO - 8144 - Nurse: created: E_Maslarz timejob: 0
+2020-01-31 12:45:45,097 - INFO - 8144 - Nurse: created: D_Ben-Madej timejob: 0
+2020-01-31 12:45:45,097 - INFO - 8144 - Nurse: created: V_Lodzinska timejob: 0
+2020-01-31 12:45:45,098 - INFO - 8144 - Nurse: created: D_Szwaja timejob: 0
+2020-01-31 12:45:45,098 - INFO - 8144 - Nurse: created: K_Banucha timejob: 1
+2020-01-31 12:45:45,098 - INFO - 8144 - Nurse: created: E_Burdzicka timejob: 1
+2020-01-31 12:45:45,098 - INFO - 8144 - Nurse: created: I_Hazubska timejob: 0.5
+2020-01-31 12:45:45,098 - DEBUG - 8144 - Nurse: setHolidays: 1
+2020-01-31 12:45:45,098 - INFO - 8144 - Nurse: A_Olszowa setHolidays to 11.02
+
+2020-01-31 12:45:45,098 - DEBUG - 8144 - Nurse: setHolidays: number of holidays raised: 1
+2020-01-31 12:45:45,098 - INFO - 8144 - Nurse: created: A_Olszowa timejob: 1
+2020-01-31 12:45:45,098 - INFO - 8144 - Nurse: created: M_Kolodziej timejob: 0
+2020-01-31 12:45:45,098 - INFO - 8144 - Nurse: created: D_Prokop timejob: 1
+2020-01-31 12:45:45,098 - INFO - 8144 - Nurse: created: R_Ziomek timejob: 1
+2020-01-31 12:45:45,098 - INFO - 8144 - Nurse: created: T_Rodacka timejob: 0
+2020-01-31 12:45:45,099 - INFO - 8144 - Nurse: created: I_Bielinska timejob: 0
+2020-01-31 12:45:45,099 - INFO - 8144 - Nurse: created: B_Buczkowska timejob: 0
+2020-01-31 12:45:45,099 - INFO - 8144 - Nurse: created: L_Osak timejob: 0
+2020-01-31 12:45:45,099 - INFO - 8144 - Nurse: created: D_Palica timejob: 0
+2020-01-31 12:45:45,099 - INFO - 8144 - NurseTab: loadNurses: created: 20 nurses
+2020-01-31 12:45:45,099 - INFO - 8144 - NurseTab: putDataInGrid:
+2020-01-31 12:45:45,099 - DEBUG - 8144 - NurseTab: putDataInGrid: nurses are more than 0
+2020-01-31 12:45:45,099 - DEBUG - 8144 - NurseTab: putDataInGrid: inserting rows
+2020-01-31 12:45:45,110 - DEBUG - 8144 - 0
+2020-01-31 12:45:45,111 - DEBUG - 8144 - 1
+2020-01-31 12:45:45,111 - DEBUG - 8144 - 2
+2020-01-31 12:45:45,111 - DEBUG - 8144 - 3
+2020-01-31 12:45:45,111 - DEBUG - 8144 - 4
+2020-01-31 12:45:45,112 - DEBUG - 8144 - 5
+2020-01-31 12:45:45,112 - DEBUG - 8144 - 6
+2020-01-31 12:45:45,112 - DEBUG - 8144 - 7
+2020-01-31 12:45:45,112 - DEBUG - 8144 - 8
+2020-01-31 12:45:45,112 - DEBUG - 8144 - 9
+2020-01-31 12:45:45,112 - DEBUG - 8144 - 10
+2020-01-31 12:45:45,113 - DEBUG - 8144 - 11
+2020-01-31 12:45:45,113 - DEBUG - 8144 - 12
+2020-01-31 12:45:45,113 - DEBUG - 8144 - 13
+2020-01-31 12:45:45,113 - DEBUG - 8144 - 14
+2020-01-31 12:45:45,113 - DEBUG - 8144 - 15
+2020-01-31 12:45:45,113 - DEBUG - 8144 - 16
+2020-01-31 12:45:45,114 - DEBUG - 8144 - 17
+2020-01-31 12:45:45,114 - DEBUG - 8144 - 18
+2020-01-31 12:45:45,114 - DEBUG - 8144 - 19
+2020-01-31 12:45:56,744 - INFO - 8144 - NurseTab: right click on row 20

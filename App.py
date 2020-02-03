@@ -83,6 +83,10 @@ class Example(wx.Frame):
         self.autoCalc = wx.MenuItem(self.fileMenu, wx.ID_ANY, 'Automatycznie')
         self.calculateMenu.Append(self.autoCalc)
         self.Bind(wx.EVT_MENU, self.OnCalculate, self.autoCalc)
+        self.calculateMenu.AppendSeparator()
+        self.clear = wx.MenuItem(self.fileMenu, wx.ID_ANY, 'Wyczysc')
+        self.calculateMenu.Append(self.clear)
+        self.Bind(wx.EVT_MENU, self.OnClear, self.clear)
 
     def OnNew(self, e):
         self.logger.info("App: OnNew " + str(e.GetId()))
@@ -111,6 +115,10 @@ class Example(wx.Frame):
         selectedSchedule = self.book.getCurrentSchedule()
         #self.logger.debug("App: OnCalculate: selectedPage " + str(selectedSchedule))
         selectedSchedule.OnCalculate()
+
+    def OnClear(self, e):
+        self.logger.info("App: OnClear")
+        self.book.OnClear()
 
 def main():
 

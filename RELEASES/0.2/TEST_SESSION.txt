@@ -1,0 +1,57 @@
+TESTS:
+
+1. NurseTab
+    1.1. Startup with .nur file   		                         
+    1.2. Startup without .nur file              	PASSED           
+    1.3. Add new nurse                                  PASSED  
+    1.4. Edit existing nurse			
+        1.4.1. Edit name                                     
+        1.4.2. Edit holidays
+            1.4.2.1. Put one day off                        
+            1.4.2.2. Put range of holidays                   - not implemented              POSTPONED
+            1.4.2.3. Edit one day off                       
+            1.4.2.4. Edit range of holidays                  - not implemented              POSTPONED
+            1.4.2.5. Remove day off                         
+            1.4.2.6. Remove range of holidays                - not implemented              POSTPONED
+        1.4.3. Edit timejob 				PASSED                                 
+        1.4.4. Edit unavailabilities                        
+            1.4.4.1. Add new unavailability                  
+            1.4.4.2. Update unavailability                  
+            1.4.4.3. Remove unavailability                   
+    1.5. Save nurse staff to file                            
+    1.6. Open staff from file     			PASSED                         
+2. Book
+    2.1. Create new schedule page
+        2.1.1. Create one single page                   PASSED  
+        2.2.2. Create few clear pages                        
+        2.2.3. Create new page after schedule           FAILED     
+        2.2.4. Create 12 pages - perf testing                
+    2.2. Open schedule from file
+        2.2.1. Open schedule when page is already created    
+        2.2.2. Open as a single page                        
+    2.3. Save schedule to file
+        2.3.1. Save particular page                         
+        2.3.2. Save all pages separately                     
+        2.3.3. Save all pages together                       
+3. ScheduleTab
+    3.1. Manual schedule creation                           
+    3.2. Automated schedule calculation
+        3.2.1. Automated for single page                     
+        3.2.2. Automated calculation for particular page    
+    3.3. Updating schedule and validation
+        3.3.1. Put invalid value in field                    
+        3.3.2. Put daily duty after daily duty              
+        3.3.3. Put daily duty after nightly duty             
+        3.3.4. Put 3 nightly duty in series                  
+        3.3.5. Remove proper nightly duty                   
+        3.3.6. Remove proper daily duty                   
+        3.3.7. Remove wrong nightly duty                
+        3.3.8. Remove wrong daily duty                     
+        3.3.9. Change duty type from nightly to daily        
+        3.3.10. Change duty type from daily to nightly       
+        3.3.11. Put duties for four sundays                 
+        3.3.12. Put duty for unavailable date                
+        3.3.13. Put DX                                       
+        3.3.14. Remove DX                                    
+    3.4. automated schedule creation with initial data       
+        

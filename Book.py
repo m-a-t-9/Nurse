@@ -33,10 +33,15 @@ class Book:
         self.schedulePages.append(ScheduleTab(self.nb, self.logger, self.getIface(), self.pageCounter, month))
         self.nb.AddPage(self.schedulePages[-1], self.schedulePages[-1].monthName)
         self.nb.ChangeSelection(self.schedulePages[-1].page)
+        self.parent.Bind(wx.EVT_NOTEBOOK_PAGE_CHANGED, self.OnTabChange)
         self.pageCounter += 1
     
     def OnTabChange(self, e):
-        self.logger.info("Book: OntabChange: " + str(self.nb.GetSelection()))
+        page = self.nb.GetSelection()
+        self.logger.info("Book: OntabChange: " + str(page))
+        if page != 0 and self.nurseTab.changed == True:
+            self.logger.info("Book: OnTabChange: refreshing")
+            self.schedulePages[page-1].setMonthAndRefresh(month=-1)
         
     def getCurrentSchedule(self):
         return self.schedulePages[self.nb.GetSelection()-1]
@@ -88,4 +93,11 @@ class Book:
             except IOError:
                 wx.LogError("Cannot open file '%s'." % newfile)
         
-        
+    def OnClear(self):
+        page = self.nb.GetSelection()
+        if page > 0:
+            self.schedulePages[page-1].clear()
+            self.nb.DeletePage(page)
+            self.nb.SendSizeEvent()
+            self.schedulePages.remove(self.schedulePages[page-1])
+            self.pageCounter -= 1

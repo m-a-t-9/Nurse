@@ -11,7 +11,7 @@ class Schedule:
         self.monthId = MONTHS.index(self.month)+1
         self.monthIndex = self.monthId-1
         self.nif = nurseIface
-        self.nurses = self.nif("GET_NURSES")
+        self.nurses = self.nif("NEW_STAFF")
         self.helper = ScheduleHelper(self.logger)
         self.duties = []
         self.saturdays = []
@@ -72,9 +72,7 @@ class Schedule:
             self.logger.info("Schedule: validate nurse:  must have one free Sunday")
             return [False, "Pielegniarka musi mieć przynajmniej jedną niedziele wolna w miesiącu"]
         return [True, ""]
-    
-   
-    
+        
     def isAlreadyAssigned(self, nurse, duty):
         for nur in duty.nurses:
             if nur.name == nurse.name:
@@ -220,7 +218,7 @@ class Schedule:
             
     def planRestNursesHours(self): 
         for nurse in self.nurses:
-            if nurse.getUnplannedHours() != 0:
+            if nurse.getUnplannedHours() != 0 and nurse.getUnplannedHours() < 12:
                 duty = self.helper.findFirstDailyDutyWithThreeNursesAssigned(nurse, self.duties)
                 if duty != None:
                     self.logger.info("Schedule: planRestNursesHours: duty which was found: " + str(duty.day))

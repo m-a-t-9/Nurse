@@ -13,43 +13,45 @@ class Nurse:
         self.extorsions = []
         self.sundays = 0
         self.name = data.split(",")[0]
-        self.timejob = data.split(",")[1].rstrip()
+        self.timejob = data.split(",")[1].replace("\n", "")
         if len(data.split(",")) >= 3:
-            self.setAvailabilities(data.split(",")[2])
+            self.setAvailabilities(data.split(",")[2].replace("\n", ""))
         if len(data.split(",")) >= 4:
-            self.setHolidays(data.split(",")[3])
+            self.setHolidays(data.split(",")[3].replace("\n", ""))
         self.hours = 0
         self.logger.info("Nurse: created: " + self.name + " timejob: " + str(self.timejob))
 
     def setAvailabilities(self, data):
-        splitted = data.split(";")
-        self.logger.debug("Nurse: setAvailabilities: " + str(len(splitted)))
-        if len(self.holidays) != 0:
-            self.availabilities = []
-        if len(splitted) > 1:
-            for day in splitted:
-                self.logger.debug("Nurse: setAvailabilities: " + day.rstrip())
-                self.availabilities.append(day.rstrip())
-            self.logger.info("Nurse: " + self.name + " setAvailabilities to " + "; ".join(self.availabilities))
-        elif len(splitted) == 1:
-            self.availabilities.append(splitted[0])
-            self.logger.info("Nurse: " + self.name + " setUnavailability to " + "; ".join(self.availabilities))
-        self.logger.debug("Nurse: setUnavailability: number of holidays raised: " + str(len(self.availabilities)))
+        if data != "":
+            splitted = data.split(";")
+            self.logger.debug("Nurse: setAvailabilities: " + str(len(splitted)))
+            if len(self.holidays) != 0:
+                self.availabilities = []
+            if len(splitted) > 1:
+                for day in splitted:
+                    self.logger.debug("Nurse: setAvailabilities: " + day.rstrip())
+                    self.availabilities.append(day.rstrip())
+                self.logger.info("Nurse: " + self.name + " setAvailabilities to " + "; ".join(self.availabilities))
+            elif len(splitted) == 1:
+                self.availabilities.append(splitted[0])
+                self.logger.info("Nurse: " + self.name + " setUnavailability to " + "; ".join(self.availabilities))
+            self.logger.debug("Nurse: setUnavailability: number of holidays raised: " + str(len(self.availabilities)))
 
     def setHolidays(self, data):
-        splitted = data.split(";")
-        self.logger.debug("Nurse: setHolidays: " + str(len(splitted)))
-        if len(self.holidays) != 0:
-            self.holidays = []
-        if len(splitted) > 1:
-            for day in splitted:
-                self.logger.debug("Nurse: setHolidays: " + day.rstrip())
-                self.holidays.append(day.replace('\n', "").replace(" ", ""))
-            self.logger.info("Nurse: " + self.name + " setHolidays to " + "; ".join(self.holidays))
-        elif len(splitted) == 1:
-            self.holidays.append(splitted[0])
-            self.logger.info("Nurse: " + self.name + " setHolidays to " + "; ".join(self.holidays))
-        self.logger.debug("Nurse: setHolidays: number of holidays raised: " + str(len(self.holidays)))
+        if data != "":
+            splitted = data.split(";")
+            self.logger.debug("Nurse: setHolidays: " + str(len(splitted)))
+            if len(self.holidays) != 0:
+                self.holidays = []
+            if len(splitted) > 1:
+                for day in splitted:
+                    self.logger.debug("Nurse: setHolidays: " + day.rstrip())
+                    self.holidays.append(day.replace('\n', "").replace(" ", ""))
+                self.logger.info("Nurse: " + self.name + " setHolidays to " + "; ".join(self.holidays))
+            elif len(splitted) == 1:
+                self.holidays.append(splitted[0])
+                self.logger.info("Nurse: " + self.name + " setHolidays to " + "; ".join(self.holidays))
+            self.logger.debug("Nurse: setHolidays: number of holidays raised: " + str(len(self.holidays)))
         
     def setTimejob(self, timejob):
         self.timejob = str(timejob)
@@ -250,12 +252,13 @@ class Nurse:
         #01.01["", NZ, UZ]
         #01.01-09.01
         #22.01-07.02
+        self.logger.info("Nurse: addHolidays: " + ";".join(data))
         for date in data:
             if date.find("-") != -1:
                 #TO BE IMPLEMENTED
                 self.logger.debug("Nurse: addHolidays: range date syntax found")
             else:
-                if date.find("NZ") == -1 and date.find("UZ") == -1:
+                if date.find("NZ") == -1 and date.find("UZ") == -1 and date != "":
                     self.logger.info("Nurse: addHolidays: simple holiday")
                     self.setHolidays(date)
                     
